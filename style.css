@@ -1,5 +1,5 @@
 body {
-    background-color: #c00100;
+    background-color: #808080;
     font-family: Arial, sans-serif;
 }
 
@@ -13,5 +13,5 @@ p {
 }
 
 button {
-      font-family: fantasy;
+      font-family: 'Courier New', Courier, monospace;
 }
