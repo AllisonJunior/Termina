@@ -1,25 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- TÍTULO DO SITE -->
     <title>Termina</title>
+    
+    <!-- FAVICONS DO SITE -->
+    <link rel="icon" href="recursos/icons/favicons/icon_default.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="recursos/icons/favicons/icon_32x32.png" type="image/png">
+    <link rel="icon" sizes="48x48" href="recursos/icons/favicons/icon_48x48.png" type="image/png">
+    <link rel="icon" sizes="64x64" href="recursos/icons/favicons/icon_64x64.png" type="image/png">
+
+    <!-- FOLHA DE ESTILOS DA PÁGINA -->
+    <link rel="stylesheet" href="arquivos/estilos/principal.css">
+    
+    <!-- LINK PARA FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* Estilos para a tabela */
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
 </head>
+
 <body>
-      <h1>Termina</h1>
-      <p>Welcome to this site to test some stuff like the system that we will be using!</p>
 
-      <ul>
-        <li><button>Itens</button></li>
-        <li><button>Raças</button></li>
-        <li><button>Planos de Fundo</button></li>
-        <li><button>Histórias</button></li>
-        <li><a href="../shell_scripts/reba.html">PRIVATE</a></li>
-        <li><a href="../Estruturas_de_Dados/host.html">Mudar para outro repositório</a></li>
-        <li><a href="pages/teste.html">Mudar de Página</a></li>
-    </ul>
+    <!-- BARRA DO TOPO -->
+    <nav class="navbar">
+        <p>Termina. O sistema de RPG modificado para um mundo completamente desolado.</p>
+    </nav>
+    
+    <!-- NAV BAR ABAIXO DA BARRA DO TOPO -->
+    <nav class="navbar">
+        <div class="menu">  
+            <a href="">Menu Principal</a>
+            <a href="">Regras</a>
+            <a href="">Referências</a>
+            <a href="">Ferramentas</a>
+            <a href="">Configurações</a>
+        </div>
 
-    <button>Pray to me</button>
+        <div class="search-container">
+            <input type="text" id="nome" name="nome" placeholder="Buscar...">
+            <button>
+                <i class="fas fa-search search-icon"></i>
+            </button>  
+        </div>
+    </nav>
+
+    <!-- MARCADOR DA DOCUMENTAÇÃO -->
+    <div id="tabela-container">
+        <!-- Tabela será gerada aqui -->
+    </div>
+
+    <!-- Script para carregar e exibir a tabela -->
+    <script>
+        // Função para criar a tabela a partir dos dados JSON
+        function criarTabela(dados) {
+            // Cria a tabela e o cabeçalho
+            const tabela = document.createElement('table');
+            const cabecalho = document.createElement('thead');
+            cabecalho.innerHTML = `
+                <tr>
+                    <th>ITEM</th>
+                    <th>PREÇO</th>
+                </tr>
+            `;
+            tabela.appendChild(cabecalho);
+
+            // Cria o corpo da tabela
+            const corpo = document.createElement('tbody');
+
+            // Preenche a tabela com os dados
+            dados.forEach(item => {
+                const linha = document.createElement('tr');
+                linha.innerHTML = `
+                    <td>${item.item}</td>
+                    <td>${item.preco}</td>
+                `;
+                corpo.appendChild(linha);
+            });
+
+            tabela.appendChild(corpo);
+
+            // Adiciona a tabela ao container no HTML
+            document.getElementById('tabela-container').appendChild(tabela);
+        }
+
+        // Carrega o arquivo JSON e exibe a tabela
+        fetch('arquivos/dados/prices.json')
+            .then(response => {
+                console.log('Resposta recebida:', response); // Verifica se a resposta é recebida
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Dados recebidos:', data); // Verifica os dados recebidos
+                criarTabela(data);
+            })
+            .catch(error => console.error('Erro ao carregar o JSON:', error));
+    </script>
+
 </body>
 </html>
