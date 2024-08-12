@@ -11,22 +11,78 @@
 }
 
 
+
+/* TEXTO DA BARRA DE DESCRIÇÃO */
+.bar_section
+{
+ display: flex;
+ align-items: center;
+ background-color: #333;
+ padding: 10px 5px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* TEXTO DA BARRA DE DESCRIÇÃO DO SITE */
+.bar_section .page_title
+{ 
+ color: #69ebcf;
+ font-size: larger;
+ font-weight: bold;
+ font-style: normal;
+}
+
+.bar_section .page_descr
+{ 
+ color: #96a7a3;
+ font-style: italic;
+ font-size: small;
+}
+
+
+/* TEXTO DA BARRA DE DESCRIÇÃO */
+.bar_title
+{
+ display: flex;
+ align-items: center;
+ background-color: #333;
+ padding: 10px 5px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /* TEXTO DA BARRA DE DESCRIÇÃO */
 .bar_page 
 {
-    display: flex;
-    align-items: center;
-    background-color: #333;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 10px 5px;
+ display: flex;
+ align-items: center;
+ background-color: #333;
+ padding: 10px 5px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 
 /* BOTÕES DA BARRA DE OPÇÕES */
 .bar_page .div_buttons
 {
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
+ display: flex;
+}
+
+.bar_page .div_return
+{
+ position: relative;
+ margin-right: 20px;  
+ display: flex; 
+}
+
+.bar_page .div_return a
+{
+ color: #FFF;
+ text-decoration: none;
+ padding: 5px 10px;
+ display: block;
+}
+
+.bar_page .div_return a:hover
+{
+ color: cornflowerblue;
 }
 
 .bar_page .div_option
@@ -43,6 +99,16 @@
  display: block; 
 }
 
+.bar_page .div_option .selected_option
+{
+ text-decoration: underline;   
+}
+
+.bar_page .div_option .selected_sub_option
+{
+ text-decoration: underline;   
+}
+
 .bar_page .div_option:hover a
 {
  color: cornflowerblue;   
@@ -53,7 +119,7 @@
 {
  display: none;
  position: absolute;
- background-color: #444;
+ background-color: #444444;
  list-style: none;
  padding: 10px 0;
  margin: 0;
@@ -66,19 +132,18 @@
 
 .bar_page .div_option .sub li
 {
- padding: 5px 20px; 
+ padding: 5px 10px; 
 }
 
 .bar_page .div_option .sub li a
 {
     color: antiquewhite;
-    text-decoration: none;
     display: block;
 }
 
 .bar_page .div_option .sub li a:hover
 {
-    color: cornflowerblue;
+ color: cornflowerblue;
 }
 
 /* Exibir o submenu no hover */
@@ -110,7 +175,7 @@
 {
  text-decoration: none;
  color: #333;
- width: 120px;
+ width: 100px;
 }
 
 .div_sections a:hover {

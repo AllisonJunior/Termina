@@ -8,5 +8,10 @@
         "nome": "Sobrevivente",
         "descricao": "A classe que se baseia em manwhas coreanos.",
         "link": "../players/classes/survivor.html"
+    },    
+    {
+        "nome": "Monge",
+        "descricao": "A classe que se baseia em manwhas coreanos.",
+        "link": "../players/classes/monge.html"
     }
 ]

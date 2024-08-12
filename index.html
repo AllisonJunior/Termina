@@ -3,52 +3,48 @@
 
 <head>
     <title>Página Principal</title>
-    <link rel = "stylesheet" href = "src/styles/main.css">
+    <link rel = "stylesheet" href = "/src/styles/main.css">
 </head>
 
 <body>
       
       <!-- Barra de navegação: Descrição do site -->
-      <nav class = "bar_page">
-            <p>Termina.&nbsp;</p> 
-            <p>Um sistema de RPG reimaginado com um conjunto de ferramentas para auxiliar na sua campanha.</p>
+      <nav class = "bar_section">
+            <h1 class = "page_title">Termina.&nbsp;</h1> 
+            <p class = "page_descr">Um sistema de RPG reimaginado com um conjunto de ferramentas para auxiliar na sua campanha.</p>
       </nav>
 
       <!-- Barra de navegação: Seções do site -->
       <nav class = "bar_page">
             
             <!-- Divisão: Botões -->
+            <div class = "div_return">
+                  <a href = "">Menu Principal</a>
+            </div>
+
             <div class = "div_buttons">
 
                   <div class = "div_option">
 
-                        <a href = "">Menu Principal</a>
+                        <a href = "">Jogadores</a>
                         <ul class = "sub">
-                             <li><a href = "" > Submenu 1</a></li>
-                             <li><a href = "" > Submenu 2</a></li>
-                             <li><a href = "" > Submenu 3</a></li>
-                        </ul>
-
-                  </div>
-
-                  <div class = "div_option">
-
-                        <a href = "">Regras</a>
-                        <ul class = "sub">
-                             <li><a href = "" > Submenu 4</a></li>
-                             <li><a href = "" > Submenu 5</a></li>
-                             <li><a href = "" > Submenu 6</a></li>
+                             <li><a href = "src/pages/players/classes.html" >Classes</a></li>
+                             <li><a href = "src/pages/players/races.html" >Raças</a></li>
+                             <li><a href = "src/pages/players/background.html" >História de Fundo</a></li>
+                             <li><a href = "src/pages/players/feats.html" >Habilidades</a></li>
+                             <li><a href = "src/pages/players/items.html" >Itens</a></li>
+                             <li><a href = "src/pages/players/spells.html" >Mágias</a></li>
                         </ul>
 
                   </div>
                   
                   <div class = "div_option">
 
-                        <a href = "">Referências</a>
+                        <a href = "">Regras</a>
                         <ul class = "sub">
-                             <li><a href = "" > Submenu 7</a></li>
-                             <li><a href = "" > Submenu 8</a></li>
-                             <li><a href = "" > Submenu 9</a></li>
+                             <li><a href = "" >Gerais</a></li>
+                             <li><a href = "" >Atributos</a></li>
+                             <li><a href = "" >Criação de Personagem</a></li>
                         </ul>
                   
                   </div>
@@ -57,60 +53,30 @@
 
                         <a href = "">Ferramentas</a>
                         <ul class = "sub">
-                             <li><a href = "" > Submenu A</a></li>
-                             <li><a href = "" > Submenu B</a></li>
-                             <li><a href = "" > Submenu C</a></li>
+                             <li><a href = "" >Bestiário</a></li>
                         </ul>
                   
                   </div>
 
-                  <div class = "div_option">
-
-                        <a href = "">Configurações</a>
-                        <ul class = "sub">
-                             <li><a href = "" > Submenu D</a></li>
-                             <li><a href = "" > Submenu E</a></li>
-                             <li><a href = "" > Submenu F</a></li>
-                        </ul>
-
-                  </div>
-
             </div>      
-            
-            <div class = "div_search">
-                  <input type="text" placeholder="Buscar...">
-                  <button type="button">⌕</button>
-            </div>        
 
       </nav>
+
+      <br>
 
       <!-- Divisão: Seções do site -->
       <div class = "div_sections">
 
            <!-- Divisão: Jogadores -->
            <div class = "div_sectionPlayers">
-                 <a class = "section" href = "src/pages/players/spells.html">Mágias</a> 
-                 <a class = "section" href = "src/pages/players/races.html">Raças</a> 
-                 <a class = "section" href = "src/pages/players/background.html">Histórias</a> 
-                 <a class = "section" href = "src/pages/players/classes.html">Classes</a> 
-                 <a class = "section" href = "src/pages/players/items.html">Itens</a> 
-                 <a class = "section" href = "src/pages/players/feats.html">Habilidades</a> 
+                 <a class = "section" href = "/src/pages/players/spells.html">Mágias</a> 
+                 <a class = "section" href = "/src/pages/players/races.html">Raças</a> 
+                 <a class = "section" href = "/src/pages/players/background.html">Histórias</a> 
+                 <a class = "section" href = "/src/pages/players/classes.html">Classes</a> 
+                 <a class = "section" href = "/src/pages/players/items.html">Itens</a> 
+                 <a class = "section" href = "/src/pages/players/feats.html">Habilidades</a> 
            </div>           
            
-           <!-- Divisão: Regras -->
-           <div class = "div_sectionRules">
-                 <a class = "section" href = "">Atributos</a> 
-                 <a class = "section" href = "">Condições</a> 
-                 <a class = "section" href = "">Ações</a> 
-           </div>    
-
-           <!-- Divisão: Ferramentas -->
-           <div class = "div_sectionDungeonMaster">
-                 <a class = "section" href = "">Bestiário</a> 
-                 <a class = "section" href = "">Gerador de Loot</a> 
-                 <a class = "section" href = "">Calculadora de Desafio</a> 
-           </div>
-
       </div> 
 
 </body>
