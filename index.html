@@ -2,120 +2,117 @@
 <html lang="pt-br">
 
 <head>
-    <!-- TÍTULO DO SITE -->
-    <title>Termina</title>
-    
-    <!-- FAVICONS DO SITE -->
-    <link rel="icon" href="recursos/icons/favicons/icon_default.png" type="image/png">
-    <link rel="icon" sizes="32x32" href="recursos/icons/favicons/icon_32x32.png" type="image/png">
-    <link rel="icon" sizes="48x48" href="recursos/icons/favicons/icon_48x48.png" type="image/png">
-    <link rel="icon" sizes="64x64" href="recursos/icons/favicons/icon_64x64.png" type="image/png">
-
-    <!-- FOLHA DE ESTILOS DA PÁGINA -->
-    <link rel="stylesheet" href="arquivos/estilos/principal.css">
-    
-    <!-- LINK PARA FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <style>
-        /* Estilos para a tabela */
-        table {
-            width: 50%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            padding: 10px;
-            text-align: left;
-            border: 1px solid #ddd;
-        }
-
-        th {
-            background-color: #f4f4f4;
-        }
-    </style>
+    <title>Página Principal</title>
+    <link rel = "stylesheet" href = "/src/styles/main.css">
 </head>
 
 <body>
+      
+      <!-- Barra de navegação: Descrição do site -->
+      <nav class = "bar_page">
+            <p>Termina.&nbsp;</p> 
+            <p>Um sistema de RPG reimaginado com um conjunto de ferramentas para auxiliar na sua campanha.</p>
+      </nav>
 
-    <!-- BARRA DO TOPO -->
-    <nav class="navbar">
-        <p>Termina. O sistema de RPG modificado para um mundo completamente desolado.</p>
-    </nav>
-    
-    <!-- NAV BAR ABAIXO DA BARRA DO TOPO -->
-    <nav class="navbar">
-        <div class="menu">  
-            <a href="">Menu Principal</a>
-            <a href="">Regras</a>
-            <a href="">Referências</a>
-            <a href="">Ferramentas</a>
-            <a href="">Configurações</a>
-        </div>
+      <!-- Barra de navegação: Seções do site -->
+      <nav class = "bar_page">
+            
+            <!-- Divisão: Botões -->
+            <div class = "div_buttons">
 
-        <div class="search-container">
-            <input type="text" id="nome" name="nome" placeholder="Buscar...">
-            <button>
-                <i class="fas fa-search search-icon"></i>
-            </button>  
-        </div>
-    </nav>
+                  <div class = "div_option">
 
-    <!-- MARCADOR DA DOCUMENTAÇÃO -->
-    <div id="tabela-container">
-        <!-- Tabela será gerada aqui -->
-    </div>
+                        <a href = "">Menu Principal</a>
+                        <ul class = "sub">
+                             <li><a href = "" > Submenu 1</a></li>
+                             <li><a href = "" > Submenu 2</a></li>
+                             <li><a href = "" > Submenu 3</a></li>
+                        </ul>
 
-    <!-- Script para carregar e exibir a tabela -->
-    <script>
-        // Função para criar a tabela a partir dos dados JSON
-        function criarTabela(dados) {
-            // Cria a tabela e o cabeçalho
-            const tabela = document.createElement('table');
-            const cabecalho = document.createElement('thead');
-            cabecalho.innerHTML = `
-                <tr>
-                    <th>ITEM</th>
-                    <th>PREÇO</th>
-                </tr>
-            `;
-            tabela.appendChild(cabecalho);
+                  </div>
 
-            // Cria o corpo da tabela
-            const corpo = document.createElement('tbody');
+                  <div class = "div_option">
 
-            // Preenche a tabela com os dados
-            dados.forEach(item => {
-                const linha = document.createElement('tr');
-                linha.innerHTML = `
-                    <td>${item.item}</td>
-                    <td>${item.preco}</td>
-                `;
-                corpo.appendChild(linha);
-            });
+                        <a href = "">Regras</a>
+                        <ul class = "sub">
+                             <li><a href = "" > Submenu 4</a></li>
+                             <li><a href = "" > Submenu 5</a></li>
+                             <li><a href = "" > Submenu 6</a></li>
+                        </ul>
 
-            tabela.appendChild(corpo);
+                  </div>
+                  
+                  <div class = "div_option">
 
-            // Adiciona a tabela ao container no HTML
-            document.getElementById('tabela-container').appendChild(tabela);
-        }
+                        <a href = "">Referências</a>
+                        <ul class = "sub">
+                             <li><a href = "" > Submenu 7</a></li>
+                             <li><a href = "" > Submenu 8</a></li>
+                             <li><a href = "" > Submenu 9</a></li>
+                        </ul>
+                  
+                  </div>
+                  
+                  <div class = "div_option">
 
-        // Carrega o arquivo JSON e exibe a tabela
-        fetch('arquivos/dados/prices.json')
-            .then(response => {
-                console.log('Resposta recebida:', response); // Verifica se a resposta é recebida
-                if (!response.ok) {
-                    throw new Error('Network response was not ok ' + response.statusText);
-                }
-                return response.json();
-            })
-            .then(data => {
-                console.log('Dados recebidos:', data); // Verifica os dados recebidos
-                criarTabela(data);
-            })
-            .catch(error => console.error('Erro ao carregar o JSON:', error));
-    </script>
+                        <a href = "">Ferramentas</a>
+                        <ul class = "sub">
+                             <li><a href = "" > Submenu A</a></li>
+                             <li><a href = "" > Submenu B</a></li>
+                             <li><a href = "" > Submenu C</a></li>
+                        </ul>
+                  
+                  </div>
+
+                  <div class = "div_option">
+
+                        <a href = "">Configurações</a>
+                        <ul class = "sub">
+                             <li><a href = "" > Submenu D</a></li>
+                             <li><a href = "" > Submenu E</a></li>
+                             <li><a href = "" > Submenu F</a></li>
+                        </ul>
+
+                  </div>
+
+            </div>      
+            
+            <div class = "div_search">
+                  <input type="text" placeholder="Buscar...">
+                  <button type="button">⌕</button>
+            </div>        
+
+      </nav>
+
+      <!-- Divisão: Seções do site -->
+      <div class = "div_sections">
+
+           <!-- Divisão: Jogadores -->
+           <div class = "div_sectionPlayers">
+                 <a class = "section" href = "/src/pages/players/spells.html">Mágias</a> 
+                 <a class = "section" href = "/src/pages/players/races.html">Raças</a> 
+                 <a class = "section" href = "/src/pages/players/background.html">Histórias</a> 
+                 <a class = "section" href = "/src/pages/players/classes.html">Classes</a> 
+                 <a class = "section" href = "/src/pages/players/items.html">Itens</a> 
+                 <a class = "section" href = "/src/pages/players/feats.html">Habilidades</a> 
+           </div>           
+           
+           <!-- Divisão: Regras -->
+           <div class = "div_sectionRules">
+                 <a class = "section" href = "">Atributos</a> 
+                 <a class = "section" href = "">Condições</a> 
+                 <a class = "section" href = "">Ações</a> 
+           </div>    
+
+           <!-- Divisão: Ferramentas -->
+           <div class = "div_sectionDungeonMaster">
+                 <a class = "section" href = "">Bestiário</a> 
+                 <a class = "section" href = "">Gerador de Loot</a> 
+                 <a class = "section" href = "">Calculadora de Desafio</a> 
+           </div>
+
+      </div> 
 
 </body>
+
 </html>
