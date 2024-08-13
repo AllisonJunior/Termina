@@ -168,9 +168,38 @@
 {
  display: flex;   
  flex-wrap: wrap;
+ justify-content: center;
 }
 
 .div_sections .section_block
 {
+ padding: 10px 20px;
+ text-align: center;
+ transition: transform 0.1s ease;
+}
+
+.div_sections .section_block:hover
+{
+ transform: scale(1.1,1.1);   
+}
+
+.div_sections .section_block a
+{
+ text-decoration: none;
+ font-style: oblique;
+ font-weight: normal;
+ color: #45574a;
+ font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
+}
+
+
+/* JOGADORES TITLE */
+.title
+{
+ font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif; 
+ font-size: larger;
+ text-decoration: underline;
+ font-weight: bold;
  text-align: center;
 }
+
