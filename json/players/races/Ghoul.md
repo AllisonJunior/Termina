@@ -1,5 +1,3 @@
-# Ghoul
+# Alberto Gosta de Fruta
 
-### É um ser totalmente sociável.
-
-- Possui uma kink.
+- Tipo de classe descritida.
