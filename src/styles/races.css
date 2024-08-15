@@ -1,0 +1,52 @@
+/* Estilo para cabeçalhos */
+#modalContent h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: red;
+}
+
+#modalContent h2 {
+    font-size: 1.75em;
+    margin-bottom: 0.5em;
+}
+
+#modalContent h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Estilo para parágrafos */
+#modalContent p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+/* Estilo para listas */
+#modalContent ul {
+    padding-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+#modalContent li {
+    margin-bottom: 0.5em;
+}
+
+/* Estilo para texto em negrito e itálico */
+#modalContent strong {
+    font-weight: bold;
+}
+
+#modalContent em {
+    font-style: italic;
+}
+
+/* Outros estilos personalizados */
+#modalContent a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#modalContent a:hover {
+    text-decoration: underline;
+}

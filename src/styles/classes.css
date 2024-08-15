@@ -20,12 +20,12 @@
 
 .class_colorA, .class_colorB
 {
-    align-items: center;
+ align-items: center;
 }
 
 .class_colorA
 {
-    background-color: aliceblue;   
+ background-color: aliceblue;   
 }
 
 .class_colorA a, .class_colorB a

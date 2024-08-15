@@ -61,6 +61,43 @@
 
       </nav>
 
+      <button class="show_window">Mostrar</button>
+
+      <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Conteúdo da Modal</p>
+      </div>
+    </div>
+
+    <script>
+      // Obter elementos da modal e do botão de fechar
+      var modal = document.getElementById("myModal");
+      var span = document.getElementsByClassName("close")[0];
+      
+      // Quando o usuário clicar no botão de fechar, fecha a modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      
+      // Quando o usuário clicar fora da modal, fecha a modal
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      
+      // Função para abrir a modal
+      function openModal() {
+        modal.style.display = "block";
+      }
+      
+      // Exemplo de uso: abra a modal ao clicar no título da página
+      document.querySelector('.show_window').addEventListener('click', openModal);
+      </script>
+      
+
 </body>
 
 </html>

@@ -4,13 +4,17 @@
 <head>
     <title>Termina: Raças</title>
     <link rel = "stylesheet" href = "../../styles/main.css">
+    <link rel = "stylesheet" href = "../../styles/races.css">
+    <script src="../../scripts/races.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
 </head>
 
 <body>
       <!-- Barra de navegação: Descrição do site -->
       <nav class = "bar_section">
             <h1 class = "page_title">Raças.&nbsp;</h1> 
-            <p class = "page_descr">Search by name on the left, click a name to display on the right. Press J/K to navigate.</p>
+            <p class = "page_descr">Clique na raça específica, para visualizar detalhadamente sua descrição.</p>
       </nav>
 
       <!-- Barra de navegação: Seções do site -->
@@ -60,6 +64,59 @@
         </div>      
 
       </nav>
+
+      <!-- MODAL WINDOW: DESCRIÇÃO DETALHADA DAS RAÇAS -->
+
+      <div id="myModal" class="modal">
+            <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p id="modalContent"></p>
+            </div>
+      </div>
+    
+
+      <!-- DESCRIÇÃO DAS RAÇAS -->
+      <br>
+
+      <div class = "title">
+            <p>Comuns</p>
+      </div>
+
+      <div class="lin_common" >
+      </div> 
+
+      <br>
+
+      <div class = "title">
+            <p>Exóticas</p>
+      </div>
+
+      <div class="lin_exotic" >
+      </div> 
+
+      <br>
+
+      <div class = "title">
+            <p>Monstruosas</p>
+      </div>
+
+      <div class="lin_monstruous" >
+      </div> 
+
+      <br>
+
+      <div class = "title">
+            <p>Termina</p>
+      </div>
+
+      <div class="lin_termina">
+      </div> 
+
+      <br>
+
+      <!-- The Modal -->
+    
+    
 
 </body>
 
