@@ -1,40 +1,54 @@
 document.addEventListener("DOMContentLoaded", function() {
-  fetch('../../../json/players/races.json')
-      .then(response => response.json())
-      .then(races => {
-          races.forEach(race => {
-              const divClass = `.lin_${race.type}`;
-              const container = document.querySelector(divClass);
-
-              if (container) {
-                  const raceDiv = document.createElement("div");
-                  raceDiv.className = "race";
-
-                  const raceName = document.createElement("a");
-                  raceName.href = "#";
-                  raceName.textContent = race.name;
-                  raceName.addEventListener('click', function(event) {
-                      event.preventDefault();
-                      openModal(race.name); // Passa o nome da raça como parâmetro
-                  });
-
-                  raceDiv.appendChild(raceName);
-                  container.appendChild(raceDiv);
-              }
-          });
-      })
-      .catch(error => {
-          console.error('Erro ao carregar o arquivo JSON:', error);
-      });
+    fetch('../../../json/players/races.json')
+        .then(response => response.json())
+        .then(races => {
+            const types = new Set(races.map(race => race.type));
+            
+            types.forEach(type => {
+                const filteredRaces = races.filter(race => race.type === type);
+                filteredRaces.forEach((race, index) => {
+                    const divClass = `.lin_${type}`;
+                    const container = document.querySelector(divClass);
+  
+                    if (container) {
+                        const raceDiv = document.createElement("div");
+                        raceDiv.className = "race";
+  
+                        const raceName = document.createElement("a");
+                        raceName.href = "#";
+                        raceName.textContent = race.name;
+                        raceName.addEventListener('click', function(event) {
+                            event.preventDefault();
+                            openModal(race.key); // Passa a chave da raça como parâmetro
+                        });
+  
+                        const raceDesc = document.createElement("p");
+                        raceDesc.textContent = race.desc;
+  
+                        raceDiv.appendChild(raceName);
+                        raceDiv.appendChild(raceDesc);
+                        container.appendChild(raceDiv);
+  
+                        // Se for o último item do tipo, adiciona um <br>
+                        if (index === filteredRaces.length - 1) {
+                            container.appendChild(document.createElement("br"));
+                        }
+                    }
+                });
+            });
+        })
+        .catch(error => {
+            console.error('Erro ao carregar o arquivo JSON:', error);
+        });
 });
-
+  
 // Obter elementos da modal e do botão de fechar
 var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
 var modalContent = document.getElementById("modalContent");
 
-function openModal(raceName) {
-    const markdownFilePath = `../../../json/players/races/${raceName}.md`;
+function openModal(raceKey) {
+    const markdownFilePath = `../../../json/players/races/${raceKey}.md`;
 
     fetch(markdownFilePath)
         .then(response => {
@@ -61,22 +75,19 @@ function openModal(raceName) {
         });
 }
 
-
-
-
 // Função para fechar a modal
 function closeModal() {
-  modal.style.display = "none";
+    modal.style.display = "none";
 }
 
 // Quando o usuário clicar no botão de fechar, fecha a modal
 span.onclick = function() {
-  closeModal();
+    closeModal();
 }
 
 // Quando o usuário clicar fora da modal, fecha a modal
 window.onclick = function(event) {
-  if (event.target == modal) {
-      closeModal();
-  }
+    if (event.target == modal) {
+        closeModal();
+    }
 }

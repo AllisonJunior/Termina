@@ -2,46 +2,55 @@
  {  
   "type": "common",
   "name": "Dwarf",
-  "desc": ""  
+  "key": "dwarf",
+  "desc": "Ser de pequena estatura que comumente é chamado de ser incompreendido."  
  },
  {  
   "type": "common",
   "name": "Dragonborn",
+  "key": "dragonborn",
   "desc": ""  
  }, 
  {  
   "type": "common",
   "name": "Elf",
+  "key": "elf",
   "desc": ""  
  },
  {  
   "type": "common",
   "name": "Gnome",
+  "key": "gnome",
   "desc": ""  
  },
  {  
   "type": "common",
   "name": "Half-Elf",
+  "key": "half-elf",
   "desc": ""  
  },
  {  
   "type": "common",
   "name": "Half-Orc",
+  "key": "half-orc",
   "desc": ""  
  }, 
  {  
   "type": "common",
   "name": "Halfling",
+  "key": "halfling",
   "desc": ""  
  },
  {  
   "type": "common",
   "name": "Human",
+  "key": "human",
   "desc": "Best class!"  
  },
  {  
   "type": "common",
   "name": "Tiefling",
+  "key": "tiefling",
   "desc": ""  
  },
 
@@ -51,131 +60,157 @@
  {
   "type": "exotic",
   "name": "Aarakocra",
+  "key": "aarakocra",
   "desc": ""  
  }, 
  {
   "type": "exotic",
   "name": "Aasimar",
+  "key": "aasimar",
   "desc": ""  
  },
  {
   "type": "exotic",
   "name": "Changeling",
+  "key": "changeling",
   "desc": ""  
  },
  {
   "type": "exotic",
   "name": "Deep Gnome",
+  "key": "deep gnome",
   "desc": ""  
  },
  {
   "type": "exotic",
   "name": "Duergar",
+  "key": "duergar",
   "desc": ""  
  },
  {
   "type": "exotic",
   "name": "Eladrin",
+  "key": "eladrin",
   "desc": ""  
  }, 
  {
   "type": "exotic",
   "name": "Fairy",
+  "key": "fairy",
   "desc": ""  
  }, 
  {
   "type": "exotic",
   "name": "Firbolg",
+  "key": "firbolg",
   "desc": ""  
  }, 
  {
   "type": "exotic",
   "name": "Genasi (Air)",
+  "key": "genasi air",
   "desc": ""  
  },
  {
   "type": "exotic",
   "name": "Genasi (Earth)",
+  "key": "genasi earth",
   "desc": ""  
  },
  {
   "type": "exotic",
   "name": "Genasi (Fire)",
+  "key": "genasi fire",
   "desc": ""  
  },
  {
   "type": "exotic",
   "name": "Genasi (Water)",
+  "key": "genasi water",
   "desc": ""  
  },
  {
   "type": "exotic",
   "name": "Githyanki",
+  "key": "githyanki",
   "desc": ""  
  },
  {
   "type": "exotic",
   "name": "Githzerai",
+  "key": "githzerai",
   "desc": ""  
  },
  {
   "type": "exotic",
   "name": "Goliath",
+  "key": "goliath",
   "desc": ""  
  },
  {
   "type": "exotic",
   "name": "Harengon",
+  "key": "haregon",
   "desc": ""  
  },
  {
   "type": "exotic",
   "name": "Kenku",
+  "key": "kenku",
   "desc": ""  
  },
  {
   "type": "exotic",
   "name": "Locathah",
+  "key": "locathah",
   "desc": ""  
  },
  {
   "type": "exotic",
   "name": "Owlin",
+  "key": "owlin",
   "desc": ""  
  },
  {
   "type": "exotic",
   "name": "Satyr",
+  "key": "satyr",
   "desc": ""  
  },
  {
   "type": "exotic",
   "name": "Sea Elf",
+  "key": "sea elf",
   "desc": ""  
  }, 
  {
   "type": "exotic",
   "name": "Shadar-Kai",
+  "key": "shadar-kai",
   "desc": ""  
  },
  {
   "type": "exotic",
   "name": "Tabaxi",
+  "key": "tabaxi",
   "desc": ""  
  },
  {
   "type": "exotic",
   "name": "Tortle",
+  "key": "tortle",
   "desc": ""  
  },
  {
   "type": "exotic",
   "name": "Triton",
+  "key": "triton",
   "desc": ""  
  },
  {
   "type": "exotic",
   "name": "Verdan",
+  "key": "verdan",
   "desc": ""  
  },
 
@@ -185,56 +220,67 @@
  {
   "type": "monstruous",
   "name": "Bugbear",
+  "key": "bugbear",
   "desc": ""
  },
  {
   "type": "monstruous",
   "name": "Centaur",
+  "key": "centaur",
   "desc": ""
  },
  {
   "type": "monstruous",
   "name": "Goblin",
+  "key": "goblin",
   "desc": ""
  },
  {
   "type": "monstruous",
   "name": "Grung",
+  "key": "grung",
   "desc": ""
  },
  {
   "type": "monstruous",
   "name": "Hobgoblin",
+  "key": "hobgoblin",
   "desc": ""
  },
  {
   "type": "monstruous",
   "name": "Kobold",
+  "key": "kobold",
   "desc": ""
  },
  {
   "type": "monstruous",
   "name": "Lizardfolk",
+  "key": "lizardfolk",
   "desc": ""
  },
  {
   "type": "monstruous",
   "name": "Minotaur",
+  "key": "minotaur",
   "desc": ""
  },
  {
   "type": "monstruous",
   "name": "Orc",
+  "key": "orc",
   "desc": ""
  },
  {
   "type": "monstruous",
   "name": "Shifter",
+  "key": "shifter",
   "desc": ""
  },
  {
   "type": "monstruous",
   "name": "Yuan-ti",
+  "key": "yuan-ti",
   "desc": ""
  },
 
@@ -244,26 +290,19 @@
  {
   "type": "termina",
   "name": "Ghoul",
+  "key": "ghoul",
   "desc": "Classe criado por sujunho"
  },
  {
   "type": "termina",
   "name": "Meat Doll",
+  "key": "meat doll",
   "desc": ""
  },
  {
   "type": "termina",
   "name": "Mist Born",
+  "key": "mist born",
   "desc": ""  
- },
- {
-  "type": "termina",
-  "name": "Roberto",
-  "desc": "Gosta de cuscuz."  
- },
- {
-  "type": "termina",
-  "name": "Almeida Top",
-  "desc": "Todo Poderoso"  
  }
 ]

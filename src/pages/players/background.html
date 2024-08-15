@@ -4,6 +4,7 @@
 <head>
     <title>Termina: Histórias de Fundo</title>
     <link rel = "stylesheet" href = "../../styles/main.css">
+    <link rel = "stylesheet" href = "../../styles/backgrounds.css">
 </head>
 
 <body>
@@ -61,42 +62,22 @@
 
       </nav>
 
-      <button class="show_window">Mostrar</button>
+      <!-- MODAL WINDOW: DESCRIÇÃO DETALHADA DAS RAÇAS -->
 
-      <!-- Modal Structure -->
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Conteúdo da Modal</p>
+      <div id="myModal" class="modal">
+            <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p id="modalContent"></p>
+            </div>
       </div>
-    </div>
+    
 
-    <script>
-      // Obter elementos da modal e do botão de fechar
-      var modal = document.getElementById("myModal");
-      var span = document.getElementsByClassName("close")[0];
-      
-      // Quando o usuário clicar no botão de fechar, fecha a modal
-      span.onclick = function() {
-        modal.style.display = "none";
-      }
-      
-      // Quando o usuário clicar fora da modal, fecha a modal
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
-      
-      // Função para abrir a modal
-      function openModal() {
-        modal.style.display = "block";
-      }
-      
-      // Exemplo de uso: abra a modal ao clicar no título da página
-      document.querySelector('.show_window').addEventListener('click', openModal);
-      </script>
-      
+      <!-- DESCRIÇÃO DOS BACKGROUNDS -->
+      <div class = "backag">
+      </div>
+
+      <script src="../../scripts/backgrounds.js" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
 </body>
 

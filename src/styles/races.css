@@ -1,52 +1,53 @@
-/* Estilo para cabeçalhos */
-#modalContent h1 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
-    color: red;
+/* MAIN DISPLAY */
+.titleA
+{
+ font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif; 
+ font-size: larger;
+ text-decoration: underline;
+ font-weight: bold;
+ text-align: center;
+ background-color: aliceblue;  
 }
 
-#modalContent h2 {
-    font-size: 1.75em;
-    margin-bottom: 0.5em;
+.lin_common, 
+.lin_exotic, 
+.lin_monstruous, 
+.lin_termina
+{
+ padding-left: 1em;  
 }
 
-#modalContent h3 {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
+.lin_common p, 
+.lin_exotic p, 
+.lin_monstruous p, 
+.lin_termina p
+{
+ font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;    
+ font-size: smaller;
+ text-decoration: none;
+ margin-bottom: 1em;
+ font-style: italic;
 }
 
-/* Estilo para parágrafos */
-#modalContent p {
-    font-size: 1em;
-    line-height: 1.6;
-    margin-bottom: 1em;
+.lin_common a, 
+.lin_exotic a, 
+.lin_monstruous a, 
+.lin_termina a
+{
+ font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;    
+ font-size: larger;
+ text-decoration: none;
 }
 
-/* Estilo para listas */
-#modalContent ul {
-    padding-left: 1.5em;
-    margin-bottom: 1em;
+.lin_common a:hover, 
+.lin_exotic a:hover, 
+.lin_monstruous a:hover, 
+.lin_termina a:hover
+{
+ text-decoration: underline;   
 }
 
-#modalContent li {
-    margin-bottom: 0.5em;
-}
-
-/* Estilo para texto em negrito e itálico */
-#modalContent strong {
-    font-weight: bold;
-}
-
-#modalContent em {
-    font-style: italic;
-}
-
-/* Outros estilos personalizados */
-#modalContent a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-#modalContent a:hover {
-    text-decoration: underline;
+.lin_common, .lin_monstruous
+{
+ background-color: aliceblue;   
 }
