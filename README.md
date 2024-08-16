@@ -1,3 +1,0 @@
-# Termina
-
-### Isso ae Prodigio 😎
