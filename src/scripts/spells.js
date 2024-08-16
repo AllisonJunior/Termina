@@ -13,6 +13,17 @@ document.addEventListener("DOMContentLoaded", function() {
         'transmutation': 'Transmutação'
     };
 
+    function formatSpellName(spell) {
+        switch (spell.type) {
+            case 'c':
+                return `${spell.name} 🅲`;
+            case 'r':
+                return `${spell.name} 🆁`;
+            default:
+                return spell.name; // Para o tipo 'n' ou qualquer outro tipo não especificado
+        }
+    }
+
     function createTableRow(spell) {
         const row = document.createElement("tr");
     
@@ -25,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Cria o link e define seu comportamento
         const link = document.createElement("a");
         link.href = "#"; // Define o href para # para que o link não navegue para outra página
-        link.textContent = spell.name;
+        link.textContent = formatSpellName(spell);
         link.addEventListener("click", (event) => {
             event.preventDefault(); // Impede o comportamento padrão do link
             openModal(spell.name); // Abre a modal com o nome da magia
