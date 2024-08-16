@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Termina: Mágias</title>
+    <link rel = "stylesheet" href = "../../styles/main.css">
+    <link rel = "stylesheet" href = "../../styles/spells.css">
+</head>
+
+<body>
+      <!-- Barra de navegação: Descrição do site -->
+      <nav class = "bar_section">
+            <h1 class = "page_title">Mágias.&nbsp;</h1> 
+            <p class = "page_descr">Verifique as mágias disponíveis na tabela abaixo, além de também utilizar o filtro para melhor visualização.</p>
+      </nav>
+
+      <!-- Barra de navegação: Seções do site -->
+      <nav class = "bar_page">
+            
+        <!-- Divisão: Botões -->
+        <div class = "div_return">
+              <a href = "../../../index.html">Menu Principal</a>
+        </div>
+
+        <div class = "div_buttons">
+
+              <div class = "div_option">
+
+                  <a href = "" class = "selected_option" >Jogadores</a>
+                    <ul class = "sub">
+                         <li><a href = "classes.html" >Classes</a></li>
+                         <li><a href = "races.html" >Raças</a></li>
+                         <li><a href = "background.html" >Histórias</a></li>
+                         <li><a href = "feats.html" >Habilidades</a></li>
+                         <li><a href = "items.html" >Itens</a></li>
+                         <li><a class = "selected_sub_option" href = "spells.html" >Mágias</a></li>
+                    </ul>
+
+              </div>
+              
+              <div class = "div_option">
+
+                    <a href = "">Regras</a>
+                    <ul class = "sub">
+                         <li><a href = "" >Gerais</a></li>
+                         <li><a href = "" >Atributos</a></li>
+                         <li><a href = "" >Criação de Personagem</a></li>
+                    </ul>
+              
+              </div>
+              
+              <div class = "div_option">
+
+                    <a href = "">Ferramentas</a>
+                    <ul class = "sub">
+                         <li><a href = "" >Bestiário</a></li>
+                    </ul>
+              
+              </div>
+
+        </div>      
+
+      </nav>
+
+      <!-- MODAL WINDOW: DESCRIÇÃO DETALHADA DAS RAÇAS -->
+      <div id="myModal" class="modal">
+            <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p id="modalContent"></p>
+            </div>
+      </div>
+
+      <!-- SELEÇÃO DE FILTROS PARA LISTAGEM DE MÁGIA -->
+      <div class="filter">
+            <br>
+            <p class="advise">Filtrar</p>
+
+            <div class = "selectionFilter">
+                  
+                  <p>Por Escolas de Mágia: </p>
+
+                  <label> <input type="checkbox" name="school" value="abjuration">Abjuração</label> 
+                  <label> <input type="checkbox" name="school" value="conjuration">Conjuração</label> 
+                  <label> <input type="checkbox" name="school" value="divination">Divinação</label> 
+                  <label> <input type="checkbox" name="school" value="enchantment">Encantamento</label> 
+                  <label> <input type="checkbox" name="school" value="evocation">Evocação</label> 
+                  <label> <input type="checkbox" name="school" value="illusion">Ilusão</label> 
+                  <label> <input type="checkbox" name="school" value="necromancy">Necromancia</label> 
+                  <label> <input type="checkbox" name="school" value="transmutation">Transmutação</label>
+
+                  <p>Por Classes: </p>
+
+                  <label> <input type="checkbox" name="class" value="Artificer">Artífice</label> 
+                  <label> <input type="checkbox" name="class" value="Wizard">Mago</label> 
+                  <label> <input type="checkbox" name="class" value="Sorcerer">Feiticeiro</label> 
+                  <label> <input type="checkbox" name="class" value="Cleric">Clérigo</label> 
+                  <label> <input type="checkbox" name="class" value="Druid">Druida</label> 
+                  <label> <input type="checkbox" name="class" value="Bard">Bardo</label> 
+                  <label> <input type="checkbox" name="class" value="Warlock">Bruxo</label> 
+                  <label> <input type="checkbox" name="class" value="Paladin">Paladino</label> 
+                  <label> <input type="checkbox" name="class" value="Fighter">Guerreiro</label> 
+                  <label> <input type="checkbox" name="class" value="Ranger">Patrulheiro</label> 
+                  <label> <input type="checkbox" name="class" value="Rogue">Ladino</label>
+                   
+            </div>
+
+      </div> 
+
+      <!-- TABELA DE SPELLS -->
+      <div class = "spellsList">
+
+            <!-- BOTÕES -->
+            <div class = "spellsLevel">
+                  <button class = "btn">Truques</button>
+                  <button class = "btn">1º Nível</button>
+                  <button class = "btn">2º Nível</button>
+                  <button class = "btn">3º Nível</button>
+                  <button class = "btn">4º Nível</button>
+                  <button class = "btn">5º Nível</button>
+                  <button class = "btn">6º Nível</button>
+                  <button class = "btn">7º Nível</button>
+                  <button class = "btn">8º Nível</button>
+                  <button class = "btn">9º Nível</button>
+            </div> 
+
+            <!-- TABELA -->
+            <div class = "spellsTable">
+                  
+                  <table>
+
+                          <thead>  
+                                 <tr>
+                                      <th>Nome da Mágia</th>
+                                      <th>Escola</th>
+                                      <th>Tempo de Lançamento</th>
+                                      <th>Alcance</th>
+                                      <th>Duração</th>
+                                 </tr>                            
+                          </thead> 
+
+                          <tbody class ="spell_section">
+                          </tbody>
+
+                  </table>
+
+            </div> 
+
+      </div>
+
+      <script src="../../scripts/spells.js" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</body>
+
+</html>

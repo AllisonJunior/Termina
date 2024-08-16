@@ -1,0 +1,127 @@
+[
+ {
+  "name": "Blade Ward",
+  "level": "0",
+  "school": "abjuration",
+  "cast": "1 Ação",
+  "range": "Você mesmo(a)",
+  "duration": "1 Turno",
+  "classes": ["Bard", "Sorcerer", "Warlock", "Wizard"]
+ },
+ {
+  "name": "Absorb Elements",
+  "level": "1",
+  "school": "abjuration",
+  "cast": "1 Reação, que você sofre quando sofre dano de ácido, frio, fogo, raio ou trovão",
+  "range": "Você mesmo(a)",
+  "duration": "1 Turno",
+  "classes": ["Artificer", "Druid", "Ranger", "Sorcerer", "Wizard"]
+ }, 
+ {
+  "name": "Imprisonment",
+  "level": "9",
+  "school": "abjuration",
+  "cast": "1 Minuto",
+  "range": "30 feet",
+  "duration": "Até ser dissipado",
+  "classes": ["Warlock", "Wizard"]
+ },
+
+
+
+
+
+ {
+  "name": "Acid Splash",
+  "level": "0",
+  "school": "conjuration",
+  "cast": "1 Ação",
+  "range": "60 feet",
+  "duration": "Instantâneo",
+  "classes": ["Artificer", "Sorcerer", "Wizard"]
+ },
+
+
+
+
+
+ {
+  "name": "Guidance",
+  "level": "0",
+  "school": "divination",
+  "cast": "1 Ação",
+  "range": "Toque",
+  "duration": "Concentração: durante 1 minuto",
+  "classes": ["Artificer", "Cleric", "Druid"]
+ }, 
+ 
+ 
+
+
+
+ {
+  "name": "Encode Thoughts",
+  "level": "0",
+  "school": "enchantment",
+  "cast": "1 Ação",
+  "range": "Você mesmo(a)",
+  "duration": "8 horas",
+  "classes": ["Wizard"]
+ },
+
+ 
+
+
+
+ {
+  "name": "Booming Blade",
+  "level": "0",
+  "school": "evocation",
+  "cast": "1 Ação",
+  "range": "Você mesmo(a)",
+  "duration": "1 turno",
+  "classes": ["Artificer", "Sorcerer", "Warlock", "Wizard"]
+ },
+ 
+
+
+
+
+ {
+  "name": "Minor Illusion",
+  "level": "0",
+  "school": "illusion",
+  "cast": "1 Ação",
+  "range": "30 feet",
+  "duration": "1 minuto",
+  "classes": ["Bard", "Sorcerer", "Warlock", "Wizard"]
+ },
+ 
+
+
+
+
+ {
+  "name": "Chill Touch",
+  "level": "0",
+  "school": "necromancy",
+  "cast": "1 Ação",
+  "range": "120 feet",
+  "duration": "1 turno",
+  "classes": ["Sorcerer", "Warlock", "Wizard"]
+ },
+ 
+
+
+
+
+ {
+  "name": "Control Flames",
+  "level": "0",
+  "school": "transmutation",
+  "cast": "1 Ação",
+  "range": "60 feet",
+  "duration": "Instantâneo ou 1 hora",
+  "classes": ["Sorcerer", "Warlock", "Wizard"]
+ }
+]
