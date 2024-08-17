@@ -1,3 +1,1 @@
-# Termina
-
-### Isso ae Prodigio 😎
+# Termina System
