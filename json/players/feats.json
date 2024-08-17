@@ -1,0 +1,274 @@
+[
+ { 
+  "name": "Aberrant Dragonmark",
+  "desc": "Adquiri uma marca de dragão com bônus e desvantagens etc."    
+ },
+ { 
+  "name": "Actor",
+  "desc": ""    
+ },
+ { 
+  "name": "Alert",
+  "desc": ""    
+ },
+ { 
+  "name": "Artificer Initiate",
+  "desc": ""    
+ },
+ { 
+  "name": "Athlete",
+  "desc": ""    
+ },
+ { 
+  "name": "Cartomancer",
+  "desc": ""    
+ },
+ { 
+  "name": "Charger",
+  "desc": ""    
+ },
+ { 
+  "name": "Chef",
+  "desc": "Permite fazer comidas que podem curar aliados."    
+ },
+ { 
+  "name": "Crossbow Expert",
+  "desc": ""    
+ },
+ { 
+  "name": "Crusher",
+  "desc": ""    
+ },
+ { 
+  "name": "Defensive Duelist",
+  "desc": ""    
+ },
+ { 
+  "name": "Dual Wielder",
+  "desc": ""    
+ },
+ { 
+  "name": "Dungeon Delver",
+  "desc": ""    
+ },
+ { 
+  "name": "Durable",
+  "desc": ""    
+ },
+ { 
+  "name": "Eldritch Adept",
+  "desc": ""    
+ },
+ { 
+  "name": "Elemental Adept",
+  "desc": ""    
+ },
+ { 
+  "name": "Ember of the Fire Giant",
+  "desc": ""    
+ },
+ { 
+  "name": "Fey Touched",
+  "desc": ""    
+ },
+ { 
+  "name": "Fighting Initiate",
+  "desc": ""    
+ },
+ { 
+  "name": "Fury of the Frost Giant",
+  "desc": ""    
+ },
+ { 
+  "name": "Gift of the Chromatic Dragon",
+  "desc": ""    
+ },
+ { 
+  "name": "Gift of the Gem Dragon",
+  "desc": ""    
+ },
+ { 
+  "name": "Gift of the Metallic Dragon",
+  "desc": ""    
+ },
+ { 
+  "name": "Grappler",
+  "desc": ""    
+ },
+ { 
+  "name": "Great Weapon Master",
+  "desc": ""    
+ },
+ { 
+  "name": "Guile of the Cloud Giant",
+  "desc": ""    
+ },
+ { 
+  "name": "Gunner",
+  "desc": ""    
+ },
+ { 
+  "name": "Healer",
+  "desc": ""    
+ },
+ { 
+  "name": "Heavily Armored",
+  "desc": ""    
+ },
+ { 
+  "name": "Heavy Armor Master",
+  "desc": ""    
+ },
+ { 
+  "name": "Inspiring Leader",
+  "desc": ""    
+ },
+ { 
+  "name": "Keen Mind",
+  "desc": ""    
+ },
+ { 
+  "name": "Keenness of the Stone Giant",
+  "desc": ""    
+ },
+ { 
+  "name": "Lightly Armored",
+  "desc": ""    
+ },
+ { 
+  "name": "Linguist",
+  "desc": ""    
+ },
+ { 
+  "name": "Lucky",
+  "desc": ""    
+ },
+ { 
+  "name": "Mage Slayer",
+  "desc": ""    
+ },
+ { 
+  "name": "Magic Initiate",
+  "desc": ""    
+ },
+ { 
+  "name": "Martial Adept",
+  "desc": ""    
+ },
+ { 
+  "name": "Medium Armor Master",
+  "desc": ""    
+ },
+ { 
+  "name": "Metamagic Adept",
+  "desc": ""    
+ },
+ { 
+  "name": "Mobile",
+  "desc": ""    
+ },
+ { 
+  "name": "Moderately Armored",
+  "desc": ""    
+ },
+ { 
+  "name": "Mounted Combatant",
+  "desc": ""    
+ },
+ { 
+  "name": "Observant",
+  "desc": ""    
+ },
+ { 
+  "name": "Piercer",
+  "desc": ""    
+ },
+ { 
+  "name": "Poisoner",
+  "desc": ""    
+ },
+ { 
+  "name": "Polearm Master",
+  "desc": ""    
+ },
+ { 
+  "name": "Resilient",
+  "desc": ""    
+ },
+ { 
+  "name": "Ritual Caster",
+  "desc": ""    
+ },
+ { 
+  "name": "Rune Shaper",
+  "desc": ""    
+ },
+ { 
+  "name": "Savage Attacker",
+  "desc": ""    
+ },
+ { 
+  "name": "Sentinel",
+  "desc": ""    
+ },
+ { 
+  "name": "Shadow Touched",
+  "desc": ""    
+ },
+ { 
+  "name": "Sharpshooter",
+  "desc": ""    
+ },
+ { 
+  "name": "Shield Master",
+  "desc": ""    
+ },
+ { 
+  "name": "Skill Expert",
+  "desc": ""    
+ },
+ { 
+  "name": "Skilled",
+  "desc": ""    
+ },
+ { 
+  "name": "Skulker",
+  "desc": ""    
+ },
+ { 
+  "name": "Soul of the Storm Giant",
+  "desc": ""    
+ },
+ { 
+  "name": "Spell Sniper",
+  "desc": "Aumenta seu range de casting de spells."    
+ },
+ { 
+  "name": "Strike of the Giants",
+  "desc": ""    
+ },
+ { 
+  "name": "Tavern Brawler",
+  "desc": ""    
+ },
+ { 
+  "name": "Telekinetic",
+  "desc": ""    
+ },
+ { 
+  "name": "Telepathic",
+  "desc": ""    
+ },
+ { 
+  "name": "Vigor of the Hill Giant",
+  "desc": ""    
+ },
+ { 
+  "name": "War Caster",
+  "desc": ""    
+ },
+ { 
+  "name": "Weapon Master",
+  "desc": "Aumenta a sua proficiência com armas."    
+ }
+]

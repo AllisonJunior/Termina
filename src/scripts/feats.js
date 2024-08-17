@@ -1,32 +1,32 @@
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('../../../json/players/backgrounds.json')
+    fetch('../../../json/players/feats.json')
         .then(response => response.json())
-        .then(backgrounds => {
-            backgrounds.forEach((background, index) => {
-                const container = document.querySelector(".backag");
+        .then(feats => {
+            feats.forEach((feats, index) => {
+                const container = document.querySelector(".featsList");
   
                 if (container) {
-                    const backgroundDiv = document.createElement("div");
-                    backgroundDiv.className = "background";
+                    const featsDiv = document.createElement("div");
+                    feats.className = "feats";
   
                     // Define a cor de fundo e o padding
-                    backgroundDiv.style.backgroundColor = (index % 2 === 0) ? "aliceblue" : "#fff";
-                    backgroundDiv.style.padding = "10px"; // Define o padding
+                    featsDiv.style.backgroundColor = (index % 2 === 0) ? "aliceblue" : "#fff";
+                    featsDiv.style.padding = "10px"; // Define o padding
   
-                    const backgroundName = document.createElement("a");
-                    backgroundName.href = "#";
-                    backgroundName.textContent = background.name;
-                    backgroundName.addEventListener('click', function(event) {
+                    const featsName = document.createElement("a");
+                    featsName.href = "#";
+                    featsName.textContent = feats.name;
+                    featsName.addEventListener('click', function(event) {
                         event.preventDefault();
-                        openModal(background.name); // Passa o nome do background como parâmetro
+                        openModal(feats.name); // Passa o nome do background como parâmetro
                     });
   
-                    const backgroundDesc = document.createElement("p");
-                    backgroundDesc.textContent = background.desc;
+                    const featsDesc = document.createElement("p");
+                    featsDesc.textContent = feats.desc;
   
-                    backgroundDiv.appendChild(backgroundName);
-                    backgroundDiv.appendChild(backgroundDesc);
-                    container.appendChild(backgroundDiv);
+                    featsDiv.appendChild(featsName);
+                    featsDiv.appendChild(featsDesc);
+                    container.appendChild(featsDiv);
                 }
             });
         })
@@ -41,8 +41,8 @@ var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
 var modalContent = document.getElementById("modalContent");
 
-function openModal(backgroundName) {
-    const markdownFilePath = `../../../json/players/backgrounds/${backgroundName}.md`;
+function openModal(featName) {
+    const markdownFilePath = `../../../json/players/feats/${featName}.md`;
 
     fetch(markdownFilePath)
         .then(response => {
