@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Termina: Habilidades</title>
+    <link rel = "stylesheet" href = "../../styles/main.css">
+    <link rel = "stylesheet" href = "../../styles/feats.css">
+</head>
+
+<body>
+      <!-- Barra de navegação: Descrição do site -->
+      <nav class = "bar_section">
+            <h1 class = "page_title">Habilidades.&nbsp;</h1> 
+            <p class = "page_descr">Clique na habilidade específica, para visualizar seus detalhess.</p>
+      </nav>
+
+      <!-- Barra de navegação: Seções do site -->
+      <nav class = "bar_page">
+            
+        <!-- Divisão: Botões -->
+        <div class = "div_return">
+              <a href = "../../../index.html">Menu Principal</a>
+        </div>
+
+        <div class = "div_buttons">
+
+              <div class = "div_option">
+
+                    <a href = "" class = "selected_option" >Jogadores</a>
+                    <ul class = "sub">
+                         <li><a href = "classes.html" >Classes</a></li>
+                         <li><a href = "races.html" >Raças</a></li>
+                         <li><a href = "background.html" >Histórias</a></li>
+                         <li><a class = "selected_sub_option" href = "feats.html" >Habilidades</a></li>
+                         <li><a href = "items.html" >Itens</a></li>
+                         <li><a href = "spells.html?schools=&classes=&level=0" >Mágias</a></li>
+                    </ul>
+
+              </div>
+              
+              <div class = "div_option">
+
+                    <a href = "">Regras</a>
+                    <ul class = "sub">
+                         <li><a href = "" >Gerais</a></li>
+                         <li><a href = "" >Atributos</a></li>
+                         <li><a href = "" >Criação de Personagem</a></li>
+                    </ul>
+              
+              </div>
+              
+              <div class = "div_option">
+
+                    <a href = "">Ferramentas</a>
+                    <ul class = "sub">
+                         <li><a href = "" >Bestiário</a></li>
+                    </ul>
+              
+              </div>
+
+        </div>      
+
+      </nav>
+
+      <!-- MODAL WINDOW: DESCRIÇÃO DETALHADA DAS RAÇAS -->
+      <div id="myModal" class="modal">
+            <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p id="modalContent"></p>
+            </div>
+      </div>
+    
+
+      <!-- DESCRIÇÃO DOS BACKGROUNDS -->
+      <div class = "featsList">
+      </div>
+
+      <script src="../../scripts/feats.js" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+</body>
+
+</html>
