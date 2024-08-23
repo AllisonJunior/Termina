@@ -1,0 +1,144 @@
+/* FILTRAGEM DA TABELA */
+.filter .advise
+{
+ font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif; 
+ font-size: larger;
+ text-decoration: underline;
+ font-weight: bold;
+ text-align: center;
+}
+
+.filter .selectionFilter .filter_list
+{
+ display: flex;   
+ flex-wrap: wrap;
+ justify-content: center;  
+}
+
+.filter .selectionFilter .filter_list label
+{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ margin-top: 0.2em;
+ font-style: italic;
+ padding: 10px;
+}
+
+.filter .selectionFilter .filter_list label:hover
+{
+ text-decoration: underline;      
+}
+
+
+
+
+.spellsList
+{
+ display: flex;
+ flex-direction: column;
+ align-items: center;  
+}
+
+.spellsList .spellsLevel
+{
+ display: flex;
+ padding-top: 30px;
+ justify-content: center;
+ align-items: center;
+ width: 80%;
+}
+
+.spellsList .spellsLevel .btn
+{
+ margin: 0 1px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-style: italic;
+ background-color: aliceblue;
+ padding: 5px 10px;
+ border: 1px solid rgb(179, 186, 194);
+ border-radius: 10px 10px 0px 0px;
+ color: #134191;
+ flex: 1 1 auto;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
+
+/* Media Query para telas menores */
+@media (max-width: 600px) 
+{
+ .spellsList .spellsLevel .btn 
+ {
+  width: auto; /* Ajusta a largura conforme necessário */
+  max-width: 100px; /* Define uma largura máxima para o botão */
+ }
+}
+
+.spellsList .spellsLevel .btn.active 
+{
+ background-color: #919bce;
+ color: white;
+}
+
+.spellsList .spellsLevel .btn.active:hover
+{
+ background-color: #597bb6;   
+}
+
+.spellsList .spellsLevel .btn:hover
+{
+ box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra interna */
+ background-color: #e7eaee;
+}
+
+.spellsList .spellsTable
+{
+ background-color: aliceblue;   
+ border: 1px solid rgb(179, 186, 194);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ width: 80%;
+}
+  
+/* TABELA EM SI */
+.spellsList .spellsTable table
+{  
+ border-spacing: 0;
+ border-collapse: collapse; 
+ text-align: left;
+ border: 1px solid rgb(179, 186, 194);
+}
+
+/* ELEMENT */
+.spellsList .spellsTable th
+{
+ background-color: #919bce;
+ font-family: Arial, Helvetica, sans-serif;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ color: white;
+ font-weight: bold;
+ padding-left: 10px;
+}
+
+.spellsList .spellsTable td
+{
+ padding-top: 10px;   
+ padding-left: 10px;   
+ padding-bottom: 10px;
+ border-bottom: 1px solid rgb(179, 186, 194);
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.spellsList .spellsTable td a 
+{
+ text-decoration: none;   
+}
+
+.spellsList .spellsTable td:nth-child(2) 
+{
+ font-style: italic;
+}

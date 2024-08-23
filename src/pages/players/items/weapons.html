@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Termina: Itens - Armas</title>
+    <link rel = "stylesheet" href = "../../../styles/main.css">
+    <link rel = "stylesheet" href = "../../../styles/classesDetails.css">
+</head>
+
+<body>
+      <!-- Barra de navegação: Descrição do site -->
+      <nav class = "bar_section">
+            <h1 class = "page_title">Armas.&nbsp;</h1> 
+            <p class = "page_descr">Abaixo estão listadas as tabelas de armas com base em suas categorias além de suas propriedades.</p>
+      </nav>
+
+      <!-- Barra de navegação: Seções do site -->
+      <nav class = "bar_page">
+            
+        <!-- Divisão: Botões -->
+        <div class = "div_return">
+              <a href = "../../../../index.html">Menu Principal</a>
+        </div>
+
+        <div class = "div_buttons">
+
+              <div class = "div_option">
+
+                    <a href = "" class = "selected_option" >Jogadores</a>
+                    <ul class = "sub">
+                         <li><a href = "../classes.html" >Classes</a></li>
+                         <li><a href = "../races.html" >Raças</a></li>
+                         <li><a href = "../background.html" >Histórias</a></li>
+                         <li><a href = "../feats.html" >Habilidades</a></li>
+                         <li><a class = "selected_sub_option" href = "../items.html" >Itens</a></li>
+                         <li><a href = "../spells.html?schools=&classes=&level=0" >Mágias</a></li>
+                    </ul>
+
+              </div>
+              
+              <div class = "div_option">
+
+                    <a href = "">Regras</a>
+                    <ul class = "sub">
+                         <li><a href = "" >Gerais</a></li>
+                         <li><a href = "" >Atributos</a></li>
+                         <li><a href = "" >Criação de Personagem</a></li>
+                    </ul>
+              
+              </div>
+              
+              <div class = "div_option">
+
+                    <a href = "">Ferramentas</a>
+                    <ul class = "sub">
+                         <li><a href = "" >Bestiário</a></li>
+                    </ul>
+              
+              </div>
+
+        </div>      
+
+      </nav>
+
+      <!-- MODAL WINDOW: DESCRIÇÃO DETALHADA DAS RAÇAS -->
+      <div id="myModal" class="modal">
+            <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p id="modalContent"></p>
+            </div>
+      </div>
+
+      <!-- DESCRIÇÃO DE ITENS GENÉRICOS E COMUNS -->
+      <div class="content">
+           
+            <p class="topic">Propriedades</p>
+
+            <p>Sua classe concede proficiência em certas armas, refletindo tanto o foco da classe quanto as ferramentas que você provavelmente usará. Quer você prefira uma espada longa ou um arco longo, sua arma e sua habilidade de manejá-la com eficácia podem significar a diferença entre a vida e a morte durante uma aventura. As tabelas de Armas mostram as armas mais comuns usadas, o dano que causam quando acertam e quaisquer propriedades especiais que possuam. Cada arma é classificada como corpo a corpo ou de longo alcance. Uma arma corpo a corpo é usada para atacar um alvo a até 5 feet de você, enquanto uma arma de longo alcance é usada para atacar um alvo à distância.</p>
+            <br>
+            <div class="sub_table">
+                  
+                  <table>
+                         
+                         <thead>
+
+                                <tr>
+                                    <th>Propriedade</th>
+                                    <th>Descrição</th>
+                                </tr>
+
+                         </thead>
+
+                         <tbody>
+                            
+                                <tr>
+                                     <td><strong>Munição</strong></td>
+                                     <td>Você pode usar uma arma que tenha a propriedade de Munição para fazer um ataque à distância somente se tiver munição para disparar da arma. Cada vez que você ataca com a arma, você gasta uma munição. Retirar a munição de uma aljava, estojo ou outro recipiente faz parte do ataque. Carregar uma arma de uma mão requer mão livre. No final da batalha, você pode recuperar metade da munição gasta gastando um minuto para vasculhar o campo de batalha. Se você usar uma arma que tenha a propriedade de munição para realizar um ataque corpo a corpo, você trata a arma como uma arma improvisada. Uma tipoia deve ser carregada para causar qualquer dano quando usada dessa maneira.</td>
+                                </tr>
+                            
+                                <tr>
+                                     <td><strong>Delicadeza</strong></td>
+                                     <td>Ao fazer um ataque com uma arma de Delicadeza, você usa seu modificador de Força ou Destreza à sua escolha para as jogadas de ataque e dano. Você deve usar o mesmo modificador para ambas as jogadas.</td>
+                                </tr>
+                        
+                                <tr>
+                                     <td><strong>Pesada</strong></td>
+                                     <td>Criaturas Minúsculas ou Pequenas têm desvantagem em jogadas de ataque com armas pesadas. O tamanho e o volume de uma arma pesada a tornam grande demais para uma criatura Pequena ou Minúscula usá-la efetivamente.</td>
+                                </tr>
+ 
+                                <tr>
+                                     <td><strong>Leve</strong></td>
+                                     <td>Uma arma Leve é ​pequena e fácil de manusear, tornando-a ideal para uso em combates com duas armas.</td>
+                                </tr>
+
+                                <tr>
+                                     <td><strong>Carregar</strong></td>
+                                     <td>Devido ao tempo necessário para Carregar esta arma, você pode disparar apenas uma peça de munição dela quando usar uma ação, ação bônus ou reação para dispará-la, independentemente do número de ataques que você normalmente pode fazer.</td>
+                                </tr>
+
+                                <tr>
+                                     <td><strong>Distância</strong></td>
+                                     <td>Uma arma que pode ser usada para realizar um ataque à Distância tem um alcance mostrado entre parênteses após a munição ou propriedade de arremesso. O intervalo lista dois números. O primeiro é o alcance normal da arma em feet e o segundo indica o alcance máximo da arma. Ao atacar um alvo além do alcance normal, você tem desvantagem na jogada de ataque. Você não pode atacar um alvo além do alcance máximo da arma.</td>
+                                </tr>
+
+                                <tr>
+                                     <td><strong>Alcance</strong></td>
+                                     <td>Esta arma adiciona 5 feet ao seu Alcance quando você ataca com ela. Esta propriedade também determina seu alcance para ataques de oportunidade com uma arma de alcance.</td>
+                                </tr>
+
+                                <tr>
+                                     <td><strong>Especial</strong></td>
+                                     <td>Uma arma com a propriedade especial possui regras incomuns que regem seu uso, explicadas na descrição da arma, na seção de armas especiais.</td>
+                                </tr>
+
+                                <tr>
+                                     <td><strong>Arremesso</strong></td>
+                                     <td>Se uma arma tiver a propriedade de arremesso, você poderá arremessá-la para fazer um ataque à distância. Se a arma for uma arma corpo a corpo, você usa o mesmo modificador de habilidade para aquela jogada de ataque e dano que usaria para um ataque corpo a corpo com a arma. Por exemplo, se você lançar um machado de mão, você usa sua Força, mas se você lançar uma adaga, você pode usar sua Força ou sua Destreza, já que a adaga tem a propriedade de delicadeza.</td>
+                                </tr>
+
+                                <tr>
+                                     <td><strong>Duas Mãos</strong></td>
+                                     <td>Esta arma requer Duas Mãos para ser usada. Esta propriedade é relevante apenas quando você ataca com a arma, e não quando você simplesmente a segura.</td>
+                                </tr>
+
+                                <tr>
+                                     <td><strong>Versátil</strong></td>
+                                     <td>Esta arma pode ser usada com uma ou duas mãos. Um valor de dano entre parênteses aparece com a propriedade – o dano quando a arma é usada com as duas mãos para fazer um ataque corpo a corpo.</td>
+                                </tr>
+
+                                <tr>
+                                     <td><strong>Munição</strong></td>
+                                     <td>A munição de uma arma de fogo é destruída após o uso. As armas de fogo renascentistas e modernas usam balas. As armas de fogo futurísticas são movidas por um tipo especial de munição chamada células de energia. Uma célula de energia contém energia suficiente para todos os disparos que sua arma de fogo pode dar.</td>
+                                </tr>
+
+                                <tr>
+                                     <td><strong>Explosão de Fogo</strong></td>
+                                     <td>Uma arma que possui a propriedade de explosão de fogo pode realizar um ataque normal de alvo único ou pode pulverizar uma área de 10 feet cúbicos dentro do alcance normal com tiros. Cada criatura na área deve ser bem sucedida em um teste de resistência de Destreza CD 15 ou sofrerá o dano normal da arma. Esta ação utiliza dez munições.</td>
+                                </tr>
+
+                                <tr>
+                                     <td><strong>Recarga</strong></td>
+                                     <td>Um número limitado de tiros pode ser disparado com uma arma que possua a propriedade de recarga. Um personagem deve então recarregá-lo usando uma ação ou uma ação bônus (a escolha do personagem).</td>
+                                </tr>
+
+                         </tbody>
+
+                  </table>
+            
+            </div>
+            <br>
+
+        
+
+            <p class="topic">Armas Simples</p>
+            <br>
+
+            <div class ="sub_table">
+                  <table><thead><th>Armas Simples de Corpo a Corpo</th></thead></table>
+            </div>
+
+            <div class ="sub_table">
+                <table>
+                        <thead>
+                               <tr>
+                                   <th>Arma</th>
+                                   <th>Dano</th>
+                                   <th>Propriedades</th>
+                               </tr>
+                        </thead>
+                        <tbody>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="club" title="Visualizar">Porrete</strong></td>
+                                   <td>1d4 Contundente</td>
+                                   <td>Leve</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="dagger" title="Visualizar">Adaga</strong></td>
+                                   <td>1d4 Pefurante</td>
+                                   <td>Leve, Delicadeza, Arremesso (20/60)</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="greatclub" title="Visualizar">Porrete Grande</strong></td>
+                                   <td>1d8 Contundente</td>
+                                   <td>Duas Mãos</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="handaxe" title="Visualizar">Machado de Mão</strong></td>
+                                   <td>1d6 Cortante</td>
+                                   <td>Leve, Arremesso (20/60)</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="javelin" title="Visualizar">Javelin</strong></td>
+                                   <td>1d6 Perfurante</td>
+                                   <td>Arremesso (30/120)</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="light_hammer" title="Visualizar">Martelo Leve</strong></td>
+                                   <td>1d4 Contudente</td>
+                                   <td>Leve, Arremesso (20/60)</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="mace" title="Visualizar">Maça</strong></td>
+                                   <td>1d6 Contudente</td>
+                                   <td>-</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="quatterstaff" title="Visualizar">Bastão Longo</strong></td>
+                                   <td>1d6 Contudente</td>
+                                   <td>Versátil (1d8)</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="sickle" title="Visualizar">Foice</strong></td>
+                                   <td>1d4 Cortante</td>
+                                   <td>Leve</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="spear" title="Visualizar">Lança</strong></td>
+                                   <td>1d6 Perfurante</td>
+                                   <td>Arremesso (20/60), Versátil (1d8)</td>
+                               </tr>
+
+                        </tbody>
+                </table>
+            </div>
+            <br>
+            
+
+            <div class ="sub_table">
+                <table><thead><th>Armas Simples de Longa Distância</th></thead></table>
+            </div>
+            <div class ="sub_table">
+                <table>
+                        <thead>
+                               <tr>
+                                   <th>Arma</th>
+                                   <th>Dano</th>
+                                   <th>Propriedades</th>
+                               </tr>
+                        </thead>
+                        <tbody>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="light_crossbow" title="Visualizar">Besta Leve</strong></td>
+                                   <td>1d8 Perfurante</td>
+                                   <td>Munição, Distância (80/320), Carregar, Duas Mãos</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="dart" title="Visualizar">Dardo</strong></td>
+                                   <td>1d4 Pefurante</td>
+                                   <td>Delicadeza, Arremesso (20/60)</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="shortbow" title="Visualizar">Arco Pequeno</strong></td>
+                                   <td>1d6 Perfurante</td>
+                                   <td>Munição, Distância (80/320), Duas Mãos</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="sling" title="Visualizar">Estilingue</strong></td>
+                                   <td>1d4 Cortante</td>
+                                   <td>Munição, Distância (30/120)</td>
+                               </tr>
+
+                        </tbody>
+                </table>
+            </div>
+            <br>
+
+
+
+            <p class="topic">Armas Marciais</p>
+            <br>
+            <div class ="sub_table">
+                <table><thead><th>Armas Marciais de Corpo a Corpo</th></thead></table>
+            </div>
+            <div class ="sub_table">
+                <table>
+                        <thead>
+                               <tr>
+                                   <th>Arma</th>
+                                   <th>Dano</th>
+                                   <th>Propriedades</th>
+                               </tr>
+                        </thead>
+                        <tbody>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="battleaxe" title="Visualizar">Machado de Batalha</strong></td>
+                                   <td>1d8 Cortante</td>
+                                   <td>Versátil</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="flail" title="Visualizar">Mangual</strong></td>
+                                   <td>1d8 Contudente</td>
+                                   <td>-</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="glaive" title="Visualizar">Alabarda Curta</strong></td>
+                                   <td>1d10 Cortante</td>
+                                   <td>Pesada, Alcance, Duas Mãos</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="greataxe" title="Visualizar">Machado Grande</strong></td>
+                                   <td>1d12 Cortante</td>
+                                   <td>Pesada, Duas Mãos</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="greatsword" title="Visualizar">Espada Longa</strong></td>
+                                   <td>2d6 Cortante</td>
+                                   <td>Pesada, Duas Mãos</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="halberd" title="Visualizar">Alabarda</strong></td>
+                                   <td>1d10 Cortante</td>
+                                   <td>Pesada, Duas Mãos</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="lance" title="Visualizar">Lança</strong></td>
+                                   <td>1d12 Perfurante</td>
+                                   <td>Alcance, Especial</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="longsword" title="Visualizar">Espada Bastarda</strong></td>
+                                   <td>1d8 Cortante</td>
+                                   <td>Versátil (1d10)</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="maul" title="Visualizar">Malho</strong></td>
+                                   <td>2d6 Contudente</td>
+                                   <td>Pesada, Duas Mãos</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="morningstar" title="Visualizar">Estrela da Manhã</strong></td>
+                                   <td>1d8 Perfurante</td>
+                                   <td>-</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="pike" title="Visualizar">Lança Longa</strong></td>
+                                   <td>1d10 Perfurante</td>
+                                   <td>Pesada, Duas Mãos</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="rapier" title="Visualizar">Rapieira</strong></td>
+                                   <td>1d8 Perfurante</td>
+                                   <td>Delicadeza</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="scimitar" title="Visualizar">Cimitarra</strong></td>
+                                   <td>1d6 Cortante</td>
+                                   <td>Delicadeza, Leve</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="shortsword" title="Visualizar">Espada Curta</strong></td>
+                                   <td>1d6 Perfurante</td>
+                                   <td>Delicadeza, Leve</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="trident" title="Visualizar">Tridente</strong></td>
+                                   <td>1d6 Perfurante</td>
+                                   <td>Arremesso (20/60), Versátil (1d8)</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="war_pick" title="Visualizar">Picareta de Guerra</strong></td>
+                                   <td>1d8 Perfurante</td>
+                                   <td>-</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="warhammer" title="Visualizar">Martelo de Guerra</strong></td>
+                                   <td>1d8 Contudente</td>
+                                   <td>Versátil (1d10)</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="whip" title="Visualizar">Chicote</strong></td>
+                                   <td>1d4 Cortante</td>
+                                   <td>Delicadeza, Alcance</td>
+                               </tr>
+
+                        </tbody>
+                </table>
+            </div>
+            <br>
+
+            <div class ="sub_table">
+                <table><thead><th>Armas Marciais de Longa Distância</th></thead></table>
+            </div>
+            <div class ="sub_table">
+                <table>
+                        <thead>
+                               <tr>
+                                   <th>Arma</th>
+                                   <th>Dano</th>
+                                   <th>Propriedades</th>
+                               </tr>
+                        </thead>
+                        <tbody>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="blowgun" title="Visualizar">Zarabatana</strong></td>
+                                   <td>1 Perfurante</td>
+                                   <td>Munição, Distância (25/100), Carregar</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="hand_crossbow" title="Visualizar">Besta de Mão</strong></td>
+                                   <td>1d6 Perfurante</td>
+                                   <td>Munição, Distância (30/120), Leve, Carregar</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="heavy_crossbow" title="Visualizar">Besta Pesada</strong></td>
+                                   <td>1d10 Perfurante</td>
+                                   <td>Munição, Distância (100/400), Pesada, Carregar, Duas Mãos</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="longbow" title="Visualizar">Arco Longo</strong></td>
+                                   <td>1d8 Perfurante</td>
+                                   <td>Munição, Distância (150/600), Pesada, Duas Mãos</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="net" title="Visualizar">Rede</strong></td>
+                                   <td>-</td>
+                                   <td>Especial, Arremesso (5/15)</td>
+                               </tr>
+
+                        </tbody>
+                </table>
+            </div>
+            <br>
+
+
+
+            <p class="topic">Armas de Fogo</p>
+            <br>
+            <div class ="sub_table">
+                <table>
+                        <thead>
+                               <tr>
+                                   <th>Arma</th>
+                                   <th>Dano</th>
+                                   <th>Propriedades</th>
+                               </tr>
+                        </thead>
+                        <tbody>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="pistol" title="Visualizar">Pistola</strong></td>
+                                   <td>1d10 Perfurante</td>
+                                   <td>Munição, Alcance (30/90), Carregar</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="automatic_pistol" title="Visualizar">Pistola Automática</strong></td>
+                                   <td>2d6 Perfurante</td>
+                                   <td>Munição, Alcance (50/150), Recarga (15 Tiros)</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="revolver" title="Visualizar">Revolver</strong></td>
+                                   <td>2d8 Perfurante</td>
+                                   <td>Munição, Alcance (40/120), Recarga (6 Tiros)</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="musquet" title="Visualizar">Mosquete</strong></td>
+                                   <td>1d12 Perfurante</td>
+                                   <td>Munição, Alcance (40/120), Carregar, Duas Mãos</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="hunting_rifle" title="Visualizar">Rifle de Caça</strong></td>
+                                   <td>2d10 Perfurante</td>
+                                   <td>Munição, Alcance (80/240), Recarga (5 Tiros), Duas Mãos</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="automatic_rifle" title="Visualizar">Rifle Automático</strong></td>
+                                   <td>2d8 Perfurante</td>
+                                   <td>Munição, Alcance (80/240), Explosão de Fogo, Recarga (30 Tiros), Duas Mãos</td>
+                               </tr>
+
+                               <tr>
+                                   <td><strong><a href="" class="link" data-armor="shotgun" title="Visualizar">Espingarda</strong></td>
+                                   <td>2d8 Perfurante</td>
+                                   <td>Munição, Alcance (30/60), Recarga (2 Tiros), Duas Mãos</td>
+                               </tr>
+
+                        </tbody>
+                </table>
+            </div>
+            <br>
+
+
+
+            <p class="topic">Armas Improvisadas</p>
+            <p>Às vezes, os personagens não têm armas e precisam atacar com o que estiver à mão. Uma arma improvisada inclui qualquer objeto que você possa empunhar com uma ou duas mãos, como vidro quebrado, uma perna de mesa, uma frigideira, uma roda de carroça ou um goblin morto.</p>
+            <br>
+            <p>Em muitos casos, uma arma improvisada é semelhante a uma arma real e pode ser tratada como tal. Por exemplo, uma perna de mesa é semelhante a um taco. A critério do Mestre, um personagem proficiente com uma arma pode usar um objeto semelhante como se fosse aquela arma e usar seu bônus de proficiência.</p>
+            <br>
+            <p>Um objeto que não tenha nenhuma semelhança com uma arma causa 1d4 de dano (o Mestre atribui um tipo de dano apropriado ao objeto). Se um personagem usar uma arma de longo alcance para fazer um ataque corpo a corpo, ou lançar uma arma corpo a corpo que não possua a propriedade de arremesso, ela também causará 1d4 de dano. Uma arma de arremesso improvisada tem alcance normal de 20 metros e longo alcance de 60 feet.</p>
+            <br>
+
+            <p class="topic">Armas Especiais</p>
+            <br>
+            <div class ="sub_table">
+                  <table>
+                          <thead>
+                                 <tr>
+                                     <th>Arma</th>
+                                     <th>Descrição</th>
+                                 </tr>
+                          </thead>
+                          <tbody>
+
+                                 <tr>
+                                     <td><strong><a href="" class="link" data-armor="spear" title="Visualizar">Lança</strong></td>
+                                     <td>Você tem desvantagem quando usa uma lança para atacar um alvo a até 5 feet de você. Além disso, uma lança requer duas mãos para ser empunhada quando você não está montado.</td>
+                                 </tr>
+                                 
+                                 <tr>
+                                     <td><strong><a href="" class="link" data-armor="net" title="Visualizar">Rede</strong></td>
+                                     <td>Uma criatura Grande ou menor atingida por uma rede fica contida até ser libertada. Uma rede não tem efeito em criaturas sem forma ou em criaturas Enormes ou maiores. Uma criatura pode usar sua ação para fazer um teste de Força CD 10, libertando a si mesma ou a outra criatura ao seu alcance em caso de sucesso. Causar 5 de dano cortante à rede (CA 10) também liberta a criatura sem feri-la, encerrando o efeito e destruindo a rede. Quando você usa uma ação, ação bônus ou reação para atacar com uma rede, você pode fazer apenas um ataque, independentemente do número de ataques que você normalmente pode fazer.</td>
+                                 </tr>
+                                 
+                          </tbody>
+                  </table>
+            </div>
+
+       </div>
+       <br>
+
+       <script src="../../../scripts/armors_and_weapons.js"></script>
+</body>
+
+</html>
