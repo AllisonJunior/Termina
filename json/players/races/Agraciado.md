@@ -6,7 +6,7 @@ No mundo de Termina, Agraciados são humanos que por algum motivo foram abençoa
 
 <br>
 
-**Habilidade:** Você ganha uma [Habilidade](../../../src/pages/players/feats.html) de sua escolha.<br>
+**Habilidade:** Você ganha uma [Habilidade](../../../src/pages/players/feats.html) de sua escolha e você ganha +2 no atributo de Carisma.<br>
 **Velocidade:** Sua movimentação padrão é de 40 Feet.<br>
 **Linguagens:** Você fala comum e *Kode* (mas não sabe porque e como). <br>
 **Carismático:** Sua aparência para algumas pessoas se assemelha a de uma Dama. <br>
