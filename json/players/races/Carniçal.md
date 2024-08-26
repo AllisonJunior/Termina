@@ -27,7 +27,7 @@ No mundo de Termina, Carniçais são humanos que acabaram sendo afetados pela **
 * **Arremesar** - *Você pode pegar um objeto para arremesar em até 20 feet de você (DC 10 + Bônus de Proficiência). Em caso de acerto o alvo é Atordoado até o seu próximo turno, em caso de falha aquela criatura terá vantagem em ataques direcionados a você até o seu próximo turno*.
 * **Ódio** - *Seu braço escolhido se torna uma armadura encouraçada, assim aumentando sua proteção. Recebendo +1 de CA Durante 2 Turnos*.
 * **Instinto** - *Você pode se dar vantagem em algum teste que envolva o atributo de Horror*.
-* **Berserker** - *Você se entrega a raiva e fúria que um Carniçal decaído possui. Essa ação custa 2 fichas de infecção, caso a tome durante 5 turnos, você terá imunidade a qualquer tipo de ataque elemental (Gelo, Fogo, Ácido, trovão e relâmpago) e resistência a dano físico do tipo Contudente*.
+* **Berserker** - *Você se entrega a raiva e fúria que um Carniçal decaído possui. Essa ação custa 3 fichas de infecção, caso a tome durante 5 turnos, você terá resistência a qualquer tipo de ataque elemental (Gelo, Fogo, Ácido, trovão e relâmpago) e resistência a dano físico do tipo Contudente*.
 
 O uso da mão de caça funciona da seguinte forma, por padrão você possui 2 fichas de decaímento/infecção, que podem ser gastas para executar uma das ações acima (Não aumenta) e caso deseje utilizar novamente, será feito uma espécie de troca, para cada uso acima das 2 fichas padrão, será gasto metade do dado de vida da sua classe principal + Bônus de proficiência. Caso o uso passe do límite e você acabe sendo reduzido a 0 pontos de vida, a sua infecção irá controlar seu corpo e assim você morre (Um descanso longo reseta as 2 fichas).
 
