@@ -1,0 +1,33 @@
+.list_ofItems
+{
+ text-emphasis: none;
+}
+
+.list_ofItems .sectionA,
+.list_ofItems .sectionB
+{
+ display: flex; 
+ align-items: center; 
+}
+
+.list_ofItems .sectionA a,
+.list_ofItems .sectionB a
+{
+ font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;    
+ font-size: larger;
+ text-decoration: none;
+ color: #134191; 
+}
+
+.list_ofItems .sectionA img,
+.list_ofItems .sectionB img
+{
+ margin-top: 10px;   
+ margin-bottom: 10px;   
+ margin-right: 10px;   
+}
+
+.list_ofItems .sectionA
+{
+ background-color: aliceblue; 
+}
