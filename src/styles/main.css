@@ -1,0 +1,437 @@
+/* PADRONIZANDO A PÁGINA COMPLETA */
+* 
+{
+ margin: 0;
+ padding: 0;
+ border: 0;
+ box-sizing: border-box;
+ font-size: 100%;
+ font: inherit;
+ vertical-align: baseline;
+}
+
+
+
+/* TEXTO DA BARRA DE DESCRIÇÃO */
+.bar_section
+{
+ display: flex;
+ align-items: center;
+ background-color: #333;
+ padding: 10px 5px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* TEXTO DA BARRA DE DESCRIÇÃO DO SITE */
+.bar_section .page_title
+{ 
+ color: #69ebcf;
+ font-size: larger;
+ font-weight: bold;
+ font-style: normal;
+}
+
+.bar_section .page_descr
+{ 
+ color: #96a7a3;
+ font-style: italic;
+ font-size: small;
+}
+
+
+/* TEXTO DA BARRA DE DESCRIÇÃO */
+.bar_title
+{
+ display: flex;
+ align-items: center;
+ background-color: #333;
+ padding: 10px 5px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* TEXTO DA BARRA DE DESCRIÇÃO */
+.bar_page 
+{
+ display: flex;
+ align-items: center;
+ background-color: #333;
+ padding: 10px 5px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* BOTÕES DA BARRA DE OPÇÕES */
+.bar_page .div_buttons
+{
+ display: flex;
+}
+
+.bar_page .div_return
+{
+ position: relative;
+ margin-right: 20px;  
+ display: flex; 
+}
+
+.bar_page .div_return a
+{
+ color: antiquewhite;
+ text-decoration: none;
+ padding: 5px 10px;
+ display: block;
+}
+
+.bar_page .div_return a:hover
+{
+ color: cornflowerblue;
+}
+
+.bar_page .div_option
+{
+ position: relative;
+ margin-right: 20px;   
+}
+
+.bar_page .div_option a
+{
+ color: antiquewhite;
+ text-decoration: none;
+ padding: 5px 10px;
+ display: block; 
+}
+
+.bar_page .div_option .selected_option
+{
+ text-decoration: underline;   
+}
+
+.bar_page .div_option .selected_sub_option
+{
+ text-decoration: underline;   
+}
+
+.bar_page .div_option:hover a
+{
+ color: cornflowerblue;   
+}
+
+/* ESTILO DO SUBMENU */
+.bar_page .div_option ul
+{
+ display: none;
+ position: absolute;
+ background-color: #444444;
+ list-style: none;
+ padding: 10px 0;
+ margin: 0;
+ top: 100%;
+ left: 0;
+ min-width: 150px;
+ border-radius: 4px;
+ z-index: 1000;   
+}
+
+.bar_page .div_option .sub li
+{
+ padding: 5px 10px; 
+}
+
+.bar_page .div_option .sub li a
+{
+ color: antiquewhite;
+ display: block;
+}
+
+.bar_page .div_option .sub li a:hover
+{
+ color: cornflowerblue;
+}
+
+/* Exibir o submenu no hover */
+.bar_page .div_option:hover .sub 
+{
+ display: block;
+}
+
+/* BUSCA DA BARRA DE OPÇÕES */
+.bar_page .div_search
+{ 
+ border: 1px solid #123; 
+ margin-left: auto;
+ border-radius: 10%;
+}
+
+
+
+/* DIVISÕES */
+
+.div_sections 
+{
+ display: flex;   
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+.div_sections .section_block
+{
+ padding: 10px 20px;
+ text-align: center;
+ transition: transform 0.1s ease;
+}
+
+.div_sections .section_block:hover
+{
+ transform: scale(1.1,1.1);   
+}
+
+.div_sections .section_block a
+{
+ text-decoration: none;
+ font-style: oblique;
+ font-weight: normal;
+ color: #45574a;
+ font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
+}
+
+
+/* JOGADORES TITLE */
+.title
+{
+ font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif; 
+ font-size: larger;
+ text-decoration: underline;
+ font-weight: bold;
+ text-align: center;
+}
+
+strong
+{
+ font-weight: bold;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BASE DA JANELA MODAL */
+.modal 
+{
+ display: none;
+ position: fixed;
+ z-index: 1;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ overflow: auto;
+ background-color: rgba(0,0,0,0.4);
+}
+
+/* Estilo do conteúdo da modal */
+.modal .modal-content 
+{
+ background-color: aliceblue;
+ margin: 15% auto;
+ padding: 20px;
+ border: 2px solid #aab2b4;
+ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+ width: 80%;
+}
+
+/* Estilo do botão de fechar */
+.modal .modal-content .close 
+{
+ color: #a3a09f;
+ float: right;
+ font-size: 3em;
+ font-weight: bold;
+ padding-right: 10px;
+ transition: transform 0.2s ease;
+}
+
+.modal .modal-content .close:hover, .modal .modal-content .close:focus 
+{
+ color: #747271;
+ text-decoration: none;
+ cursor: pointer;
+ transform: scale(1.2);
+}
+
+/* ESTILIZAÇÃO DOS TEXTOS DA MODAL */
+#modalContent h1 
+{
+ font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;    
+ font-size: 3em;
+ text-decoration: none;
+ color: #134191;
+}
+
+#modalContent h2 
+{
+ font-size: 1.75em;
+ font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;    
+ text-decoration: none;
+ color: #134191;
+}
+
+#modalContent h3 
+{
+ font-size: 1.5em;
+ font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;    
+ text-decoration: none;
+ color: #134191;
+}
+
+#modalContent h4 
+{
+ font-size: 1.25em;
+ font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
+ text-decoration: none;
+ color: #134191;
+}
+
+#modalContent h5 
+{
+ font-size: 1.1em;
+ font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
+ text-decoration: none;
+ color: #134191;
+}
+
+#modalContent h6 
+{
+ font-size: 1em;
+ font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
+ text-decoration: none;
+ color: #134191;
+}
+
+/* Estilo para parágrafos */
+#modalContent p 
+{
+ font-size: 1em;
+ line-height: 1.6;
+ margin-bottom: 1em;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#modalContent hr 
+{
+ border: 0; 
+ height: 2px; 
+ background-color: #134191;
+ margin: 20px 0; 
+ width: 100%; 
+ border-radius: 5px; 
+}
+
+#modalContent blockquote
+{
+ border-left: 5px solid #134191;
+ padding: 10px 20px;
+ font-style: italic;
+ background-color: #e3e9eb;
+ color: #000000;  
+}
+
+/* Estilo para a tabela */
+#modalContent table 
+{
+ width: 100%;
+ border-collapse: collapse; /* Remove espaços entre bordas */
+ margin: 20px 0; /* Adiciona margem ao redor da tabela */
+}
+
+/* Estilo para o cabeçalho da tabela */
+#modalContent th 
+{
+ background-color: #134191; /* Cor de fundo do cabeçalho */
+ color: #FFF; /* Cor do texto do cabeçalho */
+ padding: 10px; /* Espaçamento interno */
+ text-align: left; /* Alinhamento do texto */
+ border: 2px solid #134191; /* Borda inferior */
+ font-weight: bold;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#modalContent th a
+{
+ color: #FFF; /* Cor do texto do cabeçalho */
+}
+
+/* Estilo para as células da tabela */
+#modalContent td 
+{
+ padding: 10px; /* Espaçamento interno */
+ border-bottom: 1px solid #ddd; /* Borda inferior */
+}
+
+/* Estilo para a linha quando o cursor está sobre ela */
+#modalContent tr:hover 
+{
+ background-color: #e0e0e0; /* Cor de fundo ao passar o cursor */
+}
+
+#modalContent ul 
+{
+ padding-left: 1.5em; /* Espaçamento à esquerda */
+ margin-bottom: 1em; /* Margem abaixo da lista */
+ list-style-type: disc; /* Tipo de marcador */
+ font-size: 1em;
+ line-height: 1.6;
+ margin-bottom: 1em;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilo para listas ordenadas (ol) */
+#modalContent ol 
+{
+ padding-left: 1.5em; /* Espaçamento à esquerda */
+ margin-bottom: 1em; /* Margem abaixo da lista */
+ list-style-type: decimal; /* Tipo de marcador (números) */
+ font-size: 1em;
+ line-height: 1.6;
+ margin-bottom: 1em;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilo para itens de lista (li) */
+#modalContent li 
+{
+ margin-bottom: 0.5em; /* Espaço abaixo de cada item */
+ line-height: 1.6; /* Altura da linha para melhor leitura */
+}
+
+/* Estilo para texto em negrito e itálico */
+#modalContent strong 
+{
+ font-weight: bold;
+}
+
+#modalContent em 
+{
+ font-style: italic;
+}
+
+/* Outros estilos personalizados */
+#modalContent a 
+{
+ text-decoration: none;
+ font-weight: bold;
+}
+
+#modalContent a:hover 
+{
+ text-decoration: underline;
+}

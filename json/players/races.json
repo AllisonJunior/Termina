@@ -1,0 +1,279 @@
+[   
+ {  
+  "type": "common",
+  "name": "Anão",
+  "desc": ""  
+ },
+ {  
+  "type": "common",
+  "name": "Draconato",
+  "desc": ""  
+ }, 
+ {  
+  "type": "common",
+  "name": "Elfo",
+  "desc": ""  
+ },
+ {  
+  "type": "common",
+  "name": "Gnomo",
+  "desc": ""  
+ },
+ {  
+  "type": "common",
+  "name": "Meio Elfo",
+  "desc": ""  
+ },
+ {  
+  "type": "common",
+  "name": "Meio Orc",
+  "desc": ""  
+ }, 
+ {  
+  "type": "common",
+  "name": "Halfling",
+  "desc": ""  
+ },
+ {  
+  "type": "common",
+  "name": "Humano",
+  "desc": "Best class!"  
+ },
+ {  
+  "type": "common",
+  "name": "Tiefling",
+  "desc": ""  
+ },
+
+
+
+
+ {
+  "type": "exotic",
+  "name": "Aarakocra",
+  "desc": ""  
+ }, 
+ {
+  "type": "exotic",
+  "name": "Aasimar",
+  "desc": ""  
+ },
+ {
+  "type": "exotic",
+  "name": "Metamorfo",
+  "desc": ""  
+ },
+ {
+  "type": "exotic",
+  "name": "Gnomo das Profundezas",
+  "desc": ""  
+ },
+ {
+  "type": "exotic",
+  "name": "Duergar",
+  "desc": ""  
+ },
+ {
+  "type": "exotic",
+  "name": "Eladrin",
+  "desc": ""  
+ }, 
+ {
+  "type": "exotic",
+  "name": "Fada",
+  "desc": ""  
+ }, 
+ {
+  "type": "exotic",
+  "name": "Firbolg",
+  "desc": ""  
+ }, 
+ {
+  "type": "exotic",
+  "name": "Genasis (Ar)",
+  "desc": ""  
+ },
+ {
+  "type": "exotic",
+  "name": "Genasis (Terra)",
+  "desc": ""  
+ },
+ {
+  "type": "exotic",
+  "name": "Genasis (Fogo)",
+  "desc": ""  
+ },
+ {
+  "type": "exotic",
+  "name": "Genasis (Água)",
+  "desc": ""  
+ },
+ {
+  "type": "exotic",
+  "name": "Githyanki",
+  "desc": ""  
+ },
+ {
+  "type": "exotic",
+  "name": "Githzerai",
+  "desc": ""  
+ },
+ {
+  "type": "exotic",
+  "name": "Golias",
+  "desc": ""  
+ },
+ {
+  "type": "exotic",
+  "name": "Harengon",
+  "desc": ""  
+ },
+ {
+  "type": "exotic",
+  "name": "Kenku",
+  "desc": ""  
+ },
+ {
+  "type": "exotic",
+  "name": "Locathah",
+  "desc": ""  
+ },
+ {
+  "type": "exotic",
+  "name": "Owlin",
+  "desc": ""  
+ },
+ {
+  "type": "exotic",
+  "name": "Sátiro",
+  "desc": ""  
+ },
+ {
+  "type": "exotic",
+  "name": "Elfo do Mar",
+  "desc": ""  
+ }, 
+ {
+  "type": "exotic",
+  "name": "Shadarkai",
+  "desc": ""  
+ },
+ {
+  "type": "exotic",
+  "name": "Tabaxi",
+  "desc": ""  
+ },
+ {
+  "type": "exotic",
+  "name": "Tortle",
+  "desc": ""  
+ },
+ {
+  "type": "exotic",
+  "name": "Tritão",
+  "desc": ""  
+ },
+ {
+  "type": "exotic",
+  "name": "Verdan",
+  "desc": ""  
+ },
+
+
+
+
+ {
+  "type": "monstruous",
+  "name": "Bugbear",
+  "desc": ""
+ },
+ {
+  "type": "monstruous",
+  "name": "Centauro",
+  "desc": ""
+ },
+ {
+  "type": "monstruous",
+  "name": "Goblin",
+  "desc": ""
+ },
+ {
+  "type": "monstruous",
+  "name": "Grung",
+  "desc": ""
+ },
+ {
+  "type": "monstruous",
+  "name": "Hobgoblin",
+  "desc": ""
+ },
+ {
+  "type": "monstruous",
+  "name": "Kobold",
+  "desc": ""
+ },
+ {
+  "type": "monstruous",
+  "name": "Homem Lagarto",
+  "desc": ""
+ },
+ {
+  "type": "monstruous",
+  "name": "Minotauro",
+  "desc": ""
+ },
+ {
+  "type": "monstruous",
+  "name": "Orc",
+  "desc": ""
+ },
+ {
+  "type": "monstruous",
+  "name": "Shifter",
+  "desc": ""
+ },
+ {
+  "type": "monstruous",
+  "name": "Yuan-ti",
+  "desc": ""
+ },
+
+
+
+
+ {
+  "type": "termina",
+  "name": "Carniçal",
+  "desc": "Humano que sofreu uma mutação devido a doença TD - 53, tendo seus extintos e fome aumentados"
+ },
+ {
+  "type": "termina",
+  "name": "Boneca de Carne",
+  "desc": "Criatura do sexo feminino que sofreu uma mutação devido a doença TD - 13, fazendo com que seu corpo mudasse."
+ },
+ {
+  "type": "termina",
+  "name": "Nascido da Névoa",
+  "desc": "Criatura nascida na Zona Morta."  
+ }, 
+ {
+  "type": "termina",
+  "name": "Receptáculo",
+  "desc": "Criatura que perdeu tudo, e agora só o que lhe resta é o que acabou com tudo."  
+ },
+ {
+  "type": "termina",
+  "name": "Maldição",
+  "desc": "Criatura que por algum motivo foi amaldiçoado por um dos 4 Deuses."  
+ },
+ {
+  "type": "termina",
+  "name": "Agraciado",
+  "desc": "Criatura que recebeu diretamente dos Deuses um termo, 'agraciado aquele que forá abençoado'."  
+ },
+ {
+  "type": "termina",
+  "name": "Injustiçado",
+  "desc": "[Exclusiva do Bigode] Bigode morto de uma forma injusta, mas... ele se recusou..."  
+ }
+]
