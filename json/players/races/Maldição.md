@@ -73,4 +73,4 @@ No mundo de Termina, Maldições são humanos que por puro azar do destino ou de
 * **Tensão:** Você ganha uma ação adicional, para castar uma mágia. Uso único, recupera com o descanso longo.
 * **Aumento:** Você aumenta a área da sua mágia em um valor igual a metade do valor total (arredondado para baixo), você pode utilizar essa habilidade uma quantidade de vezes ao seu bônus de proficiência.
 * **Amar:** Como ação bônus, você pode fazer com que uma criatura que esteja em seu campo de visão em até 30 feet, realize uma ação que você a ordenar (contra a sua vontade), após essa ação ela volta a si e percebe que você o fez. Uso único, recupera com descanso longo.
-* **Telecinése:** Como uma ação você pode segurar uma criatura mentalmente e a arremessar em uma distância de até 20 feet (causando 1d6 para cada 5 feet de arremesso), o uso dessa ação é único e é recuperada com um descanso longo.
+* **Telecinése:** Como uma ação você pode segurar uma criatura mentalmente e a arremessar (a criatura que está em 5 feet de você) em uma distância de até 20 feet (causando 1d6 para cada 5 feet de arremesso), o uso dessa ação é único e é recuperada com um descanso longo.
