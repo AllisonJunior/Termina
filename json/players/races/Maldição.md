@@ -32,7 +32,7 @@ No mundo de Termina, Maldições são humanos que por puro azar do destino ou de
 * **Passos Amaldiçoados:** A sua movimentação foi melhorada, quando você esgotar seu máximo de movimentação você pode rolar um dado de 1d6, caso o resultado seja > 3, você recupera sua movimentação completa, seu uso é igual ao seu bônus de Proficiência, só se recupera o uso com um descanso longo.
 * **Super Recuperação:** A qualquer momento você pode rolar 1d100, e caso o valor seja > 60, qualquer atributo negativo infligido a você é encerrado, uso recupera com um descanso longo.
 * **Reforço:** Sua CA é aumentada em +1.
-* **Impacto:** Os seus socos em um acerto podem caso você queira empurrar uma criatura um pouco maior que você em até 40 feet de distância, exceto para o céu. 
+* **Impacto:** Os seus socos em um acerto podem caso você queira empurrar uma criatura um pouco maior que você em até 10 feet de distância, exceto para o céu. 
 * **Robusto:** Seu corpo se torna extremamente robusto, como reação você pode fazer com que o ataque que te acertaria seja negado, o uso recupera com um descanso longo.
 * **Dominar:** Como uma ação, você olha para uma criatura que esteja em até 5 feet de você e a agarra, a sua força é aumentada de uma forma tão sobrenatural que a criatura é derrubada ficando no estado caído e recebe 1d6 de dano Contundente da queda, o uso dessa habilidade é igual ao seu bônus de proficiência, seu uso é recuperado com um descanso longo.
 * **Defesa:** Como uma reação, caso uma criatura aliada em até 5 feet de você seja atacada com um acerto, você pode se jogar na frente e a proteger aumentando sua CA em +2, o uso dessa habilidade é igual ao seu bônus de proficiência, seu uso é recuperado com um descanso longo.
