@@ -9,7 +9,7 @@ No mundo de Termina, Receptáculos são humanos que perderam tudo... família, r
 **Habilidade:** Você ganha uma [Habilidade](../../../src/pages/players/feats.html) e você ganha +2 no atributo de Horror. <br>
 **Velocidade:** Sua movimentação padrão é de 30 Feet.<br>
 **Linguagens:** Você fala comum.<br>
-**Lembranças:** Seus traumas... seu passado... seus pecados... nada disso te derrubou. Você possui resistência a Dano Psíquico.
+**Lembranças:** Seus traumas... seu passado... seus pecados... nada disso te derrubou. Você possui resistência a Dano Necrótico.
 
 ## Como Receptáculo você ganha os seguintes benefícios:
 

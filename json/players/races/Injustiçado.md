@@ -6,7 +6,7 @@ No mundo de Termina, Injustiçados são humanos que foram mortos de uma forma t�
 
 <br>
 
-**Habilidade:** Você ganha uma [Habilidade](../../../src/pages/players/feats.html) de sua escolha e ganha proficiência com as perícias de Intimidação, Investigação, Percepção e Intuição<br>
+**Habilidade:** Você ganha uma [Habilidade](../../../src/pages/players/feats.html) de sua escolha e ganha proficiência com as perícias de Intimidação, Investigação, Percepção e Intuição. Você ganha +2 em carisma e +1 em Destreza.<br>
 **Velocidade:** Sua movimentação padrão é de 30 Feet.<br>
 **Linguagens:** Você fala comum e outra linguagem que você e o DM concordem para sua lore. <br>
 **4ª Parede:** Você recebe informações privilegíadas, do completo nada de seres que você sabe que estão te assistindo, e a todo aquele mundo. <br>

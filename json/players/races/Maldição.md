@@ -9,7 +9,7 @@ No mundo de Termina, Maldições são humanos que por puro azar do destino ou de
 **Habilidade:** Você ganha uma [Habilidade](../../../src/pages/players/feats.html) de sua escolha e ganha proficiência com a perícia de Intimidação.<br>
 **Velocidade:** Sua movimentação padrão é de 30 Feet.<br>
 **Linguagens:** Você fala comum e outra linguagem que você e o DM concordem para sua lore. <br>
-**Desgraça:** Como uma Maldição você teve que aprender a lidar com o que lhe foi retirado... Portanto ao escolher essa raça você precisa definir o que lhe foi retirado (*a visão, os braços, um braço, uma perna, um rim, o coração etc.*), como, e o porquê assim se tornando a sua desgraça. Essa escolha afetará de alguma forma seu personagem e possíveis interações do mesmo. <br>
+**Desgraça:** Como uma Maldição você teve que aprender a lidar com o que lhe foi retirado... Portanto ao escolher essa raça você precisa definir o que lhe foi retirado (*a visão, os braços, um braço, uma perna, um rim, o coração, sentimentos, compaixão etc.*), como, e o porquê assim isso irá acabar se tornando a sua desgraça. Essa escolha afetará de alguma forma seu personagem e possíveis interações do mesmo (DM and You). <br>
 **Causador:** Como uma Maldição você foi amaldiçoado por um dos seguintes Deuses: *Blon*, *Pcell*, *Davine Lu Linvega* ou *Schiff*, não queira o encontrar pessoalmente... <br>
 **Acaso:** Por você não ser bem-vindo na Zona Morta, a mesma acaba sendo muito mais dura com você. Quando você estiver com metade de sua vida total, qualquer Teste de Horror é feito com desvantagem. 
 
@@ -18,9 +18,12 @@ No mundo de Termina, Maldições são humanos que por puro azar do destino ou de
 
 <br>
 
-**Aura:** Sua mera presença/aura causa medo, desespero e em alguns casos nojo. Para qualquer teste da perícia de Intimidação que você precisar fazer, será feito com vantagem, potêncialmente causando medo em criaturas mais fracas que você. <br>
-**Reforço:** Devido a situação crítica, você pode fazer um sacríficio de 50% da sua vida total e dobrar todos seus atributos físicos por 2 turnos, onde após seu uso você não poderá ser curado (por aliados, características de classe, poções e etc.) até realizar um descanso curto ou longo. <br>
-**Energia Amaldiçoada:** Com base no seu Causador você pode escolhe adquirir uma das habilidades disponíveis, passivamente, além de ganhar uma habilidade única do Causador Escolhido (Começa com Blasfémia a 'Nome'). Quando você pega essa raça você escolhe uma das habilidades da lista do seu Causador, e nos níveis 5º, 10º, 15º e 20º você pode aprender uma nova.
+**Aura:** Sua mera presença/aura causa medo, desespero e em alguns casos nojo. Criaturas mais fracas que você te temem, criaturas relativamente mais fortes precisam passar em um teste de salvaguarda de carisma (CD 10 + Modificador de Intimidação). <br>
+**Energia Amaldiçoada:** Com base no seu Causador você pode escolhe adquirir uma das habilidades disponíveis. Quando você pega essa raça você escolher somente uma das habilidades da lista do seu Causador para pode aprender, nos 5º, 10º, 15º e 20º nível você pode trocar.
+
+## Causadores
+
+<br>
 
 ### **Blon** 
 <br>
@@ -34,7 +37,6 @@ No mundo de Termina, Maldições são humanos que por puro azar do destino ou de
 * **Dominar:** Como uma ação, você olha para uma criatura que esteja em até 5 feet de você e a agarra, a sua força é aumentada de uma forma tão sobrenatural que a criatura é derrubada ficando no estado caído e recebe 1d6 de dano Contundente da queda, o uso dessa habilidade é igual ao seu bônus de proficiência, seu uso é recuperado com um descanso longo.
 * **Defesa:** Como uma reação, caso uma criatura aliada em até 5 feet de você seja atacada com um acerto, você pode se jogar na frente e a proteger aumentando sua CA em +2, o uso dessa habilidade é igual ao seu bônus de proficiência, seu uso é recuperado com um descanso longo.
 * **Evadir:** Você ganha a reação de evasão.
-* **Blasfémia a Blon:** Como uma ação, desde que não esteja em rage, concentração ou com exaustão, você poderá forçadamente emanar um pouco da alma de *Blon*, fazendo com que você assimile uma pequena fração de seu poder. Você expande um *Domínio Simples* em uma raio circular de até 100 feet (*consequentemente esse domínio possui uma aparência, trêm, padaria, rua, lar, casa, espaço etc. Pega a foto, e quando expandir pela primeira vez mostra pra geral*), a duração da mesma é de 10 turnos. O acerto garantido desse domínio é o de que todo turno (contabilizando a invocação) 3 criaturas de sua escolha (dentro da área) receberão um dano de 2d6 Necrótico. O domínio simples tem resistência igual a 10. Quando o domínio símples encerrar você não poderá ser curado (a não ser por uma característica da sua própria classe). 
 
 ### **Schiff**
 <br>
@@ -48,8 +50,6 @@ No mundo de Termina, Maldições são humanos que por puro azar do destino ou de
 * **Resitir:** Caso sua vida seja reduzida a zero por um ataque físico, você pode como reação evitar isso desviando para uma distância segura (só o suficiente para não contar o ataque), após sua duração o uso só é recuperado com um descanso longo.  
 * **Rolar:** Voce ganha a reação de rolagem.
 * **Dificultar:** Como ação bônus você pode, destruir o terreno (tornar um terreno dificultoso) em até um raio círcular de 20 feet, após a sua duração o uso só é recuperado com um descanso longo.
-* **Blasfémia a Schiff:** Como uma ação, desde que não esteja em rage, concentração ou com exaustão, você poderá forçadamente emanar um pouco da alma de *Schiff*, fazendo com que você assimile uma pequena fração de seu poder. Você expande um *Domínio Simples* em uma raio circular de até 50 feet (*consequentemente esse domínio possui uma aparência, trêm, padaria, rua, lar, casa, espaço etc. Pega a foto, e quando expandir pela primeira vez mostra pra geral*), a duração da mesma é de 6 turnos. O acerto garantido desse domínio é o de que todos os seus ataques com sua arma principal (utilizada na invocação) acertam até 4 criaturas de sua escolha de uma só vez, mas o dano é dividido (ou seja, você não roda dado de acerto, todos os seus acertos para aquelas 4 criaturas com a arma principal é garantido, mas para as demais você precisa rolar acerto). O domínio simples tem resistência igual a 8. Quando o domínio símples encerrar você ganha dois pontos de exaustão.
-
 
 ### **Pcell**
 <br>
@@ -62,7 +62,6 @@ No mundo de Termina, Maldições são humanos que por puro azar do destino ou de
 * **Mina:** Seus ataques com armas de fogo, acima do alcance padrão não possuem desvantagem.
 * **Sumir:** Como ação bônus você pode simplesmente sumir até o seu próximo turno (voltando em um local de escolha do DM), o uso dessa habilidade é limitado a seu bônus de proficiência sendo recuperada com um descanso longo.
 * **Desapareça:** Você pode como ação bônus, atacar uma criatura com escuridão (DC 10 + Modificador de Horror + Bônus de Proficiência), em uma falha (da criatura) a criatura é completamente coberta em escuridão, fazendo com que ela desapareça do mapa até o seu próximo turno, já em caso de sucesso ela só recebe 1d12 de dano Necrótico, uso único e somente após um descanso longo é recuperado. 
-* **Blasfémia a Pcell:** Como uma ação, desde que não esteja em rage, concentração ou com exaustão, você poderá forçadamente emanar um pouco da alma de *Pcell*, fazendo com que você assimile uma pequena fração de seu poder. Você expande um *Domínio Simples* em uma raio circular de até 80 feet (*consequentemente esse domínio possui uma aparência, trêm, padaria, rua, lar, casa, espaço etc. Pega a foto, e quando expandir pela primeira vez mostra pra geral*), a duração da mesma é de 3 turnos. O acerto garantido desse domínio é o de que todas as criaturas aliadas sofrem um benefício a cada turno de +3 em acerto, 1d4 de vida (bônus se estiver com a vida cheia) e os ataques contra as mesmas são feitos com desvantagem. O domínio simples tem resistência igual a 6. Quando o domínio símples encerrar você perde metade da sua vida atual e ganha 1 ponto de exaustão.
 
 ### **Davine Lu Linvega**
 <br>
@@ -75,5 +74,3 @@ No mundo de Termina, Maldições são humanos que por puro azar do destino ou de
 * **Aumento:** Você aumenta a área da sua mágia em um valor igual a valor/2 (arredondado para baixo).
 * **Amar:** Como ação bônus, você pode fazer com que uma criatura que esteja em seu campo de visão em até 30 feet, realize uma ação que você a ordenar (contra a sua vontade), após essa ação ela volta a si e percebe que você o fez. Uso único, recupera com descanso longo.
 * **Telecinése:** Como uma ação você pode segurar uma criatura mentalmente e a arremessar em uma distância de até 40 feet (causando 1d6 para cada 5 feet de arremesso), o uso dessa ação é único e é recuperada com um descanso longo.
-
-* **Blasfémia a Davine Lu Linvega:** Como uma ação, desde que não esteja em rage, concentração ou com exaustão, você poderá forçadamente emanar um pouco da alma de *Pcell*, fazendo com que você assimile uma pequena fração de seu poder. Você expande um *Domínio Simples* em uma raio circular de até 10 feet (*consequentemente esse domínio possui uma aparência, trêm, padaria, rua, lar, casa, espaço etc. Pega a foto, e quando expandir pela primeira vez mostra pra geral*), a duração da mesma é de 1 turno. O acerto garantido desse domínio é o de que você se isola com uma criatura não aliada de sua escolha no alcance, a mesma ganha um +1 de CA, a partir desse momento você irá fazer um ataque com sua arma principal com um dano adicional de 1d12 Necrótico, logo após você irá rolar 1d100 (Puro), caso você tire >= 70 você faz um outro ataque, e realiza novamente esse processo só que agora com a condição aumentada em +5, isso continua até que a condição ser igual a 100, onde você só pode realizar um novo ataque caso crite (*e crite, e crite, e crite...*). O domínio simples tem resistência igual a 1. Quando o domínio símples encerrar você fica com 1 de vida e 3 pontos de exaustão.

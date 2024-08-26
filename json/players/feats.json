@@ -282,5 +282,9 @@
  { 
   "name": "[T] Ataque Adicional",
   "desc": "Você ganha a oportunidade de realizar um ataque adicional."    
+ },
+ { 
+  "name": "[T] Charme Contagiante",
+  "desc": "Sua mera presença se torna atordoante para algumas criaturas."    
  }
 ]

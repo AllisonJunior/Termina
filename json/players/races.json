@@ -259,21 +259,21 @@
  {
   "type": "termina",
   "name": "Receptáculo",
-  "desc": "Humano que perdeu tudo, e agora só o que lhe resta é o que acabou com tudo."  
+  "desc": "Criatura que perdeu tudo, e agora só o que lhe resta é o que acabou com tudo."  
  },
  {
   "type": "termina",
   "name": "Maldição",
-  "desc": "Humano que por algum motivo foi amaldiçoado por um dos 4 Deuses."  
+  "desc": "Criatura que por algum motivo foi amaldiçoado por um dos 4 Deuses."  
  },
  {
   "type": "termina",
   "name": "Agraciado",
-  "desc": "Humano que recebeu diretamente dos Deuses um termo, 'agraciado aquele que forá abençoado'."  
+  "desc": "Criatura que recebeu diretamente dos Deuses um termo, 'agraciado aquele que forá abençoado'."  
  },
  {
   "type": "termina",
   "name": "Injustiçado",
-  "desc": "[Exclusiva do Bigode] Humano morto de uma forma injusta, mas... ele se recusou..."  
+  "desc": "[Exclusiva do Bigode] Bigode morto de uma forma injusta, mas... ele se recusou..."  
  }
 ]
