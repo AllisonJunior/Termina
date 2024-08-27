@@ -6,7 +6,7 @@ No mundo de Termina, Maldições são humanos que por puro azar do destino ou de
 
 <br>
 
-**Habilidade:** Você ganha uma [Habilidade](../../../src/pages/players/feats.html) de sua escolha e ganha proficiência com a perícia de Intimidação.<br>
+**Habilidade:** Você ganha uma [Habilidade](../../../src/pages/players/feats.html) de sua escolha, ganha +2 em um atributo de sua escolha e ganha proficiência com a perícia de Intimidação.<br>
 **Velocidade:** Sua movimentação padrão é de 30 Feet.<br>
 **Linguagens:** Você fala comum e outra linguagem que você e o DM concordem para sua lore. <br>
 **Desgraça:** Como uma Maldição você teve que aprender a lidar com o que lhe foi retirado... Portanto ao escolher essa raça você precisa definir o que lhe foi retirado (*a visão, os braços, um braço, uma perna, um rim, o coração, sentimentos, compaixão etc.*), como, e o porquê assim isso irá acabar se tornando a sua desgraça. Essa escolha afetará de alguma forma seu personagem e possíveis interações do mesmo (DM and You). <br>
@@ -19,7 +19,7 @@ No mundo de Termina, Maldições são humanos que por puro azar do destino ou de
 <br>
 
 **Aura:** Sua mera presença/aura causa medo, desespero e em alguns casos nojo. Criaturas mais fracas que você te temem, criaturas relativamente mais fortes precisam passar em um teste de salvaguarda de carisma (CD 10 + Modificador de Intimidação). <br>
-**Energia Amaldiçoada:** Com base no seu Causador você pode escolhe adquirir uma das habilidades disponíveis. Quando você pega essa raça você escolher somente uma das habilidades da lista do seu Causador para pode aprender, nos 5º, 10º, 15º e 20º nível você pode trocar.
+**Energia Amaldiçoada:** Com base no seu Causador você pode escolhe adquirir uma das habilidades disponíveis. Quando você pega essa raça você escolher somente 2 habilidades do seu causador, para adicionar a seu arsenal.
 
 ## Causadores
 
