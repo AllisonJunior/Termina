@@ -275,5 +275,10 @@
   "type": "termina",
   "name": "Injustiçado",
   "desc": "[Exclusiva do Bigode] Bigode morto de uma forma injusta, mas... ele se recusou..."  
+ },
+ {
+  "type": "termina",
+  "name": "Moonscorched",
+  "desc": "Roblox"  
  }
 ]
