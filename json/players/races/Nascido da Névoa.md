@@ -10,7 +10,7 @@ No mundo de Termina, Mist Borns (Nascidos da Névoa) são criaturas que tiveram 
 **Velocidade:** Sua movimentação padrão é de 30 Feet.<br>
 **Linguagens:** Você fala comum e consegue instintivamente entender um pouco de *Kode*. <br>
 **Afinidade com o Horror:** Você tem vantagem em qualquer teste relacionado ao atributo de Horror. <br>
-**Vínculo:** Enquanto sua casca da névoa estiver em campo, você não poderá utilizar habilidades de classe que curem você (ou aliados) ou explícitamente em seu uso cause algum dano a uma criatura.
+**Vínculo:** Enquanto sua casca da névoa estiver em campo, você não pode ser curado ou curar um aliado, de uma forma não provinda da sua casca.
 
 ## Como Nascido da Névoa você ganha os seguintes benefícios:
 
