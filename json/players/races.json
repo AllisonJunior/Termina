@@ -278,13 +278,22 @@
  },
  {
   "type": "termina",
-  "name": "Moonscorched",
-  "desc": "Roblox"  
+  "name": "Marcado pelo Luar",
+  "desc": "Criatura marcada pela lua do horror..."  
  },
  {
   "type": "termina",
-  "name": "Vindo de Outro Mundo",
-  "desc": "Roblox"  
+  "name": "Convidado",
+  "desc": "Ser humano original... convidado para esse mundo."  
+ },
+ {
+  "type": "termina",
+  "name": "Experimento",
+  "desc": "Criatura ou melhor, experimento sobrevivente do incidente de ***********."  
+ },
+ {
+  "type": "termina",
+  "name": "Bendito",
+  "desc": "Criatura que sofreu algo... ao se encontrar com uma TC (Criatura de Termina)."  
  }
- 
 ]
