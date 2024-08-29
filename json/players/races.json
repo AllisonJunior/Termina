@@ -295,5 +295,10 @@
   "type": "termina",
   "name": "Bendito",
   "desc": "Criatura que sofreu algo... ao se encontrar com uma TC (Criatura de Termina)."  
+ },
+ {
+  "type": "termina",
+  "name": "Antigo",
+  "desc": "..."  
  }
 ]
