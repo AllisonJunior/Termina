@@ -1,0 +1,42 @@
+[
+ { 
+  "name": "Privilégio Assustador",
+  "desc": "Você se torna mais forte sobre determinadas condições."    
+ },
+ { 
+  "name": "Análise Crítica",
+  "desc": "Você ganha a habilidade de rapidamente descubrir algo sobre uma criatura."    
+ },
+ { 
+  "name": "Ataque Adicional",
+  "desc": "Você ganha a oportunidade de realizar um ataque adicional."    
+ },
+ { 
+  "name": "Charme Contagiante",
+  "desc": "Sua mera presença se torna atordoante para algumas criaturas."    
+ },
+ { 
+  "name": "Ágil",
+  "desc": "Sua velocidade é incomparável, seus reflexos são tão rápidos que com só sua velocidade você é capaz de cruzar o campo de batalha inteiro."    
+ },
+ { 
+  "name": "Escudo Armado",
+  "desc": "Qualquer um que não considere seu escudo uma arma carece de imaginação e flexibilidade."    
+ },
+ { 
+  "name": "Bloqueador",
+  "desc": "Seu orgulho não permite ver um aliado se ferir."    
+ },
+ { 
+  "name": "Por um Fio",
+  "desc": "Você pode sobreviver a um ataque fatal, quase que de uma forma milagrosa."    
+ },
+ { 
+  "name": "Traços de Blon",
+  "desc": "Seus ataques desarmados agora possuem uma nova propriedade."    
+ },
+ { 
+  "name": "Traços de Schiff",
+  "desc": "Sua percepção de mundo foi alterada, de certa forma positivamente..."    
+ }
+]

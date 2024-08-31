@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Termina: Classes - Artífice</title>
+    <link rel = "stylesheet" href = "../../../styles/main.css">
+    <link rel = "stylesheet" href = "../../../styles/classesDetails.css">
+</head>
+
+<body>
+      <!-- Barra de navegação: Descrição do site -->
+      <nav class = "bar_section">
+            <h1 class = "page_title">Artífice.&nbsp;</h1> 
+            <p class = "page_descr">Descrição detalhada da classe, junto a sua tabela e outras informações.</p>
+      </nav>
+
+      <!-- Barra de navegação: Seções do site -->
+      <nav class = "bar_page">
+            
+        <!-- Divisão: Botões -->
+        <div class = "div_return">
+              <a href = "../../../../index.html">Menu Principal</a>
+        </div>
+
+        <div class = "div_buttons">
+
+              <div class = "div_option">
+
+                    <a href = "" class = "selected_option" >Jogadores</a>
+                    <ul class = "sub">
+                         <li><a class = "selected_sub_option" href = "../classes.html" >Classes</a></li>
+                         <li><a href = "../races.html" >Raças</a></li>
+                         <li><a href = "../background.html" >Histórias</a></li>
+                         <li><a href = "../feats.html" >Habilidades</a></li>
+                         <li><a href = "../items.html" >Itens</a></li>
+                         <li><a href = "../spells.html" >Mágias</a></li>
+                    </ul>
+
+              </div>
+              
+              <div class = "div_option">
+
+                    <a href = "">Regras</a>
+                    <ul class = "sub">
+                         <li><a href = "" >Gerais</a></li>
+                         <li><a href = "" >Atributos</a></li>
+                         <li><a href = "" >Criação de Personagem</a></li>
+                    </ul>
+              
+              </div>
+              
+              <div class = "div_option">
+
+                    <a href = "">Ferramentas</a>
+                    <ul class = "sub">
+                         <li><a href = "" >Bestiário</a></li>
+                    </ul>
+              
+              </div>
+
+        </div>      
+
+      </nav>
+
+      <!-- MODAL WINDOW: DESCRIÇÃO DETALHADA DAS RAÇAS -->
+      <div id="myModal" class="modal">
+            <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p id="modalContent"></p>
+            </div>
+      </div>
+
+      <div class ="content">
+
+            <div class="description">
+                  <p class="topic">Descrição da classe</p>
+
+                  <p class="boldAndItalic">Mestres da invenção, os artífices usam engenhosidade e magia para desbloquear capacidades extraordinárias em objetos. Eles veem a magia como um sistema complexo esperando para ser decodificado e então aproveitado em seus feitiços e invenções. Você pode encontrar tudo o que precisa para jogar com um desses inventores nas suas sessões.</p>
+                  <p class="boldAndItalic">Artífices usam uma variedade de ferramentas para canalizar seu poder arcano. Para lançar uma magia, um artífice pode usar suprimentos de alquimista para criar um elixir potente, suprimentos de calígrafo para inscrever um sigilo de poder ou ferramentas de funileiro para criar um amuleto temporário. A magia dos artífices está ligada às suas ferramentas e talentos, e poucos outros personagens podem produzir a ferramenta certa para um trabalho tão bem quanto um artífice.</p>
+                  <p class="italic">Para fazer multiclasse com essa classe você deve ter ao menos 13 pontos no atributo de Inteligência ou mais.</p>
+      
+                  <div class ="table">
+
+                        <table>
+      
+                               <thead>
+                                      <tr>
+
+                                          <th>Nível</th>
+                                          <th>Bônus de Proficiência</th>
+                                          <th>Características</th>
+                                          <th>Infusões Conhecidas</th>
+                                          <th>Itens Infundidos</th>
+                                          <th>Truques Conhecidos</th>
+                                          <th>1º Nível</th>
+                                          <th>2º Nível</th>
+                                          <th>3º Nível</th>
+                                          <th>4º Nível</th>
+                                          <th>5º Nível</th>
+
+                                      </tr>
+
+                               </thead>
+      
+                               <tbody>
+
+                                      <tr>
+                                           <td>1</td>
+                                           <td>+2</td>
+                                           <td>Funilaria Mágica, Feitiçaria</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                           <td>2</td>
+                                           <td>2</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                      </tr>
+                                      
+                                      <tr>
+                                           <td>2</td>
+                                           <td>+2</td>
+                                           <td>Infundir Item</td>
+                                           <td>4</td>
+                                           <td>2</td>
+                                           <td>2</td>
+                                           <td>2</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                      </tr>
+                                      
+                                      <tr>
+                                           <td>3</td>
+                                           <td>+2</td>
+                                           <td>Sub-Classe</td>
+                                           <td>4</td>
+                                           <td>2</td>
+                                           <td>2</td>
+                                           <td>3</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                      </tr>
+                                       
+                                      <tr>
+                                           <td>4</td>
+                                           <td>+2</td>
+                                           <td>Melhoria de Habilidade</td>
+                                           <td>4</td>
+                                           <td>2</td>
+                                           <td>2</td>
+                                           <td>3</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                      </tr>
+                                       
+                                      <tr>
+                                           <td>5</td>
+                                           <td>+3</td>
+                                           <td>Característica da Sub-Classe</td>
+                                           <td>4</td>
+                                           <td>2</td>
+                                           <td>2</td>
+                                           <td>4</td>
+                                           <td>2</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                      </tr>
+                                      
+                                      <tr>
+                                           <td>6</td>
+                                           <td>+3</td>
+                                           <td>Experiência com Ferramentas</td>
+                                           <td>6</td>
+                                           <td>3</td>
+                                           <td>2</td>
+                                           <td>4</td>
+                                           <td>2</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                      </tr>
+                                      
+                                      <tr>
+                                           <td>7</td>
+                                           <td>+3</td>
+                                           <td>Pensar de um Gênio</td>
+                                           <td>6</td>
+                                           <td>3</td>
+                                           <td>2</td>
+                                           <td>4</td>
+                                           <td>3</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                      </tr>
+                                      
+                                      <tr>
+                                           <td>8</td>
+                                           <td>+3</td>
+                                           <td>Melhoria de Habilidade</td>
+                                           <td>6</td>
+                                           <td>3</td>
+                                           <td>2</td>
+                                           <td>4</td>
+                                           <td>3</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                      </tr>
+                                      
+                                      <tr>
+                                           <td>9</td>
+                                           <td>+4</td>
+                                           <td>Característica da Sub-Classe</td>
+                                           <td>6</td>
+                                           <td>3</td>
+                                           <td>2</td>
+                                           <td>4</td>
+                                           <td>3</td>
+                                           <td>2</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                      </tr>
+                                      
+                                      <tr>
+                                           <td>10</td>
+                                           <td>+4</td>
+                                           <td>Adepto de Itens Mágicos</td>
+                                           <td>8</td>
+                                           <td>4</td>
+                                           <td>3</td>
+                                           <td>4</td>
+                                           <td>3</td>
+                                           <td>2</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                      </tr>
+                                      
+                                      <tr>
+                                           <td>11</td>
+                                           <td>+4</td>
+                                           <td>Item Armazenador de Feitiços</td>
+                                           <td>8</td>
+                                           <td>4</td>
+                                           <td>3</td>
+                                           <td>4</td>
+                                           <td>3</td>
+                                           <td>3</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                      </tr>
+                                      
+                                      <tr>
+                                           <td>12</td>
+                                           <td>+4</td>
+                                           <td>Melhoria de Habilidade</td>
+                                           <td>8</td>
+                                           <td>4</td>
+                                           <td>3</td>
+                                           <td>4</td>
+                                           <td>3</td>
+                                           <td>3</td>
+                                           <td>-</td>
+                                           <td>-</td>
+                                      </tr>
+                                      
+                                      <tr>
+                                           <td>13</td>
+                                           <td>+5</td>
+                                           <td>-</td>
+                                           <td>8</td>
+                                           <td>4</td>
+                                           <td>3</td>
+                                           <td>4</td>
+                                           <td>3</td>
+                                           <td>3</td>
+                                           <td>1</td>
+                                           <td>-</td>
+                                      </tr>
+                                      
+                                      <tr>
+                                           <td>14</td>
+                                           <td>+5</td>
+                                           <td>Sábio dos Items Mágicos</td>
+                                           <td>10</td>
+                                           <td>5</td>
+                                           <td>4</td>
+                                           <td>4</td>
+                                           <td>3</td>
+                                           <td>3</td>
+                                           <td>1</td>
+                                           <td>-</td>
+                                      </tr>
+                                        
+                                      <tr>
+                                           <td>15</td>
+                                           <td>+5</td>
+                                           <td>Característica da Sub-Classe</td>
+                                           <td>10</td>
+                                           <td>5</td>
+                                           <td>4</td>
+                                           <td>4</td>
+                                           <td>3</td>
+                                           <td>3</td>
+                                           <td>2</td>
+                                           <td>-</td>
+                                      </tr>
+                                          
+                                      <tr>
+                                           <td>16</td>
+                                           <td>+5</td>
+                                           <td>Melhoria de Habilidade</td>
+                                           <td>10</td>
+                                           <td>5</td>
+                                           <td>4</td>
+                                           <td>4</td>
+                                           <td>3</td>
+                                           <td>3</td>
+                                           <td>2</td>
+                                           <td>-</td>
+                                      </tr>
+                                          
+                                      <tr>
+                                           <td>17</td>
+                                           <td>+6</td>
+                                           <td>-</td>
+                                           <td>10</td>
+                                           <td>5</td>
+                                           <td>4</td>
+                                           <td>4</td>
+                                           <td>3</td>
+                                           <td>3</td>
+                                           <td>3</td>
+                                           <td>1</td>
+                                      </tr>
+                                          
+                                      <tr>
+                                           <td>18</td>
+                                           <td>+6</td>
+                                           <td>Mestre dos Items Mágicos</td>
+                                           <td>12</td>
+                                           <td>6</td>
+                                           <td>4</td>
+                                           <td>4</td>
+                                           <td>3</td>
+                                           <td>3</td>
+                                           <td>3</td>
+                                           <td>1</td>
+                                      </tr>
+                                        
+                                      <tr>
+                                           <td>19</td>
+                                           <td>+6</td>
+                                           <td>Melhoria de Habilidade</td>
+                                           <td>12</td>
+                                           <td>6</td>
+                                           <td>4</td>
+                                           <td>4</td>
+                                           <td>3</td>
+                                           <td>3</td>
+                                           <td>3</td>
+                                           <td>2</td>
+                                      </tr>
+                                      
+                                      <tr>
+                                           <td>20</td>
+                                           <td>+6</td>
+                                           <td>Alma de Artífice</td>
+                                           <td>12</td>
+                                           <td>6</td>
+                                           <td>4</td>
+                                           <td>4</td>
+                                           <td>4</td>
+                                           <td>3</td>
+                                           <td>3</td>
+                                           <td>3</td>
+                                      </tr>
+                                      
+                               </tbody>
+                               
+                        </table>
+                  
+                  </div>
+                  
+            </div>
+
+            <div class="features">
+     
+                 <p class="topic">Características da Classe</p>    
+
+                 <p>Como Artífice você ganha os seguintes benefícios:</p>
+                 <br>
+
+                 <p class="sub_title">Pontos de Vida</p>
+                 <p><strong>Dado de Vida:</strong> 1d8</p> 
+                 <p><strong>Vida:</strong> 8 + seu Modificador de Constituição</p>
+                 <br>
+
+                 <p class="sub_title">Proficiências</p>
+                 <p><strong>Armadura:</strong> Armadura Leve, Armadura Média e Escudos</p>  
+                 <p><strong>Armas:</strong> Armas Simples e Armas de Fogo</p>  
+                 <p><strong>Ferramentas:</strong> Ferramentas de Ladrão, Ferramentas de Funileiro e um tipo de Ferramenta de Artesão da sua escolha.</p>  
+                 <p><strong>Salvaguardas:</strong> Constituição e Inteligência</p>  
+                 <p><strong>Habilidades:</strong> Escolha dois entre Arcana, História, Investigação, Medicina, Natureza, Percepção, Prestidigitação</p>  
+                 <br>
+
+                 <p class="sub_title">Equipamento</p>
+                 <p>Você começa com os seguintes equipamentos, além dos equipamentos concedidos pelo seu histórico:</p>
+                 <ul>
+                     <li>Quaisquer duas armas simples;</li> 
+                     <li>Uma Besta Leve e 20 Virotes ou Um Revolver;</li> 
+                     <li>Armadura de Couro Batido ou Armadura de Cota de Escamas;</li> 
+                     <li>Ferramentas de Ladrão e um Pacote de Explorador de Masmorras.</li> 
+                 </ul>
+                 <br>
+
+                 <p class="topic">Habilidades da Classe</p>
+                 <br>
+
+                 <p class = "sub_title">[Nível 1] Funilaria Mágica</p>   
+                 <p>No 1º nível, você aprendeu como aplicar uma faísca de magia em objetos mundanos. Para usar esta habilidade, você deve ter Ferramentas de Ladrão ou de artesão em mãos. Você então toca um objeto não mágico Minúsculo como uma ação e atribui a ele uma das seguintes propriedades mágicas de sua escolha:</p>             
+                 <ul>
+                      <li>O objeto emite luz brilhante em um raio de 5 feet e uma luz fraca por 5 feets adicionais;</li>
+                      <li>Sempre que tocado por uma criatura, o objeto emite uma mensagem gravada que pode ser ouvida a até 10 feet de distância. Você emite a mensagem ao conceder essa propriedade ao objeto, e a gravação não pode durar mais do que 6 segundos;</li>
+                      <li>O objeto emite continuamente um odor ou som não-verbal de sua escolha (vento, ondas, chilrear ou algo semelhante). O fenômeno escolhido é perceptível a até 10 feet de distância;</li>
+                      <li>Um efeito visual estático aparece em uma das superfícies do objeto. Este efeito pode ser uma imagem, até 25 palavras de texto, linhas e formas, ou uma mistura desses elementos, conforme desejar.</li>
+                    </ul> 
+                    <br>
+                    <p>A propriedade escolhida tem duração indeterminada. Como uma ação, você pode tocar o objeto e encerrar a propriedade mais cedo.</p>
+                    <br>
+                    <p>Você pode conceder magia a vários objetos, tocando um objeto cada vez que usar esse recurso, embora um único objeto possa conter apenas uma propriedade por vez. O número máximo de objetos que você pode afetar com este recurso ao mesmo tempo é igual ao seu Modificador de Inteligência (mínimo de um objeto). Se você tentar exceder o máximo, a propriedade mais antiga será encerrada imediatamente e a nova propriedade será aplicada.</p>
+                    <br>
+                    <br>
+
+                 <p class = "sub_title">[Nível 1] Feitiçaria</p> 
+                 <p>Você estudou o funcionamento da magia e como lançar feitiços, canalizando a magia através de objetos. Para os observadores, você não parece estar lançando feitiços de maneira convencional; você parece produzir maravilhas a partir de itens mundanos e invenções bizarras.</p>
+                 <br>
+
+                 <p class ="sub_title">Feitiçaria: Ferramentas Necessárias</p>
+                 <p>Você produz os efeitos da magia do seu artífice através de suas ferramentas. Você deve ter um foco de lançamento de feitiços especificamente as Ferramentas de Ladrão ou de alguma forma Ferramentas de Artesão.</p>
+                 <br>
+
+                 <p class ="sub_title">Feitiçaria: Truques</p>
+                 <p>No 1º nível, você conhece dois truques à sua escolha da lista de <a href="../spells.html?classes=Artificer&level=0">Truques de Artífice</a>. Em níveis mais altos, você aprende truques adicionais de artífice à sua escolha, conforme mostrado na coluna Truques Conhecidos da tabela Artífice.</p>
+                 <br>
+                 <p>Quando você ganha um nível nesta classe, você pode substituir um dos truques do artífice que você conhece por outro truque da lista de <a href="../spells.html?classes=Artificer&level=0">Truques de Artífice.</a></p>
+                 <br>
+
+                 <p class ="sub_title">Feitiçaria: Preparando e Lançando Feitiços</p>
+                 <p>A tabela do Artífice mostra quantos espaços de magia você tem para lançar suas magias de artífice. Para conjurar uma de suas magias de artífice de 1º nível ou superior, você deve gastar um espaço do nível da magia ou superior. Os seus espaços de magia gastos são recuperados ao terminar um descanso longo.</p>
+                 <br>
+
+                 <p class ="sub_title">Feitiçaria: Habilidade de Feitiçaria</p>
+                 <p>Inteligência é sua habilidade de lançar feitiços para seus feitiços de artífice; sua compreensão da teoria por trás da magia permite que você use esses feitiços com habilidade superior. Você usa sua Inteligência sempre que uma magia de artífice se referir à sua habilidade de lançar magias. Além disso, você usa seu modificador de Inteligência ao definir a CD do teste de resistência para uma magia de artífice que você conjura e ao fazer uma jogada de ataque com uma.</p>
+                 <br>
+                 <p><strong>Salvaguarda de Feitiço:</strong> 8 + seu Bônus de Proficiência + seu Modificador de Inteligência</p>
+                 <p><strong>Modificador de Ataque de Feitiço:</strong> seu Bônus de Proficiência + seu Modificador de Inteligência</p>
+                 <br>
+                 
+                 <p class ="sub_title">Feitiçaria: Rituais</p>
+                 <p>Você pode lançar uma magia de artífice como um ritual se essa magia tiver a etiqueta ritual e você tiver a magia preparada.</p>
+                 <br>
+                 <br>
+                 
+                 <p class ="sub_title">[Nível 2] Infundir Item</p>
+                 <p>No 2º nível, você ganhou a habilidade de imbuir itens mundanos com certas infusões mágicas, transformando esses objetos em itens mágicos.</p>
+                 <br>
+
+                 <p class ="sub_title">Infundir Item: Infusões Conhecidas</p>
+                 <p>Ao ganhar esse recurso, escolha quatro <a href="#" class="linker" nameOfFile="test" nameOfClass="artificer">Infusões de Artificer</a> para aprender. Você aprende infusões adicionais à sua escolha quando atinge determinados níveis nesta classe, conforme mostrado na coluna Infusões Conhecidas da tabela Artífice.</p>
+                 <br>
+
+                 <p class ="sub_title">Infundir Item: Infundindo um Item</p>
+                 <p>Sempre que terminar um descanso longo, você pode tocar um objeto não mágico e imbuí-lo com uma de suas <a href="#" class="linker" nameOfFile="test" nameOfClass="artificer">Infusões de Artificer</a>   , transformando-o em um item mágico. Uma infusão funciona apenas em certos tipos de objetos, conforme especificado na descrição da infusão. Se o item exigir sintonização, você poderá sintonizar-se com ele no instante em que infundir o item. Se você decidir sintonizar o item mais tarde, deverá fazê-lo usando o processo normal de sintonização.</p>
+                 <br>
+                 <p>Sua infusão permanece em um item indefinidamente, mas quando você morre, a infusão desaparece após um número de dias igual ao seu Modificador de Inteligência (mínimo de 1 dia). A infusão também desaparece se você substituir seu conhecimento sobre a infusão.</p>
+                 <br>
+                 <p>Você pode infundir mais de um objeto não mágico ao final de um descanso longo; o número máximo de objetos aparece na coluna Itens Infundidos da tabela Artífice. Você deve tocar em cada um dos objetos, e cada uma de suas infusões só pode estar em um objeto por vez. Além disso, nenhum objeto pode suportar mais do que uma de suas infusões por vez. Se você tentar exceder o número máximo de infusões, a infusão mais antiga termina e então a nova infusão é aplicada.</p>
+                 <br>
+                 <p>Se uma infusão terminar em um item que contém outras coisas, como um saco de armazenamento, seu conteúdo aparecerá inofensivamente dentro e ao redor de seu espaço.</p>
+                 <br>
+                 <br>
+
+                 <p class ="sub_title">[Nível 3] Sub-Classe</p>
+                 <p>No 3º nível você escolhe um tipo de especialização como Artífice. Sua escolha concede características no 5º nível e novamente no 9º e 15º níveis.</p>
+                 <br>
+                 <div class ="sub_table">
+                 <table class>
+                        <thead>
+                              <tr>
+                                   <th>Especialização</th>
+                                   <th>Descrição</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                               <tr>
+                                    <td><a href="#" class="linker" nameOfFile="test" nameOfClass="artificer">Alquimista</a></td>
+                                    <td>Um Alquimista é especialista em combinar reagentes para produzir efeitos místicos. Os alquimistas usam suas criações para dar vida e sugá-la. A alquimia é a mais antiga das tradições dos artesãos e sua versatilidade tem sido valorizada há muito tempo em tempos de guerra e paz.</td>
+                               </tr>     
+                               <tr>
+                                    <td><a href="#" class="linker" nameOfFile="test" nameOfClass="artificer">Armadurado</a></td>
+                                    <td>Um artífice especializado como Armeiro modifica a armadura para funcionar quase como uma segunda pele. A armadura é aprimorada para aprimorar a magia do artífice, desencadear ataques potentes e gerar uma defesa formidável. O artífice se une a esta armadura, tornando-se um com ela enquanto faz experiências com ela e refina suas capacidades mágicas.</td>
+                               </tr>                                
+                               <tr>
+                                    <td><a href="#" class="linker" nameOfFile="test" nameOfClass="artificer">Artilheiro</a></td>
+                                    <td>Um Artilheiro é especialista em usar magia para lançar energia, projéteis e explosões em um campo de batalha. Este poder destrutivo é valorizado pelos exércitos nas guerras em muitos mundos diferentes. E quando a guerra passa, alguns membros desta especialização procuram construir um mundo mais pacífico, usando os seus poderes para combater o ressurgimento dos conflitos. O artífice gnomo Vi, que percorre todo o mundo, tem sido especialmente sincero sobre como consertar as coisas: "Já era hora de consertarmos as coisas em vez de mandá-las todas para o inferno."</td>
+                               </tr>                     
+                               <tr>
+                                    <td><a href="#" class="linker" nameOfFile="test" nameOfClass="artificer">Ferreiro de Batalha</a></td>
+                                    <td>Os exércitos necessitam de protecção e alguém tem de recompor as coisas se as defesas falharem. Uma combinação de protetor e médico, um Battle Smith é um especialista em defender os outros e reparar material e pessoal. Para ajudar em seu trabalho, os Battle Smiths são acompanhados por um defensor de aço, um companheiro protetor de sua própria criação. Muitos soldados contam histórias de quase morrerem antes de serem salvos por um Battle Smith e um defensor de aço.</td>
+                               </tr>                        
+                        </tbody>
+                 </table>
+                 </div>
+                 <br>
+                 <br>
+
+                 <p class ="sub_title">[Nível 4] Melhoria de Habilidade</p>
+                 <p>Quando você atinge o 4º nível, 8º, 12º, 16º e 19º nível, você pode aumentar um valor de atributo de sua escolha em 2, pode aumentar dois valores de atributo de sua escolha em 1 ou escolher uma habilidade da <a href ="../feats.html">Lista de Habilidades</a>. Você não pode aumentar o valor de um atributo para acima de 20 usando este recurso.</p>
+                 <br>
+                 <br>
+
+                 <p class ="sub_title">[Nível 6] Experiência com Ferramentas</p>
+                 <p>No 6º nível, seu Bônus de Proficiência agora é duplicado para qualquer teste de habilidade que você faça que utilize sua Proficiência com uma ferramenta.</p>
+                 <br>
+                 <br>
+
+                 <p class ="sub_title">[Nível 7] Pensar de um Gênio</p>
+                 <p>No 7º nível, você ganhou a habilidade de encontrar soluções sob pressão. Quando você ou outra criatura que você possa ver a até 30 feet de você faz um Teste de Habilidade ou Teste de Resistência, você pode usar sua reação para adicionar seu Modificador de Inteligência à jogada.</p>
+                 <br>                 
+                 <br>                 
+                 
+                 <p class ="sub_title">[Nível 10] Adepto de Itens Mágicos</p>
+                 <p>Ao atingir o 10º nível, você alcança uma compreensão profunda de como usar e fazer itens mágicos:</p>
+                 <ul>
+                     <li>Você pode sintonizar até quatro itens mágicos de uma vez.</li>
+                     <li>Se você criar um item mágico com raridade comum ou incomum, levará um quarto do tempo normal.</li>
+                 </ul>
+                 <br>
+                 <br>
+               
+                 <p class ="sub_title">[Nível 11] Item Armazenador de Feitiços</p>
+                 <p>No 11º nível, você agora pode armazenar uma magia em um objeto. Sempre que terminar um descanso longo, você pode tocar uma arma simples ou marcial ou um item que possa usar como foco de lançamento de magias e armazenar uma magia nele, escolhendo uma magia de 1º ou 2º nível da lista de <a href="../spells.html?schools=&classes=Artificer&level=1">Magias do Artífice</a> que requer 1 ação para ser lançada (você não precisa prepará-la).</p>
+                 <br> 
+                 <p>Enquanto segura o objeto, uma criatura pode realizar uma ação para produzir o efeito da magia a partir dele, usando seu Modificador de Habilidade de Conjuração. Se a magia exigir concentração, a criatura deverá se concentrar. A magia permanece no objeto até que seja usada um número de vezes igual ao dobro do seu Modificador de Inteligência (mínimo de duas vezes) ou até que você use esta característica novamente para armazenar uma magia em um objeto.</p>
+                 <br> 
+                 <br> 
+
+                 <p class ="sub_title">[Nível 14] Sábio dos Items Mágicos</p>
+                 <p>No 14º nível, sua habilidade com itens mágicos se aprofunda ainda mais:</p>
+                 <ul>
+                     <li>Você pode sintonizar até cinco itens mágicos de uma vez.</li>
+                     <li>Você ignora todos os requisitos de classe, raça, magia e nível para sintonizar ou usar um item mágico.</li>
+                 </ul>
+                 <br> 
+                 <br> 
+
+                 <p class ="sub_title">[Nível 18] Mestre dos Items Mágicos</p>
+                 <p>A partir do 18º nível, você pode sintonizar até seis itens mágicos de uma vez.</p>
+                 <br>
+                 <br>
+
+                 <p class ="sub_title">[Nível 20] Alma de Artífice</p>
+                 <p>No 20º nível, você desenvolve uma conexão mística com seus itens mágicos, que você pode utilizar para proteção:</p>
+                 <ul>
+                     <li>Você ganha um bônus de +1 em todos os testes de resistência por item mágico com o qual você está atualmente sintonizado.</li>
+                     <li>Se você for reduzido a 0 pontos de vida, mas não for morto imediatamente, você pode usar sua reação para encerrar uma de suas infusões de artífice, fazendo com que você caia para 1 ponto de vida em vez de 0.</li>
+                 </ul>
+                 <br>
+
+               </div>
+
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+      <script src="../../../scripts/generic_modal.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+[   
+ {
+  "type": "termina",
+  "name": "Carniçal",
+  "desc": "Humano que sofreu uma mutação por ter sido atacado por uma TC, que lhe causou... mudanças... e... muita fome..."
+ },
+ {
+  "type": "termina",
+  "name": "Boneca de Carne",
+  "desc": "Criatura do sexo feminino que foi atacada por uma TC fazendo com que seu corpo mudasse."
+ },
+ {
+  "type": "termina",
+  "name": "Nascido da Névoa",
+  "desc": "Criatura que nasceu na ZM... e recebeu... um espelho de si própria."  
+ }, 
+ {
+  "type": "termina",
+  "name": "Receptáculo",
+  "desc": "Criatura que perdeu tudo, e agora só o que lhe resta é causador de sua desgraça."  
+ },
+ {
+  "type": "termina",
+  "name": "Maldição",
+  "desc": "Criatura que por algum motivo foi amaldiçoado por um dos 4 Deuses."  
+ },
+ {
+  "type": "termina",
+  "name": "Agraciado",
+  "desc": "Criatura que recebeu diretamente dos Deuses um termo, 'agraciado aquele que forá abençoado'."  
+ },
+ {
+  "type": "termina",
+  "name": "Injustiçado",
+  "desc": "[Exclusiva do Bigode] Bigode morto de uma forma injusta, mas... ele se recusou..."  
+ },
+ {
+  "type": "termina",
+  "name": "Marcado pelo Luar",
+  "desc": "Criatura marcada pela lua do horror..."  
+ },
+ {
+  "type": "termina",
+  "name": "Convidado",
+  "desc": "Ser humano original... convidado para esse mundo."  
+ }
+] 
