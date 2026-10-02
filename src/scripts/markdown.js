@@ -17,7 +17,7 @@ export async function loadMarkdown(fileUrl) {
     }
 
     const tooltipMarkdown = await renderTooltips(markdown);
-    return renderMarkdownFunctions(tooltipMarkdown);
+    return renderMarkdownFunctions(tooltipMarkdown, fileUrl);
 }
 
 export function clearMarkdownCache() {

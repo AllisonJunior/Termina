@@ -232,9 +232,31 @@ function applyAlignments(renderedMarkdown, alignments) {
     return renderedMarkdown;
 }
 
-export function renderMarkdownFunctions(markdown) {
+function resolveImageSources(renderedMarkdown, baseUrl) {
+    if (!baseUrl || typeof document === "undefined") {
+        return renderedMarkdown;
+    }
+
+    const container = document.createElement("div");
+    container.innerHTML = renderedMarkdown;
+
+    container.querySelectorAll("img[src]").forEach((image) => {
+        const source = image.getAttribute("src");
+
+        if (!source) {
+            return;
+        }
+
+        image.setAttribute("src", new URL(source, baseUrl).href);
+    });
+
+    return container.innerHTML;
+}
+
+export function renderMarkdownFunctions(markdown, baseUrl) {
     const alignedMarkdown = renderAlignedText(renderMacroFunctions(markdown));
     const renderedMarkdown = marked.parse(alignedMarkdown.markdown);
 
-    return applyAlignments(renderedMarkdown, alignedMarkdown.alignments);
+    const alignedOutput = applyAlignments(renderedMarkdown, alignedMarkdown.alignments);
+    return resolveImageSources(alignedOutput, baseUrl);
 }
