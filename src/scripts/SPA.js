@@ -46,7 +46,7 @@ export function initializeSPA(navBar) {
     // Carrega uma página como principal
     // durante dev, mudar para pasta em que está trabalhando
     // ao lançar, mudar para home
-    renderPage("lore");
+    renderPage("home");
 }
 
 async function renderPage(page) {
