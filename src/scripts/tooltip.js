@@ -18,7 +18,7 @@ function escapeHtml(text) {
 }
 
 async function fetchJson(fileUrl) {
-    const response = await fetch(fileUrl);
+    const response = await fetch(fileUrl, { cache: "no-store" });
 
     if (!response.ok) {
         throw new Error(`HTTP ${response.status} ao carregar ${fileUrl}`);
