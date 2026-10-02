@@ -3,6 +3,7 @@ const pages = {
     home: new URL("../pages/home.html", import.meta.url),
     lore: new URL("../pages/lore.html", import.meta.url),
     system: new URL("../pages/system.html", import.meta.url),
+    characters: new URL("../pages/characters.html", import.meta.url),
 };
 
 const pageModules = {
@@ -61,6 +62,7 @@ async function renderPage(page) {
     activePageModule?.cleanup?.();
     activePageModule = null;
 
+    appContent.classList.remove("is-visible");
     appContent.innerHTML = `
         <section class="page">
             <p>Carregando...</p>
@@ -87,6 +89,7 @@ async function renderPage(page) {
         }
 
         appContent.innerHTML = html;
+        requestAnimationFrame(() => appContent.classList.add("is-visible"));
 
         const loadModule = pageModules[page];
 
@@ -115,5 +118,6 @@ async function renderPage(page) {
                 <p>Não foi possível carregar o conteúdo solicitado.</p>
             </section>
         `;
+        requestAnimationFrame(() => appContent.classList.add("is-visible"));
     }
 }

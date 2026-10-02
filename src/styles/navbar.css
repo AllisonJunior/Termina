@@ -64,6 +64,12 @@
     background: transparent;
 }
 
+.navBar .system_sections .system_sections_separator {
+    width: 1px;
+    height: 24px;
+    background-color: #55585c;
+}
+
 /* Botões */
 .navBar .system_sections button {
     appearance: none;

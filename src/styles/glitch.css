@@ -3,6 +3,28 @@
     animation: glitch-flicker 1.8s steps(1, end) infinite;
 }
 
+.markdown-glitch[data-glitch="hide"] {
+    animation: none;
+    color: transparent;
+    -webkit-mask-image: radial-gradient(
+        circle var(--hide-radius, 0px) at var(--hide-x, 50%) var(--hide-y, 50%),
+        #000 0,
+        #000 70%,
+        transparent 100%
+    );
+    mask-image: radial-gradient(
+        circle var(--hide-radius, 0px) at var(--hide-x, 50%) var(--hide-y, 50%),
+        #000 0,
+        #000 70%,
+        transparent 100%
+    );
+    transition: -webkit-mask-image 0.08s ease-out, mask-image 0.08s ease-out;
+}
+
+.markdown-glitch[data-glitch="hide"].markdown-glitch-hide-active {
+    color: inherit;
+}
+
 @keyframes glitch-flicker {
     0%,
     100% {

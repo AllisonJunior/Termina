@@ -14,6 +14,8 @@ export function createNavBar ()
 
  <ul class = "system_sections">
       <li> <button setPage = "lore"> História </button> </li>
+      <li> <button setPage = "characters"> Personagens </button> </li>
+      <li class="system_sections_separator" aria-hidden="true"></li>
       <li> <button setPage = "system"> Sistema </button> </li>
  </ul>
  `;

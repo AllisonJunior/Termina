@@ -70,6 +70,7 @@ async function loadMarkdown(name, button, content) {
     button.setAttribute("aria-current", "page");
     activeButton = button;
 
+    content.classList.remove("is-visible");
     content.innerHTML = "<p>Carregando conteúdo...</p>";
     stopGlitches();
     stopGlitches = () => {};
@@ -83,6 +84,7 @@ async function loadMarkdown(name, button, content) {
         }
 
         content.innerHTML = renderedMarkdown;
+        requestAnimationFrame(() => content.classList.add("is-visible"));
         stopGlitches = initializeGlitches(content);
 
     } catch (error) {
@@ -96,6 +98,7 @@ async function loadMarkdown(name, button, content) {
             <h2>Não foi possível carregar o documento</h2>
             <p>Verifique se o arquivo existe e tente novamente.</p>
         `;
+        requestAnimationFrame(() => content.classList.add("is-visible"));
     }
 }
 

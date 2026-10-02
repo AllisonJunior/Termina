@@ -16,6 +16,26 @@ function applyTransform(viewer) {
     resetButton.hidden = imageScale <= minZoom;
 }
 
+function zoomAtPoint(viewer, clientX, clientY, nextScale) {
+    const viewport = viewer.querySelector(".image-viewer-viewport");
+    const bounds = viewport.getBoundingClientRect();
+    const pointX = clientX - (bounds.left + bounds.width / 2);
+    const pointY = clientY - (bounds.top + bounds.height / 2);
+    const imagePointX = (pointX - offsetX) / imageScale;
+    const imagePointY = (pointY - offsetY) / imageScale;
+
+    offsetX = pointX - imagePointX * nextScale;
+    offsetY = pointY - imagePointY * nextScale;
+    imageScale = nextScale;
+
+    if (imageScale === minZoom) {
+        offsetX = 0;
+        offsetY = 0;
+    }
+
+    applyTransform(viewer);
+}
+
 function resetTransform(viewer) {
     imageScale = minZoom;
     offsetX = 0;
@@ -79,7 +99,7 @@ function createViewer() {
         }
     });
 
-    viewer.querySelector(".image-viewer-image").addEventListener("wheel", (event) => {
+    viewer.querySelector(".image-viewer-viewport").addEventListener("wheel", (event) => {
         if (viewer.hidden) {
             return;
         }
@@ -90,13 +110,7 @@ function createViewer() {
             Math.max(minZoom, imageScale + (event.deltaY < 0 ? zoomStep : -zoomStep))
         );
 
-        if (nextScale === minZoom) {
-            offsetX = 0;
-            offsetY = 0;
-        }
-
-        imageScale = nextScale;
-        applyTransform(viewer);
+        zoomAtPoint(viewer, event.clientX, event.clientY, nextScale);
     }, { passive: false });
 
     const image = viewer.querySelector(".image-viewer-image");

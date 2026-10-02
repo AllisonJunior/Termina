@@ -4,8 +4,16 @@
 #app-content {
     width: 100%;
     min-height: calc(100vh - 80px);
-    margin-top: 80px;
+    margin-top: 70px;
     padding: 24px 30px;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.24s ease, transform 0.24s ease;
+}
+
+#app-content.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .page {
@@ -14,7 +22,15 @@
     margin: 0;
 }
 
-.page h1 {
+.page > h1,
+.page > h2,
+.page > h3 {
+    margin: 0 0 20px;
+}
+
+.characters > h1,
+.characters > h2,
+.characters > h3 {
     margin: 0 0 20px;
 }
 

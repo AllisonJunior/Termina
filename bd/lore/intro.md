@@ -1,6 +1,6 @@
 O mundo de Termina nada mais é do que o resultado de escolhas, más escolhas que resultaram na união forçada de toda a humanidade. Tal termo que antes tinha seu significado limitado a raça humana agora se estendia a algo de certa forma, incompreensível, a nossa alma. 
 
-A única sociedade conhecida existente reside dentro de um refúgio conhecido como **Zona Viva**. Esse refúgio como qualquer outro possui uma organização social e regras, a diferença é que a **Zona Viva** é dividida em seis distritos únicos. Distritos esses que possuem regras e culturas distintas uns dos outros, junto as "entidades" conhecidas como **Damas**, que comandam completamente o Distrito.
+A única sociedade conhecida existente reside dentro de um refúgio conhecido como **Zona Viva**. Esse refúgio como qualquer outro possui uma organização social e regras, a diferença é que a **Zona Viva** é dividida em sete distritos únicos. Distritos esses que possuem regras e culturas distintas uns dos outros, junto as "entidades" conhecidas como **Damas**, que comandam completamente o Distrito.
 
 A primeira e única organização que está presente em todos esses distritos... é conhecida como **Vanguarda**. Uma organização não governamental responsável por administrar os **Operadores**, trabalhadores que atendem diversos tipos de **Requisições** para pagar os seus impostos.
 

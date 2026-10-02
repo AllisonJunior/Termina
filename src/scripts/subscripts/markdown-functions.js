@@ -11,7 +11,8 @@ const alignmentMacros = {
     "!JUSTIFY": "justify"
 };
 const glitchModes = {
-    DISTORTED: "distorted"
+    DISTORTED: "distorted",
+    HIDE: "hide"
 };
 const sizeAliases = {
     DEFAULT: "inherit"
