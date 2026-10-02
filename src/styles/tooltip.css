@@ -1,0 +1,36 @@
+.markdown-tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    border-bottom: 1px dotted currentColor;
+}
+
+.markdown-tooltip-content {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    z-index: 10;
+    width: max-content;
+    max-width: min(320px, calc(100vw - 32px));
+    padding: 8px 10px;
+    border: 1px solid #3a3a3a;
+    border-radius: 4px;
+    background: #202124;
+    color: #e8eaed;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: left;
+    white-space: normal;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, 4px);
+    transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+}
+
+.markdown-tooltip:hover .markdown-tooltip-content,
+.markdown-tooltip:focus .markdown-tooltip-content,
+.markdown-tooltip:focus-within .markdown-tooltip-content {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+}

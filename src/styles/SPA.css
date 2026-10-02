@@ -1,0 +1,51 @@
+@import url("./subpages/home.css");
+@import url("./subpages/lore.css");
+
+#app-content {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    margin-top: 80px;
+    padding: 24px 30px;
+}
+
+.page {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+.page h1 {
+    margin: 0 0 20px;
+}
+
+.page p {
+    line-height: 1.6;
+}
+
+/* Página inicial */
+.home {
+    min-height: calc(100vh - 128px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 3rem;
+    margin-bottom: 12px;
+}
+
+.home_sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.home_sections button {
+    padding: 12px 20px;
+    cursor: pointer;
+}

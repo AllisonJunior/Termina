@@ -1,0 +1,35 @@
+.markdown-glitch {
+    display: inline-block;
+    animation: glitch-flicker 1.8s steps(1, end) infinite;
+}
+
+@keyframes glitch-flicker {
+    0%,
+    100% {
+        transform: translate(0);
+        text-shadow: none;
+    }
+
+    7% {
+        transform: translate(-1px, 1px);
+        text-shadow: 1px 0 #ff003c, -1px 0 #00d9ff;
+    }
+
+    9% {
+        transform: translate(1px, -1px);
+        text-shadow: -1px 0 #ff003c, 1px 0 #00d9ff;
+    }
+
+    11% {
+        transform: translate(0);
+        text-shadow: none;
+    }
+
+    54% {
+        opacity: 0.7;
+    }
+
+    56% {
+        opacity: 1;
+    }
+}
