@@ -1,16 +1,18 @@
 
 import { loadMarkdown as renderMarkdown } from "../markdown.js";
 import { initializeGlitches } from "./glitch.js";
+import { initializeImageViewer } from "./image-viewer.js";
 
 const markdownFiles = {
     lore: new URL("../../../bd/lore/intro.md", import.meta.url),
     player: new URL("../../../bd/lore/player.md", import.meta.url),
-    observations: new URL("../../../bd/lore/obs.md", import.meta.url)
+    convite: new URL("../../../bd/lore/convite.md", import.meta.url)
 };
 
 let activeButton = null;
 let requestId = 0;
 let stopGlitches = () => {};
+let stopImageViewer = () => {};
 
 export function initialize() {
     const sidebar = document.querySelector(".lore-sidebar");
@@ -20,6 +22,7 @@ export function initialize() {
         return;
     }
 
+    stopImageViewer = initializeImageViewer(content);
     const buttons = [...sidebar.querySelectorAll("[data-md]")];
     const initialButton = buttons.find((item) => item.classList.contains("active"))
         ?? buttons[0];
@@ -101,5 +104,7 @@ export function cleanup() {
     requestId++;
     stopGlitches();
     stopGlitches = () => {};
+    stopImageViewer();
+    stopImageViewer = () => {};
     activeButton = null;
 }

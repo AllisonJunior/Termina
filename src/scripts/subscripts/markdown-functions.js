@@ -18,6 +18,21 @@ const sizeAliases = {
 };
 
 const alignmentSyntax = /^align\((!(?:LEFT|CENTER|RIGHT|JUSTIFY))\)[ \t]*(?:\r?\n){1,2}/gim;
+const imageResizeSyntax = /^(?:0|\d+(?:\.\d+)?(?:px|rem|em|ex|ch|vw|vh|vmin|vmax|cm|mm|in|pt|pc|%))$/i;
+
+function escapeHtmlAttribute(value) {
+    return value.replace(/[&<>"']/g, (character) => {
+        const entities = {
+            "&": "&amp;",
+            "<": "&lt;",
+            ">": "&gt;",
+            '"': "&quot;",
+            "'": "&#39;"
+        };
+
+        return entities[character];
+    });
+}
 
 function findClosingBrace(text, openingBraceIndex) {
     let depth = 1;
@@ -47,7 +62,7 @@ function renderMacroContent(text) {
 }
 
 function renderMacroFunctions(markdown) {
-    const macroPattern = /\b(?:c|align|glitch|size)\s*\(/gi;
+    const macroPattern = /\b(?:c|align|glitch|size|img)\s*\(/gi;
     let result = "";
     let cursor = 0;
     let match;
@@ -68,6 +83,15 @@ function renderMacroFunctions(markdown) {
         }
 
         if (markdown[openingBraceIndex] !== "{") {
+            if (macroName === "img") {
+                const argument = markdown.slice(argumentStart, argumentEnd);
+
+                result += markdown.slice(cursor, match.index);
+                result += renderMacro(macroName, argument, "");
+                cursor = argumentEnd + 1;
+                macroPattern.lastIndex = cursor;
+            }
+
             continue;
         }
 
@@ -79,7 +103,9 @@ function renderMacroFunctions(markdown) {
 
         const argument = markdown.slice(argumentStart, argumentEnd);
         const content = markdown.slice(openingBraceIndex + 1, closingBraceIndex);
-        const renderedContent = renderMacroContent(content);
+        const renderedContent = macroName === "img"
+            ? content.trim()
+            : renderMacroContent(content);
 
         result += markdown.slice(cursor, match.index);
         result += renderMacro(macroName, argument, renderedContent);
@@ -126,6 +152,53 @@ function renderMacro(name, argument, content) {
         if (size) {
             return `<span style="font-size: ${size};">${content}</span>`;
         }
+    }
+
+    if (name === "img") {
+        const imageSource = argument.trim();
+
+        if (!imageSource) {
+            return `${name}(${argument}){${content}}`;
+        }
+
+        const styles = [];
+        let enableZoom = false;
+        const modifiers = content
+            .split(";")
+            .map((modifier) => modifier.trim())
+            .filter(Boolean);
+
+        for (const modifier of modifiers) {
+            const separatorIndex = modifier.indexOf(":");
+
+            if (separatorIndex === -1) {
+                return `${name}(${argument}){${content}}`;
+            }
+
+            const modifierName = modifier.slice(0, separatorIndex).trim().toLowerCase();
+            const modifierValue = modifier.slice(separatorIndex + 1).trim();
+
+            if (modifierName === "resize" && imageResizeSyntax.test(modifierValue)) {
+                styles.push(`width: ${modifierValue};`);
+                continue;
+            }
+
+            if (modifierName === "zoom" && modifierValue.toLowerCase() === "yes") {
+                enableZoom = true;
+                continue;
+            }
+
+            return `${name}(${argument}){${content}}`;
+        }
+
+        const frameStyleAttribute = styles.length > 0
+            ? ` style="${styles.join(" ")}"`
+            : "";
+        const zoomButton = enableZoom
+            ? `<button class="markdown-image-maximize" type="button" data-image-viewer aria-label="Maximizar imagem" title="Maximizar imagem">⛶</button>`
+            : "";
+
+        return `<span class="markdown-image"><span class="markdown-image-frame"${frameStyleAttribute}>${zoomButton}<img src="${escapeHtmlAttribute(imageSource)}" alt=""></span></span>`;
     }
 
     return `${name}(${argument}){${content}}`;

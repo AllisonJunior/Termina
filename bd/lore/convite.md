@@ -1,0 +1,1 @@
+img(../../res/img/Convite.png){resize: 45%; zoom: yes;}
