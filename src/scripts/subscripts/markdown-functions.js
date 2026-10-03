@@ -203,9 +203,9 @@ function renderMacro(name, argument, content) {
 
             if (
                 modifierName === "anim"
-                && modifierValue.toLowerCase() === "bugged"
+                && ["bugged", "redmist"].includes(modifierValue.toLowerCase())
             ) {
-                imageAnimation = "bugged";
+                imageAnimation = modifierValue.toLowerCase();
                 enableZoom = true;
                 continue;
             }
@@ -222,6 +222,9 @@ function renderMacro(name, argument, content) {
         const frameWidthAttribute = imageWidth && textResponse
             ? ` style="width: 100%;"`
             : frameStyleAttribute;
+        const frameAnimationClass = imageAnimation
+            ? ` markdown-image-frame-anim-${imageAnimation}`
+            : "";
         const imageClass = textResponse
             ? " markdown-image-textresponse"
             : "";
@@ -241,7 +244,7 @@ function renderMacro(name, argument, content) {
             ? `<img${imageClassAttribute} src="${escapeHtmlAttribute(imageSource)}" alt="">${[1, 2, 3, 4, 5].map((layer) => `<img class="markdown-image-glitch-layer markdown-image-glitch-layer-${layer}" src="${escapeHtmlAttribute(imageSource)}" alt="" aria-hidden="true">`).join("")}`
             : `<img${imageClassAttribute} src="${escapeHtmlAttribute(imageSource)}" alt="">`;
 
-        return `<span class="markdown-image${imageClass}"${textResponseAttribute}${wrapperStyleAttribute}><span class="markdown-image-frame"${frameWidthAttribute}>${zoomButton}${imageMarkup}</span></span>`;
+        return `<span class="markdown-image${imageClass}"${textResponseAttribute}${wrapperStyleAttribute}><span class="markdown-image-frame${frameAnimationClass}"${frameWidthAttribute}>${zoomButton}${imageMarkup}</span></span>`;
     }
 
     return `${name}(${argument}){${content}}`;

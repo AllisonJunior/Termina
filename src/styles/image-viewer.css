@@ -13,6 +13,10 @@
     line-height: 0;
 }
 
+.markdown-image-frame-anim-redmist {
+    overflow: hidden;
+}
+
 .markdown-image-textresponse {
     width: fit-content;
     max-width: 100%;
@@ -42,6 +46,71 @@
     z-index: 1;
     image-rendering: pixelated;
     transform: var(--bugged-transform, none);
+}
+
+.markdown-image-frame-anim-redmist::before,
+.markdown-image-frame-anim-redmist::after,
+.image-viewer-redmist-overlay::before,
+.image-viewer-redmist-overlay::after {
+    position: absolute;
+    inset: 0;
+    display: block;
+    pointer-events: none;
+    content: "";
+}
+
+.markdown-image-frame-anim-redmist::before,
+.image-viewer-redmist-overlay::before {
+    z-index: 2;
+    background:
+        radial-gradient(ellipse at 20% 58%, rgba(255, 35, 20, 0.82) 0 8%, transparent 42%),
+        radial-gradient(ellipse at 76% 36%, rgba(255, 92, 55, 0.7) 0 10%, transparent 46%),
+        radial-gradient(ellipse at 52% 82%, rgba(105, 0, 0, 0.9) 0 13%, transparent 52%);
+    filter: blur(22px) saturate(1.35);
+    mix-blend-mode: screen;
+    opacity: 0.9;
+    transform: scale(1.18);
+    animation: image-redmist-base 7s ease-in-out infinite alternate;
+}
+
+.markdown-image-frame-anim-redmist::after,
+.image-viewer-redmist-overlay::after {
+    z-index: 3;
+    background:
+        radial-gradient(ellipse 80% 13% at 18% 30%, rgba(255, 30, 15, 0.9) 0 25%, transparent 72%),
+        radial-gradient(ellipse 75% 15% at 82% 48%, rgba(255, 72, 35, 0.82) 0 22%, transparent 70%),
+        radial-gradient(ellipse 90% 12% at 36% 70%, rgba(96, 0, 0, 0.92) 0 20%, transparent 74%),
+        radial-gradient(ellipse 70% 10% at 72% 86%, rgba(221, 20, 10, 0.86) 0 18%, transparent 70%);
+    background-size: 150% 170%, 170% 160%, 160% 180%, 180% 150%;
+    filter: blur(12px) saturate(1.45);
+    mix-blend-mode: screen;
+    opacity: 0.9;
+    transform: scale(1.16) rotate(-4deg);
+    animation: image-redmist-wisps 8s ease-in-out infinite alternate;
+}
+
+@keyframes image-redmist-base {
+    0% {
+        transform: translate(-7%, 4%) scale(1.18);
+        opacity: 0.62;
+    }
+
+    100% {
+        transform: translate(6%, -5%) scale(1.28);
+        opacity: 0.86;
+    }
+}
+
+@keyframes image-redmist-wisps {
+    0% {
+        background-position: -18% 12%, 110% 42%, 8% 82%, 116% 68%;
+        transform: translate(-5%, 3%) scale(1.16) rotate(-5deg);
+    }
+
+    100% {
+        background-position: 24% -8%, 74% 56%, -18% 62%, 62% 102%;
+        transform: translate(5%, -4%) scale(1.28) rotate(4deg);
+    }
 }
 
 @keyframes image-bugged {
@@ -182,6 +251,13 @@
 
 .image-viewer-image.markdown-image-anim-bugged {
     image-rendering: pixelated;
+}
+
+.image-viewer-redmist-overlay {
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+    pointer-events: none;
 }
 
 .image-viewer-glitch-layer {

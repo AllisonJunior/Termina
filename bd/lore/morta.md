@@ -6,5 +6,5 @@ As **Expedições** para esse local já se mostraram frutíferas, com o estabele
 
 Pouco se sabe dos perigos que aqui estão presentes afinal até mesmo as **Soberanas** podem sofrer um destino cruel nesse lugar... já se passaram anos desde que as **Expedições** nesse local começaram, e não há sombra de melhoria alguma... mas não desanime, queira ou não esse lugar está diretamente atrelado a você e ao seu futuro...
 
-
-asd
+img(../../res/img/Zona Morta.png){resize: 50%; zoom: yes;}
+align(!center){c(!RED){O Fim...}}

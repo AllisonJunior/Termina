@@ -92,6 +92,7 @@
     min-width: 0;
     padding: 0 24px 20px;
     line-height: 1.7;
+    text-align: justify;
     opacity: 0;
     transform: translateY(8px);
     transition: opacity 0.24s ease, transform 0.24s ease;

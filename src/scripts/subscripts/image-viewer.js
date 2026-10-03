@@ -12,6 +12,23 @@ let pinchState;
 let stopBuggedAnimations = () => {};
 let stopViewerBuggedAnimation = () => {};
 
+function syncRedmistOverlay(viewer) {
+    const image = viewer.querySelector(".image-viewer-image");
+    const viewport = viewer.querySelector(".image-viewer-viewport");
+    const overlay = viewer.querySelector(".image-viewer-redmist-overlay");
+
+    if (!image || !viewport || !overlay) {
+        return;
+    }
+
+    const imageBounds = image.getBoundingClientRect();
+    const viewportBounds = viewport.getBoundingClientRect();
+    overlay.style.left = `${imageBounds.left - viewportBounds.left}px`;
+    overlay.style.top = `${imageBounds.top - viewportBounds.top}px`;
+    overlay.style.width = `${imageBounds.width}px`;
+    overlay.style.height = `${imageBounds.height}px`;
+}
+
 function randomBetween(min, max) {
     return min + Math.random() * (max - min);
 }
@@ -168,6 +185,7 @@ function applyTransform(viewer) {
 
     image.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${imageScale}) ${buggedTransform}`;
     resetButton.hidden = imageScale <= minZoom;
+    syncRedmistOverlay(viewer);
 }
 
 function zoomAtPoint(viewer, clientX, clientY, nextScale) {
@@ -249,6 +267,8 @@ function openViewer(sourceImage) {
         "markdown-image-anim-bugged",
         sourceImage.classList.contains("markdown-image-anim-bugged")
     );
+    const redmistEnabled = sourceImage.classList.contains("markdown-image-anim-redmist");
+    viewport.querySelector(".image-viewer-redmist-overlay").hidden = !redmistEnabled;
 
     if (sourceImage.classList.contains("markdown-image-anim-bugged")) {
         for (let index = 0; index < 5; index++) {
@@ -267,6 +287,7 @@ function openViewer(sourceImage) {
     viewer.hidden = false;
     activeViewer = viewer;
     document.body.classList.add("image-viewer-open");
+    requestAnimationFrame(() => syncRedmistOverlay(viewer));
     viewer.querySelector("[data-viewer-close]").focus();
 }
 
@@ -284,6 +305,7 @@ function createViewer() {
                 aria-label="Fechar visualização">×</button>
             <div class="image-viewer-viewport">
                 <img class="image-viewer-image" src="" alt="">
+                <span class="image-viewer-redmist-overlay" aria-hidden="true" hidden></span>
             </div>
         </section>
     `;
@@ -314,6 +336,7 @@ function createViewer() {
     }, { passive: false });
 
     const image = viewer.querySelector(".image-viewer-image");
+    image.addEventListener("load", () => syncRedmistOverlay(viewer));
     image.addEventListener("pointerdown", (event) => {
         if (viewer.hidden) {
             return;

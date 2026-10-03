@@ -14,6 +14,7 @@ const markdownFiles = {
     abismo: new URL("../../../bd/lore/abismo.md", import.meta.url),
     morta: new URL("../../../bd/lore/morta.md", import.meta.url),
     as_criaturas: new URL("../../../bd/lore/as_criaturas.md", import.meta.url),
+    reliquias: new URL("../../../bd/lore/reliquias.md", import.meta.url),
 
     // Distritos 
     golgotha: new URL("../../../bd/lore/distritos/golgotha.md", import.meta.url),
