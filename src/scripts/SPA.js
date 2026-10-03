@@ -1,4 +1,6 @@
 
+import { createMusicPlayer } from "./music-player.js";
+
 const pages = {
     home: new URL("../pages/home.html", import.meta.url),
     lore: new URL("../pages/lore.html", import.meta.url),
@@ -13,11 +15,13 @@ const pageModules = {
 const pageCache = new Map();
 let renderRequestId = 0;
 let activePageModule = null;
+let musicPlayer = null;
 
 export function initializeSPA(navBar) {
     const appContent = document.createElement("main");
     appContent.id = "app-content";
     document.body.appendChild(appContent);
+    musicPlayer = createMusicPlayer();
 
     // Delegação de eventos para navbar e conteúdo das páginas.
     document.addEventListener("click", async (event) => {
@@ -61,6 +65,7 @@ async function renderPage(page) {
 
     activePageModule?.cleanup?.();
     activePageModule = null;
+    musicPlayer?.setVisible(page === "home");
 
     appContent.classList.remove("is-visible");
     appContent.innerHTML = `

@@ -1,13 +1,10 @@
-O que é a **Zona Morta**? 
+A origem da **Névoa Vermelha** e dos **Horrores**... em outras palavras a própria inexistência do conceito de esperança... a sua indiferença para com aqueles que por lá ousam se aventurar... é tremenda.
 
-- O lado de fora.
-- De onde os monstros saem.
-- Onde se é possível coletar recursos.
-- A origem do Horror.
-- Um lugar.
+Este é o destino final de todos, principalmente daqueles que são conhecidos como **Operadores**... afinal apesar de quão cruel esse lugar possa ser... não deixa de ser um ótimo fornecedor de conhecimento e recursos... seja lá o que foi o mundo antigo... a resposta para essa pergunta está nesse lugar.
 
-Nenhuma das afirmações anteriores está errada, mas... a melhor definição para esse lugar seria: *A própria falta de esperança...* Nada nesse lugar faz sentido... nada desse lugar deseja te ajudar... não importa o quão forte você seja... a **Zona Morta** caso queira irá te consumir... 
+As **Expedições** para esse local já se mostraram frutíferas, com o estabelecimento de diversos **Faróis**... mas como sempre... nada nesse lugar é confiável... a maioria dessas zonas de controle fora da **Zona Viva** simplesmente desapareceram do completo nada há pelo menos 253 anos atrás... como tudo em **Termina**...
 
-A maldita **Névoa Vermelha** é a responsável por 100% dos problemas durante **Expedições**, afinal como se prepara para algo que não pode ser realmente definido...
+Pouco se sabe dos perigos que aqui estão presentes afinal até mesmo as **Soberanas** podem sofrer um destino cruel nesse lugar... já se passaram anos desde que as **Expedições** nesse local começaram, e não há sombra de melhoria alguma... mas não desanime, queira ou não esse lugar está diretamente atrelado a você e ao seu futuro...
 
-O importante é que esse local nunca deixará de existir... e o melhor de tudo... ele faz parte do seu futuro, afinal ele também é a resposta para tudo.
+
+asd

@@ -4,6 +4,7 @@
 @import url("./tooltip.css");
 @import url("./glitch.css");
 @import url("./image-viewer.css");
+@import url("./music-player.css");
 
 /* Configurações gerais */
 * {
@@ -12,7 +13,7 @@
 }
 
 html {
-    scrollbar-gutter: stable;
+    scrollbar-gutter: auto;
 }
 
 body {

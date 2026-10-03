@@ -1,0 +1,126 @@
+.music-player {
+    position: fixed;
+    right: 16px;
+    bottom: 24px;
+    z-index: 1100;
+    color: #e8eaed;
+}
+
+.music-player__toggle {
+    display: grid;
+    width: 48px;
+    height: 48px;
+    place-items: center;
+    border: 1px solid #55585c;
+    border-radius: 8px;
+    background: #202124;
+    color: #e8eaed;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 1;
+    opacity: 0.4;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.music-player__toggle:hover {
+    background: #303134;
+    opacity: 1;
+}
+
+.music-player__toggle:focus-visible {
+    opacity: 1;
+}
+
+.music-player__toggle:focus-visible,
+.music-player__pause:focus-visible,
+.music-player__volume:focus-visible {
+    outline: 2px solid #a8c7fa;
+    outline-offset: 3px;
+}
+
+.music-player--paused .music-player__toggle {
+    position: relative;
+}
+
+.music-player--paused .music-player__toggle::after {
+    position: absolute;
+    width: 2px;
+    height: 34px;
+    border-radius: 2px;
+    background: #e8eaed;
+    content: "";
+    transform: rotate(45deg);
+}
+
+.music-player__panel {
+    position: absolute;
+    right: 54px;
+    bottom: 0;
+    display: grid;
+    width: 250px;
+    gap: 16px;
+    padding: 18px;
+    border: 1px solid #55585c;
+    border-radius: 8px 0 8px 8px;
+    background: #202124;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 28%);
+}
+
+.music-player__panel[hidden] {
+    display: none;
+}
+
+.music-player__heading {
+    display: grid;
+    gap: 4px;
+}
+
+.music-player__eyebrow {
+    color: #a8c7fa;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.music-player__title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.music-player__control {
+    display: grid;
+    gap: 8px;
+    color: #bdc1c6;
+    font-size: 13px;
+}
+
+.music-player__volume {
+    width: 100%;
+    accent-color: #a8c7fa;
+    cursor: pointer;
+}
+
+.music-player__pause {
+    padding: 8px 12px;
+    border: 1px solid #55585c;
+    border-radius: 4px;
+    background: transparent;
+    color: #e8eaed;
+    cursor: pointer;
+}
+
+.music-player__pause:hover {
+    background: #303134;
+}
+
+@media (max-width: 480px) {
+    .music-player {
+        bottom: 12px;
+    }
+
+    .music-player__panel {
+        right: 54px;
+        width: min(250px, calc(100vw - 54px));
+    }
+}
