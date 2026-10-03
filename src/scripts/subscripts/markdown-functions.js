@@ -3,7 +3,8 @@ import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
 const colorMacros = {
     "!RED": "#ff0000",
     "!BLUE": "#0b0b66",
-    "!ABYSM": "#21022a"
+    "!ABYSM": "#21022a",
+    "!GOD": "#76b00b"
 };
 const alignmentMacros = {
     "!LEFT": "left",
@@ -166,6 +167,7 @@ function renderMacro(name, argument, content) {
         let enableZoom = false;
         let textResponse;
         let imageWidth;
+        let imageAnimation;
         const modifiers = content
             .split(";")
             .map((modifier) => modifier.trim())
@@ -199,6 +201,15 @@ function renderMacro(name, argument, content) {
                 continue;
             }
 
+            if (
+                modifierName === "anim"
+                && modifierValue.toLowerCase() === "bugged"
+            ) {
+                imageAnimation = "bugged";
+                enableZoom = true;
+                continue;
+            }
+
             return `${name}(${argument}){${content}}`;
         }
 
@@ -214,14 +225,23 @@ function renderMacro(name, argument, content) {
         const imageClass = textResponse
             ? " markdown-image-textresponse"
             : "";
+        const imageAnimationClass = imageAnimation
+            ? ` markdown-image-anim-${imageAnimation}`
+            : "";
+        const imageClassAttribute = imageAnimationClass
+            ? ` class="${imageAnimationClass.trim()}"`
+            : "";
         const textResponseAttribute = textResponse
             ? ` data-textresponse="${textResponse}"`
             : "";
         const zoomButton = enableZoom
             ? `<button class="markdown-image-maximize" type="button" data-image-viewer aria-label="Maximizar imagem" title="Maximizar imagem">⛶</button>`
             : "";
+        const imageMarkup = imageAnimation === "bugged"
+            ? `<img${imageClassAttribute} src="${escapeHtmlAttribute(imageSource)}" alt="">${[1, 2, 3, 4, 5].map((layer) => `<img class="markdown-image-glitch-layer markdown-image-glitch-layer-${layer}" src="${escapeHtmlAttribute(imageSource)}" alt="" aria-hidden="true">`).join("")}`
+            : `<img${imageClassAttribute} src="${escapeHtmlAttribute(imageSource)}" alt="">`;
 
-        return `<span class="markdown-image${imageClass}"${textResponseAttribute}${wrapperStyleAttribute}><span class="markdown-image-frame"${frameWidthAttribute}>${zoomButton}<img src="${escapeHtmlAttribute(imageSource)}" alt=""></span></span>`;
+        return `<span class="markdown-image${imageClass}"${textResponseAttribute}${wrapperStyleAttribute}><span class="markdown-image-frame"${frameWidthAttribute}>${zoomButton}${imageMarkup}</span></span>`;
     }
 
     return `${name}(${argument}){${content}}`;

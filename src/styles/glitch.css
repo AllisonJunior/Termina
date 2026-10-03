@@ -7,6 +7,13 @@
     animation: none;
 }
 
+.markdown-glitch[data-glitch="hide"] .markdown-glitch[data-glitch="distorted"] {
+    animation: none;
+    transform: none;
+    text-shadow: none;
+    opacity: 1;
+}
+
 .markdown-glitch-hide-character {
     color: transparent;
 }

@@ -1,6 +1,6 @@
 A principal e única organização não governamental conhecida da **Zona Viva**. Seu objetivo é simples, proteger a **Zona Viva** de dentro para fora. Nenhuma **Dama** ou **Soberana** interfere nas ações da **Vanguarda** e vice versa. Apesar da **Zona Viva** ser dividida em vários distritos, cada um possui um **Centro da Vanguarda** liderado por um **Comandante**.
 
-**As duas Comandantes mais famosas da Zona Viva são Hagali Yoclesh (Distrito de Ma'Havre) e Jeanne Everglae (Distrito de Golgotha).** 
+**As duas Comandantes mais famosas da Zona Viva são Yui Togashi (Distrito de Ma'Havre) e Jeanne Everglae (Distrito de Golgotha).** 
 
 A **Vanguarda** possui objetivos/obrigações claras: Extração e busca de recursos fora e na **Zona Viva**; Eliminação de criaturas; Proteção geral; Reconhecimento, exploração e limpeza das **Irregularidades**; Realização de julgamentos; Executar serviços para as **Damas** e **Soberanas**. Esses objetivos em outras palavras podem ser definidos como **Requisições**. 
 
@@ -27,4 +27,4 @@ Os **Operadores** são a principal força motora responsável por concluir essas
 
 Essa classificação representa claramente a força, efetividade e capacidade de sobrevivência de um **Operador** durante **Requisições**, onde um **Operador E**sperançoso é o ponto inicial de todo **Operador** (salvo algumas exceções, como sempre) o seu ponto mais fraco.
 
-align(!CENTER){c(!RED){Infelizmente nada dura para sempre... viva... aproveite... sobreviva... e... resista... pois, os perigos que vos aguarda não... eles nunca serão tão calorosos...}}
+*Infelizmente nada dura para sempre... viva... aproveite... sobreviva... e... resista... pois, os perigos que vos aguarda não... eles nunca serão tão calorosos...*

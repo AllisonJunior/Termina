@@ -1,7 +1,9 @@
-img(../../res/img/Abismo.jpg){resize: 50%; zoom: yes; textresponse:left;}
+img(../../res/img/Abismo.jpg){resize: 50%; zoom: yes;  textresponse:left; anim: bugged;}
 
-Pense comigo...
+Um erro... esse local nunca deveria ter existido para início de conversa, afinal não há sentido em replicar o próprio conceito da falta de esperança.
 
-E se você um cientista criasse um robô para te ajudar a limpar a sua humilde residência... mas ao se mostrar extremamente efetivo você acaba decidindo o melhorar... aí você se pergunta, e se ele também pudesse cozinhar... e se ele pudesse fazer compras... e se ele conseguisse me ajudar com meus outros experimentos... e se ele pudesse me defender... e se... ele fizesse isso... e se ele fizesse mais isso... e se ele fizesse aquilo... porque não o colocar para fazer isso...
+Apesar dos registros sobre a sua criação serem limitados a somente pessoas de alto escalão dentro da **Zona Viva** se é de conhecimento público que a sua existência foi a causa da ruina do distrito de **Axiom** há 700 anos atrás. Desde que o mesmo surgiu a **Zona Viva** nunca mais foi a mesma... 
 
-No final o que restaria? glitch(hide){glitch(distorted){c(!ABYSM){O Abismo}}}
+Seja lá o que é realmente o **Abismo**, uma única coisa é clara essa coisa é a responsável por permitir que muitos dos **Horrores** da **Zona Morta** invadam a **Zona Viva** com mais facilidade, não é atoa que as **Expedições** para esse local também possuirem uma alta taxa de mortalidade... já se passaram 700 anos e ainda não foram capazes de compreender a real natureza dessa coisa.
+
+c(!GOD){glitch(hide){glitch(distorted){En votum tuum... hoc enim erat votum quod omnes petebant...}}}
