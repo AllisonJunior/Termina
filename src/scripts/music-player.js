@@ -8,6 +8,7 @@ const tracks = [
 const defaultVolume = 0.5;
 const volumeStorageKey = "termina-music-volume";
 const pausedStorageKey = "termina-music-paused";
+const startWithMusicStorageKey = "termina-start-with-music";
 const startWithMusic = true;
 
 function getStoredVolume() {
@@ -51,7 +52,16 @@ export function createMusicPlayer() {
     const volumeValue = player.querySelector(".music-player__volume-value");
     const title = player.querySelector(".music-player__title");
     const audio = player.querySelector(".music-player__audio");
-    let userPaused = localStorage.getItem(pausedStorageKey) === "true";
+    const previousStartWithMusic = localStorage.getItem(
+        startWithMusicStorageKey
+    );
+    const configurationChanged =
+        previousStartWithMusic !== String(startWithMusic);
+    let userPaused =
+        !configurationChanged &&
+        localStorage.getItem(pausedStorageKey) === "true";
+
+    localStorage.setItem(startWithMusicStorageKey, String(startWithMusic));
 
     volume.value = String(getStoredVolume());
     audio.volume = Number(volume.value);
@@ -75,7 +85,12 @@ export function createMusicPlayer() {
         title.textContent = tracks[0].title;
     }
 
-    async function playAudio() {
+    async function playAudio(isManual = false) {
+        if (isManual) {
+            userPaused = false;
+            localStorage.setItem(pausedStorageKey, "false");
+        }
+
         try {
             await audio.play();
             userPaused = false;
@@ -124,7 +139,7 @@ export function createMusicPlayer() {
 
     pauseButton.addEventListener("click", () => {
         if (audio.paused) {
-            playAudio();
+            playAudio(true);
         } else {
             audio.pause();
             userPaused = true;
