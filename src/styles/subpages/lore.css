@@ -94,7 +94,8 @@
     line-height: 1.7;
     opacity: 0;
     transform: translateY(8px);
-    transition: opacity 0.22s ease, transform 0.22s ease;
+    transition: opacity 0.24s ease, transform 0.24s ease;
+    will-change: opacity, transform;
 }
 
 .lore-content.is-visible {

@@ -7,6 +7,8 @@ let imageScale = 1;
 let offsetX = 0;
 let offsetY = 0;
 let dragState;
+const activePointers = new Map();
+let pinchState;
 
 function applyTransform(viewer) {
     const image = viewer.querySelector(".image-viewer-image");
@@ -41,8 +43,25 @@ function resetTransform(viewer) {
     offsetX = 0;
     offsetY = 0;
     dragState = undefined;
+    activePointers.clear();
+    pinchState = undefined;
     viewer.querySelector(".image-viewer-image").classList.remove("is-dragging");
     applyTransform(viewer);
+}
+
+function getPointerPair() {
+    return [...activePointers.values()].slice(0, 2);
+}
+
+function getPointerDistance(first, second) {
+    return Math.hypot(second.clientX - first.clientX, second.clientY - first.clientY);
+}
+
+function getPointerMidpoint(first, second) {
+    return {
+        x: (first.clientX + second.clientX) / 2,
+        y: (first.clientY + second.clientY) / 2
+    };
 }
 
 function closeViewer() {
@@ -115,38 +134,68 @@ function createViewer() {
 
     const image = viewer.querySelector(".image-viewer-image");
     image.addEventListener("pointerdown", (event) => {
-        if (viewer.hidden || imageScale <= minZoom) {
+        if (viewer.hidden) {
             return;
         }
 
         event.preventDefault();
-        dragState = {
-            startX: event.clientX - offsetX,
-            startY: event.clientY - offsetY
-        };
-        image.classList.add("is-dragging");
+        activePointers.set(event.pointerId, {
+            clientX: event.clientX,
+            clientY: event.clientY
+        });
         image.setPointerCapture(event.pointerId);
+
+        if (activePointers.size === 2) {
+            dragState = undefined;
+            const [first, second] = getPointerPair();
+            pinchState = {
+                distance: getPointerDistance(first, second),
+                scale: imageScale
+            };
+            image.classList.remove("is-dragging");
+        } else if (imageScale > minZoom) {
+            dragState = {
+                startX: event.clientX - offsetX,
+                startY: event.clientY - offsetY
+            };
+            image.classList.add("is-dragging");
+        }
     });
 
     image.addEventListener("pointermove", (event) => {
-        if (!dragState || viewer.hidden) {
+        if (viewer.hidden || !activePointers.has(event.pointerId)) {
             return;
         }
 
-        offsetX = event.clientX - dragState.startX;
-        offsetY = event.clientY - dragState.startY;
-        applyTransform(viewer);
+        activePointers.set(event.pointerId, {
+            clientX: event.clientX,
+            clientY: event.clientY
+        });
+
+        if (activePointers.size >= 2 && pinchState) {
+            const [first, second] = getPointerPair();
+            const distance = getPointerDistance(first, second);
+            const midpoint = getPointerMidpoint(first, second);
+            const nextScale = Math.min(
+                maxZoom,
+                Math.max(minZoom, pinchState.scale * distance / pinchState.distance)
+            );
+
+            zoomAtPoint(viewer, midpoint.x, midpoint.y, nextScale);
+        } else if (dragState) {
+            offsetX = event.clientX - dragState.startX;
+            offsetY = event.clientY - dragState.startY;
+            applyTransform(viewer);
+        }
     });
 
     const stopDragging = (event) => {
-        if (!dragState) {
-            return;
-        }
-
+        activePointers.delete(event.pointerId);
         dragState = undefined;
+        pinchState = undefined;
         image.classList.remove("is-dragging");
 
-        if (event?.pointerId !== undefined && image.hasPointerCapture(event.pointerId)) {
+        if (image.hasPointerCapture(event.pointerId)) {
             image.releasePointerCapture(event.pointerId);
         }
     };

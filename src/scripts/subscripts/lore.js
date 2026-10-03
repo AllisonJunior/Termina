@@ -29,6 +29,7 @@ let activeButton = null;
 let requestId = 0;
 let stopGlitches = () => {};
 let stopImageViewer = () => {};
+const contentTransitionDuration = 240;
 
 export function initialize() {
     const sidebar = document.querySelector(".lore-sidebar");
@@ -86,10 +87,26 @@ async function loadMarkdown(name, button, content) {
     button.setAttribute("aria-current", "page");
     activeButton = button;
 
+    const wasVisible = content.classList.contains("is-visible");
     content.classList.remove("is-visible");
-    content.innerHTML = "<p>Carregando conteúdo...</p>";
+    content.setAttribute("aria-busy", "true");
+
+    // Garante que o estado de saída seja pintado antes da nova página.
+    if (wasVisible) {
+        await new Promise((resolve) => requestAnimationFrame(resolve));
+        await new Promise((resolve) => {
+            setTimeout(resolve, contentTransitionDuration);
+        });
+    }
+
+    // Os efeitos continuam ativos durante o fade-out para não revelar o texto.
+    if (currentRequest !== requestId) {
+        return;
+    }
+
     stopGlitches();
     stopGlitches = () => {};
+    content.innerHTML = "<p>Carregando conteúdo...</p>";
 
     try {
         const renderedMarkdown = await renderMarkdown(fileUrl);
@@ -100,8 +117,9 @@ async function loadMarkdown(name, button, content) {
         }
 
         content.innerHTML = renderedMarkdown;
-        requestAnimationFrame(() => content.classList.add("is-visible"));
         stopGlitches = initializeGlitches(content);
+        content.setAttribute("aria-busy", "false");
+        requestAnimationFrame(() => content.classList.add("is-visible"));
 
     } catch (error) {
         if (currentRequest !== requestId) {
@@ -115,6 +133,7 @@ async function loadMarkdown(name, button, content) {
             <p>Verifique se o arquivo existe e tente novamente.</p>
         `;
         requestAnimationFrame(() => content.classList.add("is-visible"));
+        content.setAttribute("aria-busy", "false");
     }
 }
 
