@@ -21,7 +21,7 @@ const markdownFiles = {
     lordran: new URL("../../../bd/lore/distritos/lordran.md", import.meta.url),
     hellstradis: new URL("../../../bd/lore/distritos/hellstradis.md", import.meta.url),
     rapture: new URL("../../../bd/lore/distritos/rapture.md", import.meta.url),
-    crimson: new URL("../../../bd/lore/distritos/crimson.md", import.meta.url),
+    roccia: new URL("../../../bd/lore/distritos/roccia.md", import.meta.url),
     ma_havre: new URL("../../../bd/lore/distritos/ma'havre.md", import.meta.url),
     axiom: new URL("../../../bd/lore/distritos/axiom.md", import.meta.url),
 };
@@ -31,6 +31,27 @@ let requestId = 0;
 let stopGlitches = () => {};
 let stopImageViewer = () => {};
 const contentTransitionDuration = 240;
+
+function waitForImages(container) {
+    const images = [...container.querySelectorAll("img")];
+
+    return Promise.all(images.map((image) => {
+        if (image.complete) {
+            return Promise.resolve();
+        }
+
+        return new Promise((resolve) => {
+            const finish = () => {
+                image.removeEventListener("load", finish);
+                image.removeEventListener("error", finish);
+                resolve();
+            };
+
+            image.addEventListener("load", finish);
+            image.addEventListener("error", finish);
+        });
+    }));
+}
 
 export function initialize() {
     const sidebar = document.querySelector(".lore-sidebar");
@@ -117,7 +138,15 @@ async function loadMarkdown(name, button, content) {
             return;
         }
 
-        content.innerHTML = renderedMarkdown;
+        const renderedContent = document.createElement("div");
+        renderedContent.innerHTML = renderedMarkdown;
+        await waitForImages(renderedContent);
+
+        if (currentRequest !== requestId) {
+            return;
+        }
+
+        content.innerHTML = renderedContent.innerHTML;
         stopGlitches = initializeGlitches(content);
         content.setAttribute("aria-busy", "false");
         requestAnimationFrame(() => content.classList.add("is-visible"));

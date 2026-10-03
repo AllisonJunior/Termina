@@ -1,9 +1,10 @@
 const zoomStep = 0.12;
-const minZoom = 1;
+const defaultZoom = 1;
+const minZoom = 0.88;
 const maxZoom = 5;
 
 let activeViewer;
-let imageScale = 1;
+let imageScale = defaultZoom;
 let offsetX = 0;
 let offsetY = 0;
 let dragState;
@@ -182,9 +183,10 @@ function applyTransform(viewer) {
     const image = viewer.querySelector(".image-viewer-image");
     const resetButton = viewer.querySelector("[data-viewer-reset]");
     const buggedTransform = image.style.getPropertyValue("--bugged-transform");
+    const isDefaultTransform = imageScale === defaultZoom && offsetX === 0 && offsetY === 0;
 
     image.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${imageScale}) ${buggedTransform}`;
-    resetButton.hidden = imageScale <= minZoom;
+    resetButton.hidden = isDefaultTransform;
     syncRedmistOverlay(viewer);
 }
 
@@ -200,16 +202,11 @@ function zoomAtPoint(viewer, clientX, clientY, nextScale) {
     offsetY = pointY - imagePointY * nextScale;
     imageScale = nextScale;
 
-    if (imageScale === minZoom) {
-        offsetX = 0;
-        offsetY = 0;
-    }
-
     applyTransform(viewer);
 }
 
 function resetTransform(viewer) {
-    imageScale = minZoom;
+    imageScale = defaultZoom;
     offsetX = 0;
     offsetY = 0;
     dragState = undefined;
@@ -217,6 +214,102 @@ function resetTransform(viewer) {
     pinchState = undefined;
     viewer.querySelector(".image-viewer-image").classList.remove("is-dragging");
     applyTransform(viewer);
+}
+
+function changeCarouselImage(frame, direction) {
+    if (!frame) {
+        return;
+    }
+
+    let imageList;
+
+    try {
+        imageList = JSON.parse(frame.dataset.imageList);
+    } catch (error) {
+        console.error("Lista de imagens inválida:", error);
+        return;
+    }
+
+    const image = frame.querySelector("img:not(.markdown-image-glitch-layer)");
+
+    if (!image || !Array.isArray(imageList) || imageList.length < 2) {
+        return;
+    }
+
+    const currentIndex = Number.parseInt(frame.dataset.imageIndex ?? "0", 10) || 0;
+    const nextIndex = currentIndex + direction;
+
+    if (nextIndex < 0 || nextIndex >= imageList.length) {
+        return;
+    }
+
+    if (frame.dataset.imageChanging === "true") {
+        return;
+    }
+
+    const nextSource = imageList[nextIndex];
+    const preload = new Image();
+    frame.dataset.imageChanging = "true";
+    setCarouselButtonsDisabled(frame, true);
+
+    preload.addEventListener("load", () => {
+        const currentHeight = frame.getBoundingClientRect().height;
+        const frameWidth = frame.getBoundingClientRect().width;
+        const nextHeight = frameWidth * preload.naturalHeight / preload.naturalWidth;
+        let clearTimer;
+
+        const clearHeight = () => {
+            clearTimeout(clearTimer);
+            frame.style.height = "";
+            frame.classList.remove("is-changing-image");
+            frame.removeAttribute("data-image-changing");
+            frame.removeEventListener("transitionend", clearHeight);
+            updateCarouselButtons(frame, nextIndex, imageList.length);
+        };
+
+        frame.style.height = `${currentHeight}px`;
+        frame.classList.add("is-changing-image");
+        image.style.opacity = "0";
+        image.src = nextSource;
+        frame.querySelectorAll(".markdown-image-glitch-layer").forEach((layer) => {
+            layer.src = nextSource;
+        });
+        frame.dataset.imageIndex = String(nextIndex);
+
+        requestAnimationFrame(() => {
+            frame.addEventListener("transitionend", clearHeight);
+            clearTimer = setTimeout(clearHeight, 350);
+            frame.style.height = `${nextHeight}px`;
+            requestAnimationFrame(() => {
+                image.style.opacity = "1";
+            });
+        });
+    }, { once: true });
+    preload.addEventListener("error", () => {
+        console.error(`Falha ao carregar a imagem da galeria: ${nextSource}`);
+        frame.removeAttribute("data-image-changing");
+        updateCarouselButtons(frame, currentIndex, imageList.length);
+    }, { once: true });
+    preload.src = nextSource;
+}
+
+function setCarouselButtonsDisabled(frame, disabled) {
+    frame.querySelectorAll("[data-image-carousel]").forEach((button) => {
+        button.disabled = disabled;
+    });
+}
+
+function updateCarouselButtons(frame, currentIndex, imageCount) {
+    const previousButton = frame.querySelector('[data-image-carousel="previous"]');
+    const nextButton = frame.querySelector('[data-image-carousel="next"]');
+
+    if (previousButton) {
+        previousButton.disabled = currentIndex <= 0;
+    }
+
+    if (nextButton) {
+        nextButton.disabled = currentIndex >= imageCount - 1;
+    }
 }
 
 function getPointerPair() {
@@ -252,10 +345,44 @@ function closeViewer() {
     dragState = undefined;
 }
 
+function updateViewerCarouselButtons(viewer, currentIndex, imageCount) {
+    const navigation = viewer.querySelector(".image-viewer-navigation");
+    const previousButton = viewer.querySelector('[data-viewer-carousel="previous"]');
+    const nextButton = viewer.querySelector('[data-viewer-carousel="next"]');
+
+    navigation.hidden = imageCount < 2;
+    previousButton.disabled = currentIndex <= 0;
+    nextButton.disabled = currentIndex >= imageCount - 1;
+}
+
+function changeViewerImage(viewer, direction) {
+    const image = viewer.querySelector(".image-viewer-image");
+    const imageList = JSON.parse(viewer.dataset.imageList || "[]");
+    const currentIndex = Number.parseInt(viewer.dataset.imageIndex ?? "0", 10) || 0;
+    const nextIndex = currentIndex + direction;
+
+    if (!image || nextIndex < 0 || nextIndex >= imageList.length) {
+        return;
+    }
+
+    image.src = imageList[nextIndex];
+    viewer.dataset.imageIndex = String(nextIndex);
+    viewer.querySelectorAll(".image-viewer-glitch-layer").forEach((layer) => {
+        layer.src = imageList[nextIndex];
+    });
+    resetTransform(viewer);
+    updateViewerCarouselButtons(viewer, nextIndex, imageList.length);
+}
+
 function openViewer(sourceImage) {
     const viewer = activeViewer ?? createViewer();
     const image = viewer.querySelector(".image-viewer-image");
     const viewport = viewer.querySelector(".image-viewer-viewport");
+    const frame = sourceImage.closest(".markdown-image-frame");
+    const imageList = frame?.dataset.imageList
+        ? JSON.parse(frame.dataset.imageList)
+        : [];
+    const imageIndex = Number.parseInt(frame?.dataset.imageIndex ?? "0", 10) || 0;
 
     stopViewerBuggedAnimation();
     viewport.querySelectorAll(".image-viewer-glitch-layer").forEach((layer) => {
@@ -263,6 +390,9 @@ function openViewer(sourceImage) {
     });
     image.src = sourceImage.currentSrc || sourceImage.src;
     image.alt = sourceImage.alt;
+    viewer.dataset.imageList = JSON.stringify(imageList);
+    viewer.dataset.imageIndex = String(imageIndex);
+    updateViewerCarouselButtons(viewer, imageIndex, imageList.length);
     image.classList.toggle(
         "markdown-image-anim-bugged",
         sourceImage.classList.contains("markdown-image-anim-bugged")
@@ -303,6 +433,16 @@ function createViewer() {
                 aria-label="Resetar zoom e posição" hidden>↺</button>
             <button class="image-viewer-close" type="button" data-viewer-close
                 aria-label="Fechar visualização">×</button>
+            <span class="image-viewer-navigation" aria-label="Navegação entre imagens" hidden>
+                <button type="button" data-viewer-carousel="previous"
+                    aria-label="Imagem anterior" title="Imagem anterior">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7" /></svg>
+                </button>
+                <button type="button" data-viewer-carousel="next"
+                    aria-label="Próxima imagem" title="Próxima imagem">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>
+                </button>
+            </span>
             <div class="image-viewer-viewport">
                 <img class="image-viewer-image" src="" alt="">
                 <span class="image-viewer-redmist-overlay" aria-hidden="true" hidden></span>
@@ -318,6 +458,14 @@ function createViewer() {
 
         if (event.target.closest("[data-viewer-reset]")) {
             resetTransform(viewer);
+            return;
+        }
+
+        const carouselButton = event.target.closest("[data-viewer-carousel]");
+
+        if (carouselButton) {
+            const direction = carouselButton.dataset.viewerCarousel === "next" ? 1 : -1;
+            changeViewerImage(viewer, direction);
         }
     });
 
@@ -357,7 +505,7 @@ function createViewer() {
                 scale: imageScale
             };
             image.classList.remove("is-dragging");
-        } else if (imageScale > minZoom) {
+        } else if (imageScale !== defaultZoom) {
             dragState = {
                 startX: event.clientX - offsetX,
                 startY: event.clientY - offsetY
@@ -413,6 +561,17 @@ function createViewer() {
 export function initializeImageViewer(root) {
     let stopBuggedAnimations = () => {};
 
+    const changeImage = (event) => {
+        const button = event.target.closest("[data-image-carousel]");
+
+        if (!button || !root.contains(button)) {
+            return;
+        }
+
+        const direction = button.dataset.imageCarousel === "next" ? 1 : -1;
+        changeCarouselImage(button.closest(".markdown-image-frame"), direction);
+    };
+
     const openImage = (event) => {
         const button = event.target.closest("[data-image-viewer]");
 
@@ -437,10 +596,12 @@ export function initializeImageViewer(root) {
 
     startBuggedAnimations();
     observer.observe(root, { childList: true, subtree: true });
+    root.addEventListener("click", changeImage);
     root.addEventListener("click", openImage);
     document.addEventListener("keydown", handleKeyDown);
 
     return () => {
+        root.removeEventListener("click", changeImage);
         root.removeEventListener("click", openImage);
         document.removeEventListener("keydown", handleKeyDown);
         observer.disconnect();

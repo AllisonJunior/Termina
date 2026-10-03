@@ -24,6 +24,8 @@ A maioria dos perigos alheios a humanidade que existem dentro da **Zona Viva** t
 
 **7º - Le Kaki**: As pessoas que vivem nas periferias... aqueles cuja própria existência é considerada um erro. Apesar de cruel, essa é a realidade... glitch(distorted){c(!RED){Em Termina nada é de graça.}}
 
+Apesar de não se existir uma métrica ou regra definitiva para quando ou porque uma **Dama** deve abandonar o trono, é de conhecimento geral que quando uma **Dama** abdica todas as suas **Soberanas** também abdicam.
+
 **A Zona Viva possui regras que devem ser seguidas independente da legislação atual do Distrito:**
  
 1. A acusada(o) de um crime independente da acusação possui direito a uma advogada ou advogado.

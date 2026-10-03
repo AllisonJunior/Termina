@@ -168,6 +168,7 @@ function renderMacro(name, argument, content) {
         let textResponse;
         let imageWidth;
         let imageAnimation;
+        let imageList;
         const modifiers = content
             .split(";")
             .map((modifier) => modifier.trim())
@@ -190,6 +191,20 @@ function renderMacro(name, argument, content) {
 
             if (modifierName === "zoom" && modifierValue.toLowerCase() === "yes") {
                 enableZoom = true;
+                continue;
+            }
+
+            if (modifierName === "list") {
+                const listedImages = modifierValue
+                    .split(",")
+                    .map((source) => source.trim())
+                    .filter(Boolean);
+
+                if (listedImages.length === 0) {
+                    return `${name}(${argument}){${content}}`;
+                }
+
+                imageList = [imageSource, ...listedImages];
                 continue;
             }
 
@@ -240,11 +255,17 @@ function renderMacro(name, argument, content) {
         const zoomButton = enableZoom
             ? `<button class="markdown-image-maximize" type="button" data-image-viewer aria-label="Maximizar imagem" title="Maximizar imagem">⛶</button>`
             : "";
+        const imageListAttribute = imageList
+            ? ` data-image-list="${escapeHtmlAttribute(JSON.stringify(imageList))}" data-image-index="0"`
+            : "";
+        const imageNavigation = imageList
+            ? `<span class="markdown-image-navigation" aria-label="Navegação entre imagens"><button type="button" data-image-carousel="previous" aria-label="Imagem anterior" title="Imagem anterior" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7" /></svg></button><button type="button" data-image-carousel="next" aria-label="Próxima imagem" title="Próxima imagem"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg></button></span>`
+            : "";
         const imageMarkup = imageAnimation === "bugged"
             ? `<img${imageClassAttribute} src="${escapeHtmlAttribute(imageSource)}" alt="">${[1, 2, 3, 4, 5].map((layer) => `<img class="markdown-image-glitch-layer markdown-image-glitch-layer-${layer}" src="${escapeHtmlAttribute(imageSource)}" alt="" aria-hidden="true">`).join("")}`
             : `<img${imageClassAttribute} src="${escapeHtmlAttribute(imageSource)}" alt="">`;
 
-        return `<span class="markdown-image${imageClass}"${textResponseAttribute}${wrapperStyleAttribute}><span class="markdown-image-frame${frameAnimationClass}"${frameWidthAttribute}>${zoomButton}${imageMarkup}</span></span>`;
+        return `<span class="markdown-image${imageClass}"${textResponseAttribute}${wrapperStyleAttribute}><span class="markdown-image-frame${frameAnimationClass}"${frameWidthAttribute}${imageListAttribute}>${zoomButton}${imageMarkup}${imageNavigation}</span></span>`;
     }
 
     return `${name}(${argument}){${content}}`;
@@ -294,6 +315,36 @@ function resolveImageSources(renderedMarkdown, baseUrl) {
         }
 
         image.setAttribute("src", new URL(source, baseUrl).href);
+    });
+
+    container.querySelectorAll(".markdown-image-frame[data-image-list]").forEach((frame) => {
+        let imageList;
+
+        try {
+            imageList = JSON.parse(frame.dataset.imageList);
+        } catch (error) {
+            console.error("Lista de imagens inválida:", error);
+            return;
+        }
+
+        if (!Array.isArray(imageList)) {
+            return;
+        }
+
+        const image = frame.querySelector("img:not(.markdown-image-glitch-layer)");
+        const imageSource = image?.getAttribute("src");
+
+        if (!imageSource) {
+            return;
+        }
+
+        frame.dataset.imageList = JSON.stringify(
+            imageList.map((source, index) => (
+                index === 0
+                    ? imageSource
+                    : new URL(source, imageSource).href
+            ))
+        );
     });
 
     return container.innerHTML;

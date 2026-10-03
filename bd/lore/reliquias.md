@@ -2,4 +2,4 @@ Itens únicos que surgem na **Zona Morta** que diferentemente de um dos **Horror
 
 O ato de achar uma **Relíquia** é similar a achar uma agulha em um palheiro, afinal qual sentido teria de algo que é responsável por impedir que você possa ter uma vida livre... te presentear constantemente... sem um custo aparente...
 
-A única **Relíquia** conhecida por toda a **Zona Viva** é a katana ceifadora de memórias **Arayashiki (阿頼耶識)**, portada pela atual **Dama** de **Ma'Havre**.
+A única **Relíquia** conhecida por toda a **Zona Viva** é a **Katana Ceifadora de Memórias Arayashiki (阿頼耶識)**, portada pela atual **Dama** de **Ma'Havre**.

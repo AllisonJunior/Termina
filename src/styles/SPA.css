@@ -6,6 +6,7 @@
     min-height: calc(100vh - 80px);
     margin-top: 70px;
     padding: 24px 30px;
+    overflow-anchor: none;
     opacity: 0;
     transform: translateY(8px);
     transition: opacity 0.24s ease, transform 0.24s ease;

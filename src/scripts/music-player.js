@@ -39,7 +39,7 @@ export function createMusicPlayer() {
                        min="0" max="1" step="0.01" aria-label="Volume da trilha sonora">
             </label>
             <button class="music-player__pause" type="button"></button>
-            <audio class="music-player__audio" preload="metadata"></audio>
+            <audio class="music-player__audio" preload="metadata" loop></audio>
         </div>
     `;
 
