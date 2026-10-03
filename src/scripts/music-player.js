@@ -91,12 +91,6 @@ export function createMusicPlayer() {
         }
     }
 
-    const retryAutoplay = () => {
-        if (!userPaused && audio.paused) {
-            playAudio();
-        }
-    };
-
     toggle.addEventListener("click", () => {
         const isOpen = !panel.hidden;
         panel.hidden = isOpen;
@@ -119,11 +113,6 @@ export function createMusicPlayer() {
     };
 
     document.addEventListener("click", closeOnOutsideClick);
-    if (startWithMusic) {
-        document.addEventListener("pointerdown", retryAutoplay);
-        document.addEventListener("keydown", retryAutoplay);
-    }
-
     pauseButton.addEventListener("click", () => {
         if (audio.paused) {
             playAudio(true);
@@ -158,10 +147,6 @@ export function createMusicPlayer() {
         },
         cleanup() {
             document.removeEventListener("click", closeOnOutsideClick);
-            if (startWithMusic) {
-                document.removeEventListener("pointerdown", retryAutoplay);
-                document.removeEventListener("keydown", retryAutoplay);
-            }
             audio.pause();
             player.remove();
         },
