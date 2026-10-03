@@ -11,12 +11,16 @@
 .lore-sidebar {
     flex: 0 0 230px;
     align-self: stretch;
-    padding: 20px 12px;
+    padding: 0 12px 20px;
     border-right: 1px solid #3a3a3a;
 }
 
 .lore-group {
     margin-top: 20px;
+}
+
+.lore-group:first-child {
+    margin-top: 0;
 }
 
 .lore-group summary {

@@ -2,7 +2,8 @@ import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
 
 const colorMacros = {
     "!RED": "#ff0000",
-    "!BLUE": "#0b0b66"
+    "!BLUE": "#0b0b66",
+    "!ABYSM": "#21022a"
 };
 const alignmentMacros = {
     "!LEFT": "left",
@@ -162,8 +163,9 @@ function renderMacro(name, argument, content) {
             return `${name}(${argument}){${content}}`;
         }
 
-        const styles = [];
         let enableZoom = false;
+        let textResponse;
+        let imageWidth;
         const modifiers = content
             .split(";")
             .map((modifier) => modifier.trim())
@@ -180,7 +182,7 @@ function renderMacro(name, argument, content) {
             const modifierValue = modifier.slice(separatorIndex + 1).trim();
 
             if (modifierName === "resize" && imageResizeSyntax.test(modifierValue)) {
-                styles.push(`width: ${modifierValue};`);
+                imageWidth = modifierValue;
                 continue;
             }
 
@@ -189,17 +191,37 @@ function renderMacro(name, argument, content) {
                 continue;
             }
 
+            if (
+                modifierName === "textresponse"
+                && ["left", "right"].includes(modifierValue.toLowerCase())
+            ) {
+                textResponse = modifierValue.toLowerCase();
+                continue;
+            }
+
             return `${name}(${argument}){${content}}`;
         }
 
-        const frameStyleAttribute = styles.length > 0
-            ? ` style="${styles.join(" ")}"`
+        const frameStyleAttribute = imageWidth && !textResponse
+            ? ` style="width: ${imageWidth};"`
+            : "";
+        const wrapperStyleAttribute = imageWidth && textResponse
+            ? ` style="width: ${imageWidth};"`
+            : "";
+        const frameWidthAttribute = imageWidth && textResponse
+            ? ` style="width: 100%;"`
+            : frameStyleAttribute;
+        const imageClass = textResponse
+            ? " markdown-image-textresponse"
+            : "";
+        const textResponseAttribute = textResponse
+            ? ` data-textresponse="${textResponse}"`
             : "";
         const zoomButton = enableZoom
             ? `<button class="markdown-image-maximize" type="button" data-image-viewer aria-label="Maximizar imagem" title="Maximizar imagem">⛶</button>`
             : "";
 
-        return `<span class="markdown-image"><span class="markdown-image-frame"${frameStyleAttribute}>${zoomButton}<img src="${escapeHtmlAttribute(imageSource)}" alt=""></span></span>`;
+        return `<span class="markdown-image${imageClass}"${textResponseAttribute}${wrapperStyleAttribute}><span class="markdown-image-frame"${frameWidthAttribute}>${zoomButton}<img src="${escapeHtmlAttribute(imageSource)}" alt=""></span></span>`;
     }
 
     return `${name}(${argument}){${content}}`;

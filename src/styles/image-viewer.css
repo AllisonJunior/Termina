@@ -13,6 +13,23 @@
     line-height: 0;
 }
 
+.markdown-image-textresponse {
+    width: fit-content;
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.markdown-image-textresponse[data-textresponse="left"] {
+    float: left;
+    margin-right: 20px;
+}
+
+.markdown-image-textresponse[data-textresponse="right"] {
+    float: right;
+    margin-left: 20px;
+}
+
 .markdown-image-frame img {
     display: block;
     width: 100%;
@@ -70,8 +87,8 @@
     position: relative;
     display: grid;
     gap: 8px;
-    width: min(90vw, 760px);
-    max-height: 86vh;
+    width: min(94vw, 1000px);
+    max-height: 90vh;
     padding: 12px;
     border: 1px solid rgba(255, 255, 255, 0.14);
     border-radius: 14px;
@@ -88,7 +105,7 @@
 .image-viewer-image {
     display: block;
     width: 100%;
-    max-height: min(72vh, 620px);
+    max-height: min(78vh, 760px);
     object-fit: contain;
     transform-origin: center;
     transition: transform 0.08s linear;
