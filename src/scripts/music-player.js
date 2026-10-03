@@ -7,9 +7,7 @@ const tracks = [
 
 const defaultVolume = 0.5;
 const volumeStorageKey = "termina-music-volume";
-const pausedStorageKey = "termina-music-paused";
-const startWithMusicStorageKey = "termina-start-with-music";
-const startWithMusic = true;
+const startWithMusic = false;
 
 function getStoredVolume() {
     const storedVolume = Number.parseFloat(
@@ -52,16 +50,7 @@ export function createMusicPlayer() {
     const volumeValue = player.querySelector(".music-player__volume-value");
     const title = player.querySelector(".music-player__title");
     const audio = player.querySelector(".music-player__audio");
-    const previousStartWithMusic = localStorage.getItem(
-        startWithMusicStorageKey
-    );
-    const configurationChanged =
-        previousStartWithMusic !== String(startWithMusic);
-    let userPaused =
-        !configurationChanged &&
-        localStorage.getItem(pausedStorageKey) === "true";
-
-    localStorage.setItem(startWithMusicStorageKey, String(startWithMusic));
+    let userPaused = false;
 
     volume.value = String(getStoredVolume());
     audio.volume = Number(volume.value);
@@ -88,13 +77,11 @@ export function createMusicPlayer() {
     async function playAudio(isManual = false) {
         if (isManual) {
             userPaused = false;
-            localStorage.setItem(pausedStorageKey, "false");
         }
 
         try {
             await audio.play();
             userPaused = false;
-            localStorage.setItem(pausedStorageKey, "false");
         } catch (error) {
             if (error.name !== "NotAllowedError") {
                 console.error("Não foi possível reproduzir a trilha sonora:", error);
@@ -143,7 +130,6 @@ export function createMusicPlayer() {
         } else {
             audio.pause();
             userPaused = true;
-            localStorage.setItem(pausedStorageKey, "true");
             updatePauseButton();
         }
     });
