@@ -384,7 +384,8 @@
     max-height: min(78vh, 760px);
     object-fit: contain;
     transform-origin: center;
-    transition: transform 0.08s linear;
+    transition: none;
+    will-change: transform;
     cursor: grab;
     touch-action: none;
 }

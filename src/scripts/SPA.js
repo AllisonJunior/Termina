@@ -9,7 +9,8 @@ const pages = {
 };
 
 const pageModules = {
-    lore: () => import("./subscripts/lore.js")
+    lore: () => import("./subscripts/lore.js"),
+    system: () => import("./subscripts/system.js"),
 };
 
 const pageCache = new Map();

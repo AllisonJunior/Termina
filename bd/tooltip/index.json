@@ -1,5 +1,6 @@
 {
     "files": [
-        "info.json"
+        "info.json", 
+        "effects.json"
     ]
 }

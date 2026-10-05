@@ -1,30 +1,107 @@
 .markdown-tooltip {
     position: relative;
-    display: inline-block;
+    display: inline;
     cursor: help;
-    border-bottom: 1px dotted currentColor;
+    color: var(--markdown-tooltip-color, currentColor);
+    text-decoration: underline solid;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    text-decoration-skip-ink: none;
+}
+
+.markdown-tooltip-label {
+    display: inline;
+}
+
+.markdown-tooltip-header {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.markdown-tooltip-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    object-fit: contain;
+    vertical-align: -0.15em;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.45));
 }
 
 .markdown-tooltip-content {
-    position: absolute;
-    bottom: calc(100% + 8px);
-    left: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
     width: max-content;
-    max-width: min(320px, calc(100vw - 32px));
-    padding: 8px 10px;
-    border: 1px solid #3a3a3a;
-    border-radius: 4px;
-    background: #202124;
-    color: #e8eaed;
+    max-width: min(640px, calc(100vw - 32px));
+    max-height: min(40vh, 360px);
+    padding: 10px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 6px;
+    background: rgba(18, 23, 36, 0.96);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+    color: #f1f3f8;
     font-size: 0.9rem;
     line-height: 1.4;
-    text-align: left;
+    text-align: justify;
     white-space: normal;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-color: rgba(190, 198, 216, 0.72) rgba(255, 255, 255, 0.08);
+    scrollbar-width: thin;
     visibility: hidden;
     opacity: 0;
-    transform: translate(-50%, 4px);
+    transform: translateY(4px);
     transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+    pointer-events: none;
+}
+
+.markdown-tooltip-content::-webkit-scrollbar {
+    width: 9px;
+}
+
+.markdown-tooltip-content::-webkit-scrollbar-track {
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.markdown-tooltip-content::-webkit-scrollbar-thumb {
+    border: 2px solid transparent;
+    border-radius: 999px;
+    background: rgba(190, 198, 216, 0.72);
+    background-clip: padding-box;
+}
+
+.markdown-tooltip-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(220, 226, 240, 0.9);
+    background-clip: padding-box;
+}
+
+.markdown-tooltip.is-active .markdown-tooltip-content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    user-select: text;
+}
+
+.markdown-tooltip-content.is-positioned {
+    transform: translateY(0);
+}
+
+.markdown-tooltip-header {
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    color: var(--markdown-tooltip-color, #fff);
+    font-weight: 700;
+}
+
+.markdown-tooltip-description {
+    overflow-wrap: anywhere;
 }
 
 .markdown-tooltip:hover .markdown-tooltip-content,
@@ -32,5 +109,34 @@
 .markdown-tooltip:focus-within .markdown-tooltip-content {
     visibility: visible;
     opacity: 1;
-    transform: translate(-50%, 0);
+    transform: translateY(0);
+}
+
+.has-active-tooltip .markdown-tooltip:not(.is-active) .markdown-tooltip-content {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.has-active-tooltip .markdown-tooltip:not(.is-active):hover .markdown-tooltip-content,
+.has-active-tooltip .markdown-tooltip:not(.is-active):focus .markdown-tooltip-content,
+.has-active-tooltip .markdown-tooltip:not(.is-active):focus-within .markdown-tooltip-content {
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+.markdown-tooltip.is-hover-suppressed .markdown-tooltip-content,
+.markdown-tooltip.is-hover-suppressed:hover .markdown-tooltip-content,
+.markdown-tooltip.is-hover-suppressed:focus .markdown-tooltip-content,
+.markdown-tooltip.is-hover-suppressed:focus-within .markdown-tooltip-content {
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+.tooltip-window-blurred .markdown-tooltip-content {
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
 }

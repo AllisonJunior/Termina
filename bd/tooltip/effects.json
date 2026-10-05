@@ -1,0 +1,15 @@
+{
+    "Bleed": {
+        "description": "Ao agir sofra dano igual a Stack, então reduza a Stack em 1/3 (arredondado para baixo).",
+        "type": "negative"
+    },
+    "Burn": {
+        "description": "No fim da cena, sofra dano igual a Stack.",
+        "type": "negative",
+        "title": "Efeito Negativo: Burn"
+    },
+    "Protection": {
+        "description": "Ao sofrer um ataque reduza o seu dano pela metade, então reduza a Stack em 1.",
+        "type": "positive"
+    }
+}

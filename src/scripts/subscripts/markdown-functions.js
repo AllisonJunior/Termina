@@ -262,8 +262,8 @@ function renderMacro(name, argument, content) {
             ? `<span class="markdown-image-navigation" aria-label="Navegação entre imagens"><button type="button" data-image-carousel="previous" aria-label="Imagem anterior" title="Imagem anterior" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7" /></svg></button><button type="button" data-image-carousel="next" aria-label="Próxima imagem" title="Próxima imagem"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg></button></span>`
             : "";
         const imageMarkup = imageAnimation === "bugged"
-            ? `<img${imageClassAttribute} src="${escapeHtmlAttribute(imageSource)}" alt="">${[1, 2, 3, 4, 5].map((layer) => `<img class="markdown-image-glitch-layer markdown-image-glitch-layer-${layer}" src="${escapeHtmlAttribute(imageSource)}" alt="" aria-hidden="true">`).join("")}`
-            : `<img${imageClassAttribute} src="${escapeHtmlAttribute(imageSource)}" alt="">`;
+            ? `<img${imageClassAttribute} src="${escapeHtmlAttribute(imageSource)}" alt="" loading="eager" fetchpriority="high" decoding="async">${[1, 2, 3, 4, 5].map((layer) => `<img class="markdown-image-glitch-layer markdown-image-glitch-layer-${layer}" src="${escapeHtmlAttribute(imageSource)}" alt="" aria-hidden="true" loading="lazy" fetchpriority="low" decoding="async">`).join("")}`
+            : `<img${imageClassAttribute} src="${escapeHtmlAttribute(imageSource)}" alt="" loading="eager" fetchpriority="high" decoding="async">`;
 
         return `<span class="markdown-image${imageClass}"${textResponseAttribute}${wrapperStyleAttribute}><span class="markdown-image-frame${frameAnimationClass}"${frameWidthAttribute}${imageListAttribute}>${zoomButton}${imageMarkup}${imageNavigation}</span></span>`;
     }

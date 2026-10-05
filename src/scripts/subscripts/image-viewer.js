@@ -327,6 +327,10 @@ function getPointerMidpoint(first, second) {
     };
 }
 
+function clampZoom(scale) {
+    return Math.min(maxZoom, Math.max(minZoom, scale));
+}
+
 function closeViewer() {
     if (!activeViewer) {
         return;
@@ -343,6 +347,8 @@ function closeViewer() {
     document.body.classList.remove("image-viewer-open");
     activeViewer = undefined;
     dragState = undefined;
+    pinchState = undefined;
+    activePointers.clear();
 }
 
 function updateViewerCarouselButtons(viewer, currentIndex, imageCount) {
@@ -475,9 +481,8 @@ function createViewer() {
         }
 
         event.preventDefault();
-        const nextScale = Math.min(
-            maxZoom,
-            Math.max(minZoom, imageScale + (event.deltaY < 0 ? zoomStep : -zoomStep))
+        const nextScale = clampZoom(
+            imageScale + (event.deltaY < 0 ? zoomStep : -zoomStep)
         );
 
         zoomAtPoint(viewer, event.clientX, event.clientY, nextScale);
@@ -528,10 +533,11 @@ function createViewer() {
             const [first, second] = getPointerPair();
             const distance = getPointerDistance(first, second);
             const midpoint = getPointerMidpoint(first, second);
-            const nextScale = Math.min(
-                maxZoom,
-                Math.max(minZoom, pinchState.scale * distance / pinchState.distance)
-            );
+            if (pinchState.distance === 0) {
+                return;
+            }
+
+            const nextScale = clampZoom(pinchState.scale * distance / pinchState.distance);
 
             zoomAtPoint(viewer, midpoint.x, midpoint.y, nextScale);
         } else if (dragState) {
@@ -544,16 +550,30 @@ function createViewer() {
     const stopDragging = (event) => {
         activePointers.delete(event.pointerId);
         dragState = undefined;
-        pinchState = undefined;
         image.classList.remove("is-dragging");
 
         if (image.hasPointerCapture(event.pointerId)) {
             image.releasePointerCapture(event.pointerId);
         }
+
+        if (activePointers.size < 2) {
+            pinchState = undefined;
+        }
+
+        const remainingPointer = getPointerPair()[0];
+
+        if (activePointers.size === 1 && remainingPointer && imageScale !== defaultZoom) {
+            dragState = {
+                startX: remainingPointer.clientX - offsetX,
+                startY: remainingPointer.clientY - offsetY
+            };
+            image.classList.add("is-dragging");
+        }
     };
 
     image.addEventListener("pointerup", stopDragging);
     image.addEventListener("pointercancel", stopDragging);
+    image.addEventListener("lostpointercapture", stopDragging);
     document.body.appendChild(viewer);
     return viewer;
 }

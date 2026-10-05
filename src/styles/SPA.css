@@ -1,5 +1,6 @@
 @import url("./subpages/home.css");
 @import url("./subpages/lore.css");
+@import url("./subpages/system.css");
 
 #app-content {
     width: 100%;
