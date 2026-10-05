@@ -10,7 +10,7 @@ A segurança desse **Distrito** é garantida exclusivamente pela própria guarda
 
 A **Igreja dos Iluminados** é uma igreja que endorça o culto as **Damas** como se fossem deusas, também sendo o principal meio de tratamento de doenças e maldições na **Zona Viva**... apesar de que como já se era esperado... tal tratamento não é algo que qualquer um possa pagar.
 
-Cerca de 95% das pessoas que residem nesse **Distrito** são membros da **Realeza** ou pessoas excentricamente influentes, afinal o custo de vida aqui é muito alto... é bom relemebrar que a própria força da **Dama** é responsável por proteger esse lugar... 
+Cerca de 95% das pessoas que residem nesse **Distrito** são membros da **Realeza** ou pessoas excentricamente influentes, afinal o custo de vida aqui é muito alto... é bom relembrar que a própria força da **Dama** é responsável por proteger esse lugar... 
  
 Aparentemente até carreiras únicas como artistas e músicos são endorçados nesse **Distrito**.
 
