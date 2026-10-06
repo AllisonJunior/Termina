@@ -10,7 +10,14 @@ const markdownFiles = {
     nivel:           new URL("../../../bd/system/regras/nivel.md", import.meta.url),
 
     // Raças
-    humano: new URL("../../../bd/system/racas/humano.md", import.meta.url),
+    humano:      new URL("../../../bd/system/racas/humano.md", import.meta.url),
+    elfo:        new URL("../../../bd/system/racas/elfo.md", import.meta.url),
+    mink:        new URL("../../../bd/system/racas/mink.md", import.meta.url),
+    vampir:      new URL("../../../bd/system/racas/vampir.md", import.meta.url),
+    seele:       new URL("../../../bd/system/racas/seele.md", import.meta.url),
+    carnical:    new URL("../../../bd/system/racas/carnical.md", import.meta.url),
+    agraciado:   new URL("../../../bd/system/racas/agraciado.md", import.meta.url),
+    amaldicoado: new URL("../../../bd/system/racas/amaldicoado.md", import.meta.url),
 
     // Classes
 

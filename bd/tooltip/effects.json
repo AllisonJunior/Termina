@@ -11,5 +11,9 @@
     "Protection": {
         "description": "Ao sofrer um ataque reduza o seu dano pela metade, então reduza a Stack em 1.",
         "type": "positive"
+    },
+    "Poise":{
+        "description": "O seu crítico é reduzido com base na Stack (Stack máxima: 8).",
+        "type": "positive"
     }
 }

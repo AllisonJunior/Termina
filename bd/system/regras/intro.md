@@ -2,12 +2,13 @@
 
 Seja bem-vindo a introdução do Sistema de Termina. Esse sistema diverge consideravelmente do clássico D&D possuindo um alto foco no combate e sua reatividade. 
 
-**Disclaimer.:** c(#851d62){Como estamos utilizando o FoundryVTT vocês não terão acesso a qualquer momento a mesa, portanto para facilitar a sua e a minha vida (o DM), requisitarei que as suas escolhas de recursos, lore, classe etc sejam me fornecidos em um único arquivo para que eu previamente prepare as suas fichas.}
+**Disclaimer.:** c(#851d62){Como estamos utilizando o FoundryVTT o acesso a mesa é limitado, portanto para facilitar a sua e a minha vida (o DM), requisitarei que as suas escolhas de recursos, lore, classe etc sejam me fornecidos em um único arquivo para que eu previamente prepare as suas fichas.}
 
 **Regras Base do Sistema:**
 
 - Todas as suas rolagens padrão são feitas utilizando um d10.
 - Todos os personagem começam no nível 1.
+- Ataques de oportunidade são feitos como uma ação livre.
 - Aqui temos um total de cinco atributos que são utilizados para todas as rolagens de teste, sendo eles: Fortitude, Prudência, Temperância, Justiça e Horror (detalhado na aba de mesmo nome).
 - Nesse sistema temos uma distinção bem clara em relação a ação de persongens em combate: Turno se trata do momento em que um personagem pode agir e Cena se refere a junção de todos os turnos de todos os participantes do combate.
 - A ordem de ação de um personagem é chamada de Speed (antiga iniciativa), que é re rolada todo fim de cena.
