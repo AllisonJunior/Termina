@@ -7,4 +7,5 @@ Uma raça com uma alta expectativa de vida que também é conhecida como a com m
 
 - Movimento base 30 feet
 - Prudência ou Justiça +2
+- Magia Mundana +2
 - Perk +1

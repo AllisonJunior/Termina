@@ -7,4 +7,5 @@ A raça mais influente de toda **Zona Viva** devido a duas peculiaridades excén
 
 - Movimento base 30 feet
 - Atributo Preferido +1
+- Pontos de Atributo +2
 - Durante um combate, quando você tiver seus pontos de vida reduzidos a 0, os fixe em 1 pela cena, no início da próxima cena expurgue todos os efeitos negativos em si. Essa habilidade ativa somente uma vez por descanso longo e é recuperada também no mesmo período

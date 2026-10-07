@@ -29,8 +29,9 @@ const markdownFiles = {
     // Magias
     mundana:         new URL("../../../bd/system/magias/mundana.md", import.meta.url),
     alma:            new URL("../../../bd/system/magias/alma.md", import.meta.url),
-
+    
     // Perks
+    perks:           new URL("../../../bd/system/perks.md", import.meta.url),
 
     // Armas Únicas
 

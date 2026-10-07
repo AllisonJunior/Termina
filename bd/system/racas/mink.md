@@ -8,3 +8,4 @@ A raça composta por criaturas que se assemelham muito a traços de animais e ta
 - Movimento base 40 feet
 - Fortitude +2
 - Vida aumentada em (Fortitude x 2)
+- Perk +1

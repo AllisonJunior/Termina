@@ -56,9 +56,6 @@ Você toca em um objeto ou área e tenta purificar quaisquer efeitos negativos p
 **COMPREENDER** <br>
 Você escolhe uma criatura em até 25 feet de você para tentar a entender. Você faz um teste de Prudência com DC definida pelo mestre, em um sucesso você consegue absorver informações sobre essa criatura. A efetividade das informações absorvidas é definida pela sua Prudência e Temperância, com Prudência alta o suficiente se é possivel entender o que a criatura está dizendo.
 
-**VINHAS ETÉRICAS** <br>
-Você cria a partir de um membro dos seu corpo uma série de vinhas etéricas que disparam em direção a uma criatura. Em um acerto o alvo sofre d8 + Prudência de dano e tem seu movimento zerado pela cena. No início da proxima cena o alvo poderá realizar um teste, em caso de falha ele sofre d8 + Prudência de dano e continua preso, em um sucesso ele sofre 2d8 + Prudência de dano e se solta. Você pode desfazer as vinhas a qualquer momento com uma ação livre.
-
 **ACELERAR** <br>
 Você toca uma criatura e dobra todo o seu movimento por esta cena.
 
