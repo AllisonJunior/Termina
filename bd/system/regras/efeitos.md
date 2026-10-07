@@ -2,14 +2,17 @@
 @Poise <br>
 @(Power Up) <br>
 @Protection <br>
+@Haste <br>
+@(Damage Up) <br>
 @Guidance
 
 **Efeitos Negativos**<br>
 @Bleed <br>
+@Spark <br>
 @Burn <br>
 @Cold <br>
 @Sinking <br>
-@Spark <br>
+@Rupture <br>
 @Poison <br>
 @Tremor <br>
 @(Healing Down) <br>

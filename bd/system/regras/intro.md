@@ -21,7 +21,7 @@
 - Defina a sua raça.
 - Defina a sua classe.
 - Defina os seus atributos.
-- Escolha as suas Magias.
+- Escolha as suas Magias, caso possua.
 - Escolha as suas Perks.
 - Escolha uma arma única e seus modificadores.
 - Escolha dois recursos.

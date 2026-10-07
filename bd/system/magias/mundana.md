@@ -56,7 +56,11 @@ Você estala seus dedos, e deles uma enorme névoa verde surge, se estendendo em
 
 **ELETRIZAR** <br>
 c(!BLUE){Alcance: *30 feet*, Duração: *Insta*} <br>
-Você estende uma de suas mãos e cria uma série de explosões elétricas em uma criatura dentro do alcance. A criatura precisa realizar um teste, em caso de falha cause 2d4 + Prudência de dano e aplique 1 @Spark.
+Você estende uma de suas mãos e cria uma série de explosões elétricas em uma criatura dentro do alcance. A criatura precisa realizar um teste, em caso de falha cause 2d4 + Prudência de dano e aplique 8 @Spark.
+
+**SANGRAR** <br>
+c(!BLUE){Alcance: *30 feet*, Duração: *Insta*} <br>
+Você estende uma de suas mãos e cria uma série de cortes em uma criatura dentro do alcance. A criatura precisa realizar um teste, em caso de falha cause 2d4 + Prudência de dano e aplique 8 @Bleed.
 
 **FALA MALDITA** <br>
 c(!BLUE){Alcance: *O quão longe sua voz chegar*, Duração: *Insta*} <br>
@@ -111,10 +115,6 @@ Você reveste seus pés com eletricidade, o fazendo disparar em direção a uma 
 c(!BLUE){Alcance: *30 feet*, Duração: *Insta*} <br>
 *Esta magia é utilizada como uma reação.* <br>
 Você expande uma onda de força focada em você, essa onda de força se expande por um raio de 15 feet. Todas as criaturas de sua escolha precisam fazer um teste de Fortitude, em caso de falha a criatura sofre d8 de dano esmagante e é empurrada 40 feet para trás, adicione ao dano d8 adicional para cada 5 feet que a criatura não pode ser empurrada.
-
-**INFLINGIR SANGRAMENTO** <br>
-c(!BLUE){Alcance: *25 feet*, Duração: *Insta*} <br>
-Você faz um movimento rápido com uma de suas mãos, causando um corte profundo na criatura alvo dentro do alcance. Em um acerto cause d12 de dano cortante e aplique 8 @Bleed. 
 
 **PROTEGER** <br>
 c(!BLUE){Alcance: *30 feet*, Duração: *Insta*} <br>

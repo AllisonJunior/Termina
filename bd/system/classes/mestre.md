@@ -15,5 +15,9 @@ Uma classe especializada na criação de todos os tipos de recursos.
 **Mestre Construtor (Passiva)** <br>
 Você ao se tornar um mestre deve escolher qual caminho trilhará, o de um Mestre Alquimista ou o de um Mestre Ferreiro. A sua escolha determina com qual eficiência você irá poder criar certas coisas e qual nível de conhecimento você possui sobre tal conteúdo.
 
-**Modificação Complementar (Ativa)** <br>
-No seu turno você pode aplicar um modificador adicional a sua arma ou a de um aliado próximo. Esse modificador dura até o fim da cena se tiver sido aplicado em sua arma, caso tenha sido aplicado em um aliado só dura um ataque.
+**Auxílio (Ativa)** <br>
+No início de uma cena você pode aplicar um dos seguintes efeitos em você ou em um aliado:
+- 1 @(Power Up) 
+- 1 @(Damage Up)
+- 2 @Protection
+- 4 @Haste

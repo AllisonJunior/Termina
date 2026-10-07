@@ -20,7 +20,7 @@ Uma classe focada exclusivamente na defesa.
 - No seu turno, o dano final dos seus ataques é aumentado em +1 para cada 5 feet movimentado
 
 **Ardilosidade (Ativa)** <br>
-No início de uma cena você pode ativar um dos seguintes beneficíos: 
+No início de uma cena você ganha um dos seguintes beneficíos: 
 - Ganhe +4 de Shield fixo.
 - Ganhe 1 @Protection.
 - Ganhe 1 @(Power Up).
