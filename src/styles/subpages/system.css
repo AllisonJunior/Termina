@@ -122,6 +122,11 @@
     border-bottom: 1px solid rgba(128, 128, 128, 0.25);
 }
 
+.system-content th:not(:last-child),
+.system-content td:not(:last-child) {
+    border-right: 1px solid #000;
+}
+
 .system-content th {
     background: #000;
     color: #fff;

@@ -4,7 +4,7 @@ As seguintes reações não possuem limíte de uso, ou seja, no seu turno você 
 Ao sofrer um ataque você pode, entrar em uma postura defensiva e reduzir o dano sofrido pela metade.
 
 **Counter**<br>
-Ao sofrer um ataque você pode, realizar um contra ataque, desde que possua alcance.
+Ao sofrer um ataque você pode, realizar um contra ataque, desde que possua alcance (magias não podem ser utilizadas para contra atacar).
 
 **Evade**<br>
 Ao sofrer um ataque você pode, realizar um teste de justiça com DC igual ao acerto, em um sucesso você esquiva completamente do ataque.

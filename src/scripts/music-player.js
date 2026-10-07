@@ -1,7 +1,7 @@
 const tracks = [
     {
         title: "Doplefy - What Was My Sin",
-        source: new URL("../../res/audio/what was my sin.mp3", import.meta.url).href,
+        source: new URL("../../res/audio/what was my sin.mp3", import.meta.url).href
     },
 ];
 

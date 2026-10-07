@@ -1,9 +1,10 @@
 const tooltipManifestUrl = new URL("../../bd/tooltip/index.json", import.meta.url);
 const effectsDirectoryUrl = new URL("../../res/effects/", import.meta.url);
-const tooltipSyntax = /@\{([^{}\r\n]+)\}|@\(([^()\r\n]+)\)|@([^\s@()[\]{}]+)/g;
+const tooltipSyntax = /@\{([^{}\r\n]+)\}|@\(([^()\r\n]+)\)|@([\p{L}\p{N}-]+)/gu;
 const tooltipTypeColors = {
     negative: "#ff0000",
-    positive: "#5793e2"
+    positive: "#5793e2",
+    resource: "#19c424"
 };
 
 let tooltipDatabasePromise;

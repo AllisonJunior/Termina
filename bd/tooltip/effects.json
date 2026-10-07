@@ -15,5 +15,13 @@
     "Poise":{
         "description": "O seu crítico é reduzido com base na Stack (Stack máxima: 8).",
         "type": "positive"
+    },
+    "Rage": {
+        "description": "Recurso consumido / utilizado para ativar efeitos únicos.",
+        "type": "resource"
+    },
+    "Power Up": {
+        "description": "Por essa cena o seu acerto é aumentado com base na Stack.",
+        "type": "positive"
     }
 }
