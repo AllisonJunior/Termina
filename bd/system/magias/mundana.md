@@ -6,10 +6,6 @@ Para escolher qualquer uma das magias presentes nessa lista você precisa de no 
 c(!BLUE){Alcance: *Visão*, Duração: *Intermitente*} <br>
 Você cria um foco de luz que ilumina em um raio de 25 feet a partir do foco. Você pode desfazer essa luz a qualquer momento com uma ação livre.
 
-**MARCA DO CAÇADOR** <br>
-c(!BLUE){Alcance: *Visão*, Duração: *Intermitente*} <br>
-Você escolhe uma criatura que pode ver e a marca com uma assinatura de mana, somente uma criatura pode estar sobre o efeito dessa magia. Ao acertar essa criatura você causa 1d12 de dano adicional. Essa assinatura dura até que você a troque, caia ou a desative com uma ação livre.
-
 **MÃO ESPECTRAL** <br>
 c(!BLUE){Alcance: *30 feet*, Duração: *Intermitente*} <br>
 Você cria uma mão espectral e flutuante que aparece em um ponto dentro do alcance, a mesma pode ser utilizada para diversas coisas, desde abrir portas e recipientes, segurar um item, mover coisas, etc, desde que esteja dentro do alcance. Você pode desativar essa mão a qualquer momento com uma ação livre, se atacada, a mão possui 4 de CA e 1 de vida. A quantidade de peso que a mão pode levantar é definida pela sua Prudência.
