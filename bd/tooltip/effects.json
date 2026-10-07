@@ -6,7 +6,7 @@
     "Burn": {
         "description": "No fim da cena, sofra dano igual a Stack.",
         "type": "negative",
-        "title": "Efeito Negativo: Burn"
+        "title": ""
     },
     "Protection": {
         "description": "Ao sofrer um ataque reduza o seu dano pela metade, então reduza a Stack em 1.",
@@ -23,5 +23,41 @@
     "Power Up": {
         "description": "Por essa cena o seu acerto é aumentado com base na Stack.",
         "type": "positive"
+    },
+    "Power Down": {
+        "description": "Por essa cena o seu acerto é reduzido com base na Stack.",
+        "type": "negative"
+    },
+    "Healing Down": {
+        "description": "Por essa cena a efetividade da sua cura é reduzida pela metade, no fim da cena a Stack é reduzida em 1.",
+        "type": "negative"
+    },
+    "Paralyze": {
+        "description": "Você perde o seu próximo bônus de rolagem, então reduza a Stack em 1.",
+        "type": "negative"
+    },
+    "Tremor": {
+        "description": "Ao sofrer dano de um ataque o sofra novamente, então reduza a Stack em 1.",
+        "type": "negative"
+    },
+    "Guidance": {
+        "description": "Sua próxima rolagem ganha um bônus de d4, então reduza a Stack em 1.",
+        "type": "positive"
+    },
+    "Poison": {
+        "description": "No fim de um turno sofra dano igual a Stack, no fim da cena a Stack é reduzida pela metade.",
+        "type": "negative"
+    },
+    "Cold": {
+        "description": "No fim da cena, sofra dano igual a Stack.",
+        "type": "negative"
+    },
+    "Fragile": {
+        "description": "Ao sofrer um ataque dobre o seu dano, então reduza a Stack em 1.",
+        "type": "negative"
+    },
+    "Spark": {
+        "description": "Ao reagir sofra (Stack x 10) de dano, então reduza a Stack em 1.",
+        "type": "negative"
     }
 }

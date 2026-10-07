@@ -25,6 +25,10 @@ const markdownFiles = {
     arcanista:       new URL("../../../bd/system/classes/arcanista.md", import.meta.url),
     horrante:        new URL("../../../bd/system/classes/horrante.md", import.meta.url),
     mestre:          new URL("../../../bd/system/classes/mestre.md", import.meta.url),
+    
+    // Magias
+    mundana:         new URL("../../../bd/system/magias/mundana.md", import.meta.url),
+    alma:            new URL("../../../bd/system/magias/alma.md", import.meta.url),
 
     // Perks
 

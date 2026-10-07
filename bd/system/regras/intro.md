@@ -18,7 +18,9 @@
 
 - Estabeleça a história do seu personagem: Qual a sua origem? Quem ou o que ele é? Qual é o seu maior trauma? Por que ele se juntaria a **Vanguarda**? 
 - Defina a sua raça.
-- Defina a sua classe em conjunto com os seus atributos.
+- Defina a sua classe.
+- Defina os seus atributos.
+- Escolha as suas Magias.
 - Escolha as suas Perks.
 - Escolha uma arma única e seus modificadores.
 - Escolha dois recursos.

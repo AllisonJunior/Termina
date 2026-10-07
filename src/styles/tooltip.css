@@ -102,6 +102,7 @@
 
 .markdown-tooltip-description {
     overflow-wrap: anywhere;
+    white-space: pre-line;
 }
 
 .markdown-tooltip:hover .markdown-tooltip-content,

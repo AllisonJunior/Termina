@@ -1,11 +1,19 @@
 **Efeitos Positivos**<br>
 @Poise <br>
 @(Power Up) <br>
-@Protection
+@Protection <br>
+@Guidance
 
 **Efeitos Negativos**<br>
 @Bleed <br>
-@Burn
+@Burn <br>
+@Cold <br>
+@Spark <br>
+@Poison <br>
+@Tremor <br>
+@(Healing Down) <br>
+@Paralyze <br>
+@Fragile <br>
 
 **Efeitos Condicionais** <br>
 @Rage
