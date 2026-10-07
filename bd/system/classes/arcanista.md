@@ -17,4 +17,4 @@ Devido a sua alta afinidade com o **Éter** você adiciona quatro magias mundana
 
 
 **Coquetel Mundano (Ativa)** <br>
-No seu turno você pode gastar sua ação para castar uma combinação de até três magias mundanas. Essa habilidade só pode ser utilizada a cada dois turnos. 
+No seu turno você pode gastar sua ação para castar uma combinação de até três magias mundanas. Essa habilidade só pode ser utilizada a cada três cenas. 

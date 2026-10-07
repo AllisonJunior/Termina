@@ -4,6 +4,7 @@ const colorMacros = {
     "!RED": "#ff0000",
     "!BLUE": "#0b0b66",
     "!ABYSM": "#21022a",
+    "!COST": "#360065",
     "!GOD": "#76b00b"
 };
 const alignmentMacros = {

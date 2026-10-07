@@ -17,6 +17,7 @@ Você ao se tornar um mestre deve escolher qual caminho trilhará, o de um Mestr
 
 **Auxílio (Ativa)** <br>
 No início de uma cena você pode aplicar um dos seguintes efeitos em você ou em um aliado:
+- 1 @Armor
 - 1 @(Power Up) 
 - 1 @(Damage Up)
 - 2 @Protection

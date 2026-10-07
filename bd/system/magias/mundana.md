@@ -65,6 +65,9 @@ Você toca uma criatura e dobra todo o seu movimento por esta cena.
 **ZONA ESCORREGADIA** <br>
 Você cria em um ponto dentro de até 45 feet de você uma área com uma substância viscosa que faz todas as criaturas escorregarem. Quando uma criatura se move dentro dessa área ela precisa fazer um teste de Justiça, em caso de falha ela sofre d6 de dano esmagante e cai (esse teste é feito toda vez que a criatura tenta se mover). A área escorregadia dura duas cenas e possui um formato a sua escolha, a única restrição é o seu tamanho máximo de 25 feet. A qualquer momento você pode desfazer essa zona com uma ação livre.  
 
+**FÔLEGO** <br>
+Você reveste a si e mais outras cinco criaturas em até 35 feet com mana, as concedendo a habilidade de respirar independentemente se o ambiente possui ar ou não. Você pode desfazer essa magia a qualquer momento com uma ação livre.
+
 **PESO PENA** <br>
 Como uma reação você reveste a si e mais outras cinco criaturas em até 35 feet com mana, reduzindo a sua velocidade de queda a tal ponto que vocês não podem mais sofrer dano de queda pela cena. 
 

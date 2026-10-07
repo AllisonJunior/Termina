@@ -75,5 +75,9 @@
     "Damage Up": {
         "description": "Por essa cena seus ataques causam (Stack x 10) de dano adicional.",
         "type": "positive"
+    },
+    "Armor": {
+        "description": "Por essa cena sua CA é aumentada com Base na Stack.",
+        "type": "positive"
     }
 }

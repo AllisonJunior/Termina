@@ -16,4 +16,4 @@ Uma classe extremamente balanceada.
 Ao sofrer um ataque unilateral você pode como uma ação livre responder a esse ataque com uma reação (Máx. 2x por turno). 
 
 **Surto de Ação (Ativa)** <br>
-No seu turno você pode ganhar uma ação extra que é perdida após seu uso. Essa habilidade só pode ser utilizada a cada dois turnos.
+No seu turno você pode ganhar uma ação extra que é perdida após seu uso. Essa habilidade só pode ser utilizada a cada três cenas.
