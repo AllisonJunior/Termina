@@ -32,11 +32,11 @@ Você cria um efeito sensorial instantâneo e inofensivo, como uma chuva de faí
 
 **FLECHA RESTRITIVA** <br> 
 c(!BLUE){Alcance: *50 feet*, Duração: *Insta*}<br>
-Você estende uma de suas mãos formando um arco magico, disparando logo em seguida em direção a uma criatura. Em um acerto cause 1d8 de dano no alvo e aplique um dos seguintes efeitos, a sua escolha: 1 @(Healing Down) ou 1 @(Paralyze).
+Você estende uma de suas mãos formando um arco magico, disparando logo em seguida em direção a uma criatura. Em um acerto cause d8 de dano no alvo e aplique um dos seguintes efeitos, a sua escolha: 1 @(Healing Down) ou 1 @(Paralyze).
 
 **AGULHA DESGASTANTE** <br>
 c(!BLUE){Alcance: *15 feet*, Duração: *Insta*} <br>
-Você cria uma pequena agulha de mana e a lança em direção a uma criatura. Em um acerto cause 1d12 de dano no alvo e aplique 1 @Fragile.
+Você cria uma pequena agulha de mana e a lança em direção a uma criatura. Em um acerto cause d12 de dano no alvo e aplique 1 @Fragile.
 
 **ORIENTAÇÃO** <br>
 c(!BLUE){Alcance: *Toque*, Duração: *Insta*} <br>
@@ -56,7 +56,7 @@ Você rapidamente cria uma explosão em um ponto dentro do alcance, essa explos�
 
 **NÉVOA VENENOSA** <br>
 c(!BLUE){Alcance: *Você*, Duração: *Insta*} <br>
-Você estala seus dedos, e deles uma enorme névoa verde surge, se estendendo em um raio de 15 feet focado em você. Todas as criaturas de sua escolha que estiverem na área precisam fazer um teste, em caso de falha sofrem 1d6 + Prudência de dano e ganham 5 @Poison, em caso de sucesso somente ganham 2 @Poison.
+Você estala seus dedos, e deles uma enorme névoa verde surge, se estendendo em um raio de 15 feet focado em você. Todas as criaturas de sua escolha que estiverem na área precisam fazer um teste, em caso de falha sofrem d6 + Prudência de dano e ganham 5 @Poison, em caso de sucesso somente ganham 2 @Poison.
 
 **ELETRIZAR** <br>
 c(!BLUE){Alcance: *30 feet*, Duração: *Insta*} <br>
@@ -88,7 +88,7 @@ Você estende sua mão em direção a uma criatura a imbuindo de mana. Por essa 
 
 **VINHAS ETÉRICAS** <br>
 c(!BLUE){Alcance: *30 feet*, Duração: *Variável*} <br>
-Da sua sombra surgem vinhas com aparência etérica em direção a uma criatura. Em um acerto o alvo sofre 1d8 + Prudência de dano e tem seu movimento zerado pela cena. O Alvo pode a partir da próxima cena, todo início de cena realizar um teste, em uma falha ele sofre (Prudência x 2) de dano e continua preso, em um sucesso ele sofre Prudência de dano e é solto.
+Da sua sombra surgem vinhas com aparência etérica em direção a uma criatura. Em um acerto o alvo sofre d8 + Prudência de dano e tem seu movimento zerado pela cena. O Alvo pode a partir da próxima cena, todo início de cena realizar um teste, em uma falha ele sofre (Prudência x 2) de dano e continua preso, em um sucesso ele sofre Prudência de dano e é solto.
 
 **ACELERAR** <br>
 c(!BLUE){Alcance: *Toque*, Duração: *Cena*} <br>
@@ -105,7 +105,7 @@ Você cria uma esfera de neblina centrada em um ponto dentro do alcance, com um 
 
 **ZONA ESCORREGADIA** <br>
 c(!BLUE){Alcance: *30 feet*, Duração: *Intermitente*} <br>
-Em um ponto dentro do alcance você cobre uma área com uma substância viscosa e escorregadia, toda a área coberta é considerada um terreno difícil. Quando uma criatura se move dentro dessa área ela precisa fazer um teste de Justiça, em caso de falha ela sofre 1d6 de dano esmagante e cai.
+Em um ponto dentro do alcance você cobre uma área com uma substância viscosa e escorregadia, toda a área coberta é considerada um terreno difícil. Quando uma criatura se move dentro dessa área ela precisa fazer um teste de Justiça, em caso de falha ela sofre d6 de dano esmagante e cai.
 
 **DISPARADA ELÉTRICA** <br>
 c(!BLUE){Alcance: *65 feet*, Duração: *Insta*} <br>
@@ -114,11 +114,11 @@ Você reveste seus pés com eletricidade, o fazendo disparar em direção a uma 
 **REPRESSÃO** <br>
 c(!BLUE){Alcance: *30 feet*, Duração: *Insta*} <br>
 *Esta magia é utilizada como uma reação.* <br>
-Você expande uma onda de força focada em você, essa onda de força se expande por um raio de 15 feet. Todas as criaturas de sua escolha precisam fazer um teste de Fortitude, em caso de falha a criatura sofre 1d8 de dano esmagante e é empurrada 40 feet para trás, adicione ao dano 1d8 adicional para cada 5 feet que a criatura não pode ser empurrada.
+Você expande uma onda de força focada em você, essa onda de força se expande por um raio de 15 feet. Todas as criaturas de sua escolha precisam fazer um teste de Fortitude, em caso de falha a criatura sofre d8 de dano esmagante e é empurrada 40 feet para trás, adicione ao dano d8 adicional para cada 5 feet que a criatura não pode ser empurrada.
 
 **INFLINGIR SANGRAMENTO** <br>
 c(!BLUE){Alcance: *25 feet*, Duração: *Insta*} <br>
-Você faz um movimento rápido com uma de suas mãos, causando um corte profundo na criatura alvo dentro do alcance. Em um acerto cause 1d12 de dano cortante e aplique 8 @Bleed. 
+Você faz um movimento rápido com uma de suas mãos, causando um corte profundo na criatura alvo dentro do alcance. Em um acerto cause d12 de dano cortante e aplique 8 @Bleed. 
 
 **PROTEGER** <br>
 c(!BLUE){Alcance: *30 feet*, Duração: *Insta*} <br>
@@ -127,18 +127,18 @@ Você envolve você ou uma criatura no alcance com uma camada de mana, reduzindo
 
 **RAIO DE GELO** <br>
 c(!BLUE){Alcance: *65 feet*, Duração: *Insta*} <br>
-Você estende uma de suas mãos e dispara a partir dela um raio de gelo em direção a uma criatura. Em um acerto cause 1d10 + Prudência de dano e alique 5 @Cold no alvo.
+Você estende uma de suas mãos e dispara a partir dela um raio de gelo em direção a uma criatura. Em um acerto cause d10 + Prudência de dano e alique 5 @Cold no alvo.
 
 **PALMAS CONGELANTES** <br>
 c(!BLUE){Alcance: *Você*, Duração: *Insta*} <br>
-Você bate palmas rapidamente, criando uma série de estacas de gelo em um raio de 15 feet focado em você. Todas as criaturas dentro dessa área a sua escolha precisam fazer um teste, em caso de falha sofrem 1d12 + Prudência de dano e ganham 3 @Cold.
+Você bate palmas rapidamente, criando uma série de estacas de gelo em um raio de 15 feet focado em você. Todas as criaturas dentro dessa área a sua escolha precisam fazer um teste, em caso de falha sofrem d12 + Prudência de dano e ganham 3 @Cold.
 
 **RAIO DE FOGO** <br>
 c(!BLUE){Alcance: *65 feet*, Duração: *Insta*} <br>
-Você estende uma de suas mãos e dispara a partir dela um raio de fogo em direção a uma criatura. Em um acerto cause 1d10 + Prudência de dano e alique 5 @Burn no alvo.
+Você estende uma de suas mãos e dispara a partir dela um raio de fogo em direção a uma criatura. Em um acerto cause d10 + Prudência de dano e alique 5 @Burn no alvo.
 
 **PALMAS ARDENTES** <br>
 c(!BLUE){Alcance: *Você*, Duração: *Insta*} <br>
-Você bate palmas rapidamente, criando uma grande quantidade de chamas em um raio de 15 feet focado em você. Todas as criaturas dentro dessa área a sua escolha precisam fazer um teste, em caso de falha sofrem 1d12 + Prudência de dano e ganham 3 @Burn.
+Você bate palmas rapidamente, criando uma grande quantidade de chamas em um raio de 15 feet focado em você. Todas as criaturas dentro dessa área a sua escolha precisam fazer um teste, em caso de falha sofrem d12 + Prudência de dano e ganham 3 @Burn.
 
 ---
