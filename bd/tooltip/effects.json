@@ -59,5 +59,9 @@
     "Spark": {
         "description": "Ao reagir sofra (Stack x 10) de dano, então reduza a Stack em 1.",
         "type": "negative"
+    },
+    "Sinking": {
+        "description": "Seu próximo ataque causa metade do dano, então reduza a Stack em 1.",
+        "type": "negative"
     }
 }

@@ -13,6 +13,7 @@
 - Os jogadores tem acesso a todas as reações desse sistema.
 - Ao ter seus pontos de vida zerados o personagem do jogador entra no estado Desestabilizado.
 - Todos os personagens podem utilizar magia, mas para isso se é necessário atender os requisitos e restrições.
+- A ambíguidade do termo "Testes" nas descrições da magia, indica que um alvo pode tentar Resistir (Fortitude), Esquivar (Justiça), etc.
 
 ## Criação do Personagem
 

@@ -8,6 +8,7 @@
 @Bleed <br>
 @Burn <br>
 @Cold <br>
+@Sinking <br>
 @Spark <br>
 @Poison <br>
 @Tremor <br>
