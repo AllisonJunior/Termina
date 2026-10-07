@@ -62,11 +62,6 @@ Você assimila horror em uma de suas mãos e cria um pequeno orbe de horror, o d
 **Ação Livre:** 6 de Vida<br>
 Você reveste a sua arma com horror, fazendo com que por esta cena todo dano causado por ela seja do tipo horrífico.
 
-**REVESTIMENTO REFLETIVO** <br>
-**Ativação:** 10 de Vida<br>
-**Ação Livre:** 8 de Vida<br>
-Você se reveste em horror instável por duas cenas. Quando atacado reflita o dobro do dano sofrido ao atacante e encerre essa magia.
-
 **ESPINHOS DE HORROR** <br>
 **Ativação:** 10 de Vida<br>
 **Ação Livre:** 10 de Vida<br>
