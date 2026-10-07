@@ -22,10 +22,9 @@ Uma classe focada exclusivamente na defesa.
 **Ardilosidade (Ativa)** <br>
 No início de uma cena você ganha um dos seguintes beneficíos: 
 - Ganhe +4 de Shield fixo.
-- Ganhe 1 @Protection.
-- Ganhe 1 @(Power Up).
 - Ganhe +30 feet por essa cena.
 - Ganhe imunidade a ataques de oportunidade por essa cena.
+- Ataques a distância feitos contra você são feitos com desvantagem.
 
 
 
