@@ -6,7 +6,7 @@ Para escolher qualquer uma das magias presentes nessa lista você precisa de no 
 Você seleciona algo para se tornar um foco de luz, esse foco ilumina em um raio de 25 feet, emitindo uma cor a sua escolha. Você pode desfazer essa luz a qualquer momento com uma ação livre.
 
 **MÃO ESPECTRAL** <br>
-Você cria uma mão espectral em até 30 feet de você, a mesma pode ser utilizada para diversas coisas, desde, abrir portas a mover coisas. Ela não possui CA, ou seja, se atacada ela é automáticamente desfeita. Você pode desfazer essa mão espectral a qualquer momento com uma ação livre.
+Você cria uma mão espectral em até 30 feet de você, a mesma pode ser utilizada para diversas coisas, desde, abrir portas a mover coisas. Ela não possui CA, ou seja, se atacada ela é automáticamente desfeita e a mesma pode atravessar objetos sólidos. Você pode desfazer essa mão espectral a qualquer momento com uma ação livre.
 
 **CONSERTAR** <br>
 Você toca um item e tenta o reparar utilizando mana. O quanto tempo e quão bem ou se pode ser consertado depende do item em si junto da sua Prudência.
@@ -30,7 +30,7 @@ Você aponta um de seus dedos em direção a um alvo e então conjura uma pequen
 Você toca um alvo e aplica 2 @Guidance no mesmo.
 
 **CURAR** <br>
-Você toca um alvo e o cura Xd8 + 2 de pontos de vida (X equivale a sua Prudência), vida excedente é convertida em Shield fixo.
+Você toca um alvo e o cura 2d8 + Prudência de pontos de vida, vida excedente é convertida em Shield fixo.
 
 **KABOOM** <br>
 Você concentra mana o suficiente em si para a dispersar em um piscar de olhos, em um raio de 15 feet focado em você uma explosão de mana acontece. Todas as criaturas a sua escolha dentro da área sofrem 4d10 + Prudência + (Quantidade de Criaturas Afetadas) de dano. 
