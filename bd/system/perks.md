@@ -22,6 +22,11 @@ No início do combate ganhe 10% da sua vida máxima de Shield fixo (arredondado 
 
 ---
 
+**Mugigo** <br>
+Ao acertar um alvo com um ataque corpo a corpo você pode aplicar @Prey.
+
+---
+
 **Ataque Extra** <br>
 Uma vez por cena ao acertar um ataque você pode o refazer novamente.
 
@@ -32,23 +37,13 @@ Você ganha por todo o combate 2 @Haste.
 
 ---
 
-**Aproveitador** <br>
-Uma vez por turno ao acertar um ataque unilateral você pode causar +35% de dano adicional (arredondado para cima).
-
----
-
 **Precisão Iminente** <br>
 Seus ataques críticos causam +10 de dano adicional.
 
 ---
 
-**Precisão Cirúrgica** <br>
-O seu primeiro ataque no turno causa +50% de dano adicional.
-
----
-
 **Maldito** <br>
-Quando um atacante te coloca no estado desestabilizado ele ganha 2 @Paralyze.
+Quando um atacante te coloca no estado desestabilizado ele ganha 2 @Paralyze e 2 @Fragile.
 
 ---
 
@@ -62,5 +57,48 @@ Ao ganhar um efeito positivo você pode escolher ganhar +1, duas vezes por cena.
 
 ---
 
-**a** <br>
-Ao ganhar um efeito positivo você pode escolher ganhar +1, duas vezes por cena.
+**Pamonha** <br>
+Você ganha um ponto de atributo ou uma magia (independente da vertente).
+
+---
+
+**Médico** <br>
+Ao curar uma criatura incluindo você, aumente a cura em (Prudência / 2, arredondado para cima).
+
+---
+
+**Adrenalina** <br>
+Uma vez a cada descanso longo, ao ter seus pontos de vida reduzidos a zero você pode agir como uma ação livre.
+
+---
+
+**Alívio Horrífico** <br>
+Uma vez por cena você pode reduzir pela metade a penalidade da ativação de uma magia da alma como uma ação livre.
+
+---
+
+**Aproveitador** <br>
+Seus ataques unilaterais causam +10 de dano adicional.
+
+---
+
+**Segunda Chance** <br>
+Uma vez por combate ao falhar em uma rolagem você pode a re rolar.
+
+---
+
+**Tank** <br>
+Ataques unilaterais causam -5 de dano.
+
+---
+
+**A Oitava** <br>
+Quando um combate começa ganhe 6 @Resilience.
+
+---
+
+**Recuperação** <br>
+Ao acertar um ataque recupere 2 de Vida.
+
+---
+

@@ -4,7 +4,8 @@
 @Protection <br>
 @Haste <br>
 @(Damage Up) <br>
-@Guidance
+@Guidance <br>
+@Resilience <br>
 
 **Efeitos Negativos**<br>
 @Bleed <br>
@@ -18,6 +19,7 @@
 @(Healing Down) <br>
 @Paralyze <br>
 @Fragile <br>
+@Prey <br>
 
 **Efeitos Condicionais** <br>
 @Rage

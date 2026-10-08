@@ -25,6 +25,10 @@ function escapeHtml(text) {
     });
 }
 
+function formatTooltipDescription(description) {
+    return escapeHtml(String(description)).replace(/\r\n?|\n/g, "<br>");
+}
+
 function normalizeTooltipKey(value) {
     return String(value)
         .normalize("NFD")
@@ -136,7 +140,7 @@ export async function renderTooltips(markdown) {
                 : "";
             const headerText = tooltipTitle ?? item;
 
-            return `<span class="markdown-tooltip markdown-tooltip-${tooltipType}" tabindex="0" style="--markdown-tooltip-color: ${tooltipColor};"><span class="markdown-tooltip-label">${iconMarkup}<span>${escapeHtml(item)}</span></span><span class="markdown-tooltip-content" role="tooltip"><span class="markdown-tooltip-header">${iconMarkup}<span>${escapeHtml(headerText)}</span></span><span class="markdown-tooltip-description">${escapeHtml(String(description))}</span></span></span>`;
+            return `<span class="markdown-tooltip markdown-tooltip-${tooltipType}" tabindex="0" style="--markdown-tooltip-color: ${tooltipColor};"><span class="markdown-tooltip-label">${iconMarkup}<span>${escapeHtml(item)}</span></span><span class="markdown-tooltip-content" role="tooltip"><span class="markdown-tooltip-header">${iconMarkup}<span>${escapeHtml(headerText)}</span></span><span class="markdown-tooltip-description">${formatTooltipDescription(description)}</span></span></span>`;
         }
     );
 }

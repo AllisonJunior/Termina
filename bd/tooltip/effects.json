@@ -79,5 +79,13 @@
     "Armor": {
         "description": "Por essa cena sua CA é aumentada com Base na Stack.",
         "type": "positive"
+    },
+    "Prey": {
+        "description": "- No fim da cena, sofra 1d4 de dano para cada vez que você foi acertado pelo aplicador desse efeito.\n- Esse efeito expira se aplicado em uma outra criatura.",
+        "type": "negative"
+    },
+    "Resilience": {
+        "description": "Quando um efeito negativo é aplicado em você, ignore a sua aplicação e reduza a Stack em 1.",
+        "type": "positive"
     }
 }
