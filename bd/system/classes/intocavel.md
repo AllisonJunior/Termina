@@ -5,7 +5,7 @@ Uma classe focada exclusivamente na defesa.
 
 | Característica   | Valor |
 |------------------|-------|
-| **Vida**         | ((Nível + 1) x 8) + Fortitude |
+| **Vida**         | (((Fortitude + Nível) x 2) + ((Nível + 1) x 6) + 30) |
 | **CA**           | 9 |
 | **Speed**        | d12 + Justiça |
 | **Resistência**  | Escolha uma para ser **Resistente**, uma para ser **Normal** e uma para ser **Vulnerável**. |
@@ -25,6 +25,3 @@ No início de uma cena você ganha um dos seguintes beneficíos:
 - Ganhe +30 feet por essa cena.
 - Ganhe imunidade a ataques de oportunidade por essa cena.
 - Ataques a distância feitos contra você são feitos com desvantagem.
-
-
-

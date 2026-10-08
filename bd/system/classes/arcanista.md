@@ -5,8 +5,8 @@ Uma classe especializada no uso de magia mundana.
 
 | Característica   | Valor |
 |------------------|-------|
-| **Vida**         | (2 x (Fortitude + Nível)) + 16 |
-| **CA**           | 5 |
+| **Vida**         | (((Fortitude + Nível) x 2) + ((Nível + 1) x 8) + 30) |
+| **CA**           | 7 |
 | **Speed**        | d10 + Justiça |
 | **Resistência**  | Escolha duas para serem **Normal** e uma para ser **Vulnerável**. |
 

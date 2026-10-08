@@ -5,7 +5,7 @@ Uma classe extremamente balanceada.
 
 | Característica   | Valor |
 |------------------|-------|
-| **Vida**         | (Fortitude x 2) + ((Nível + 1) x 8) |
+| **Vida**         | (((Fortitude + Nível) x 2) + ((Nível + 1) x 8) + 42) |
 | **CA**           | 6 |
 | **Speed**        | d6 + Justiça |
 | **Resistência**  | Escolha uma para ser **Resistente**, uma para ser **Normal** e uma para ser **Vulnerável**. |

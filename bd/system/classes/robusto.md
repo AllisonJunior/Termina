@@ -5,7 +5,7 @@ Uma classe que troca sua defesa por uma alta ofensividade.
 
 | Característica   | Valor |
 |------------------|-------|
-| **Vida**         | (Fortitude x 3) + ((Nível + 1) x 12) |
+| **Vida**         | (((Fortitude + Nível) x 3) + ((Nível + 1) x 12) + 44) |
 | **CA**           | 3 |
 | **Speed**        | d4 + Justiça |
 | **Resistência**  | Todas as suas são **Normal**. |

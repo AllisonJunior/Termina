@@ -5,8 +5,8 @@ Uma classe especializada na criação de todos os tipos de recursos.
 
 | Característica   | Valor |
 |------------------|-------|
-| **Vida**         | (Fortitude x 2) + ((Nível + 1) x 6) |
-| **CA**           | 5 |
+| **Vida**         | (((Fortitude + Nível) x 2) + ((Nível + 1) x 6) + 38) |
+| **CA**           | 7 |
 | **Speed**        | d8 + Justiça |
 | **Resistência**  | Escolha duas para serem **Normal** e uma para ser **Vulnerável**. |
 

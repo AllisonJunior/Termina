@@ -5,7 +5,7 @@ Uma classe especializada no uso de magia da alma.
 
 | Característica   | Valor |
 |------------------|-------|
-| **Vida**         | (2 x (Fortitude + Nível)) + 10 |
+| **Vida**         | (((Fortitude + Nível) x 3) + ((Nível + 2) x 4) + 48) |
 | **CA**           | 5 |
 | **Speed**        | d10 + Justiça |
 | **Resistência**  | Todas as suas são **Normal**. |
