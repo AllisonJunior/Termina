@@ -9,49 +9,56 @@ Acerto = *Justiça* <br>
 Dano = *1d4 + Justiça* <br>
 Tipo de Dano = *Perfurante ou Cortante* <br>
 Alcance = *5 feet* <br>
-Base = *Uma mão; Leve; Arremessável (+15 feet).* 
+Base = *Uma mão; Leve; Arremessável (+15 feet).* <br>
+c(!RED){Modificadores = *17*} <br>
 
 **Espada**<br>
 Acerto = *Justiça ou Fortitude* <br>
 Dano = *1d8 + Justiça ou Fortitude* <br>
 Tipo de Dano = *Cortante, Perfurante ou Esmagante* <br>
 Alcance = *5 feet* <br>
-Base = *Uma mão.* 
+Base = *Uma mão.* <br>
+c(!RED){Modificadores = *12*} <br>
 
 **Martelo Gigante**<br>
 Acerto = *Fortitude* <br>
-Dano = *1d12 + Fortitude* <br>
+Dano = *1d12 + Fortitude + 2* <br>
 Tipo de Dano = *Esmagante* <br>
 Alcance = *5 feet* <br>
-Base = *Duas mãos; Pesada. Requer Fortitude alta.* 
+Base = *Duas mãos; Pesada. Requer Fortitude alta.* <br>
+c(!RED){Modificadores = *10*} <br>
 
 **Lança**<br>
 Acerto = *Justiça* <br>
 Dano = *1d8 + Justiça* <br>
 Tipo de Dano = *Perfurante* <br>
 Alcance = *10 feet* <br>
-Base = *Uma ou duas mãos; Arremessável (+20 feet).* 
+Base = *Uma ou duas mãos; Arremessável (+20 feet).* <br>
+c(!RED){Modificadores = *12*} <br>
 
 **Revolver**<br>
 Acerto = *Justiça ou Fortitude* <br>
 Dano = *1d10 + Justiça ou Fortitude* <br>
 Tipo de Dano = *Perfurante ou Esmagante* <br>
-Alcance = *35 feet* <br>
-Base = *Uma ou duas mãos.*
+Alcance = *55 feet* <br>
+Base = *Uma ou duas mãos.* <br>
+c(!RED){Modificadores = *12*} <br>
 
 **Rifle**<br>
 Acerto = *Justiça ou Fortitude* <br>
 Dano = *1d12 + Justiça ou Fortitude* <br>
 Tipo de Dano = *Perfurante ou Esmagante* <br>
-Alcance = *65 feet* <br>
-Base = *Duas mãos.* 
+Alcance = *120 feet* <br>
+Base = *Duas mãos.* <br>
+c(!RED){Modificadores = *10*} <br>
 
 ---
 
 **Membro de Caça**<br>
 Acerto = *Fortidude, Prudência, Temperância ou Justiça* <br>
-Dano = *1d6 + Fortitude, Prudência, Temperância ou Justiça* <br>
+Dano = *1d8 + Fortitude, Prudência, Temperância ou Justiça* <br>
 Tipo de Dano = *Cortante, Perfurante ou Esmagante* <br>
 Alcance = *Variável, se for um braço com lâmina por exemplo tem 5 feet de alcance, se for uma espécie de asa que se estende 15 feet, se for uma espécie de arma orgânica 30 feet, em outras palavras, (5/30 feet)* <br>
+c(!RED){Modificadores = *14*} <br>
 
 ---
