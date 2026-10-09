@@ -6,6 +6,11 @@ Note que apesar de se poder castar magias da alma como uma ação livre, a quant
 
 ---
 
+**REVESTIMENTO HORRÍFICO** <br>
+**Ativação:** 8 de Vida<br>
+**Ação Livre:** 6 de Vida<br>
+Você profere algumas palavras incompreensíveis que imbuem a sua arma com horror, você ganha 2 @(Soul Resin).
+
 **GARRA MALDITA** <br>
 **Ativação:** 6 de Vida<br>
 **Ação Livre:** 6 de Vida<br>
@@ -40,11 +45,6 @@ Você toca uma criatura e purifica 1d4 + 1 efeitos negativos nela, para cada efe
 **Ativação:** 6 de Vida<br>
 **Ação Livre:** 6 de Vida<br>
 Você move suas mãos rapidamente de cima para baixo e de baixo para cima em direção a uma criatura, criando uma série de cortes. Em um acerto o alvo sofre d6 + Horror de dano horrífico.
-
-**REVESTIMENTO HORRÍFICO** <br>
-**Ativação:** 8 de Vida<br>
-**Ação Livre:** 6 de Vida<br>
-Você profere algumas palavras incompreensíveis que imbuem a sua arma com horror, por essa cena essa arma causará dano horrífico.
 
 **BLINK** <br>
 **Ativação:** 10 de Vida<br>

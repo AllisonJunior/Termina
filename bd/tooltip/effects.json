@@ -91,5 +91,9 @@
     "Resilience": {
         "description": "Quando um efeito negativo é aplicado em você, ignore a sua aplicação e reduza a Stack em 1.",
         "type": "positive"
+    },
+    "Soul Resin": {
+        "description": "Pela cena todo o dano dos seus ataques é convertido para dano horrífico, fim da cena reduza a Stack em 1.",
+        "type": "positive"
     }
 }
