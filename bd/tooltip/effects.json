@@ -13,7 +13,7 @@
         "type": "positive"
     },
     "Poise":{
-        "description": "O seu crítico é reduzido com base na Stack (Stack máxima: 8).",
+        "description": "O seu crítico é reduzido com base na Stack, este efeito tem Stack máxima igual a 8 e não expira no fim da cena.",
         "type": "positive"
     },
     "Rage": {
@@ -21,11 +21,11 @@
         "type": "resource"
     },
     "Power Up": {
-        "description": "Por essa cena o seu acerto é aumentado com base na Stack.",
+        "description": "Por essa cena o acerto dos seus ataques é aumentado com base na Stack.",
         "type": "positive"
     },
     "Power Down": {
-        "description": "Por essa cena o seu acerto é reduzido com base na Stack.",
+        "description": "Por essa cena o acerto dos seus ataques é reduzido com base na Stack.",
         "type": "negative"
     },
     "Healing Down": {
@@ -69,7 +69,7 @@
         "type": "negative"
     },
     "Haste": {
-        "description": "Por essa cena sua Speed é aumentada com base na Stack.",
+        "description": "Por essa cena aumente a sua Speed com base na Stack.",
         "type": "positive"
     },
     "Bind": {

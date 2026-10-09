@@ -1,25 +1,26 @@
-**Efeitos Positivos**<br>
-@Poise <br>
-@(Power Up) <br>
-@Protection <br>
-@Haste <br>
-@(Damage Up) <br>
-@Guidance <br>
-@Resilience <br>
+| Efeitos Positivos  |
+|--------------------|
+| @Poise |
+| @Protection |
+| @Haste |
+| @Guidance |
+| @Resilience |
+| @(Soul Resin) |
+| @(Power Up) |
+| @(Damage Up) |
 
-**Efeitos Negativos**<br>
-@Bleed <br>
-@Spark <br>
-@Burn <br>
-@Cold <br>
-@Sinking <br>
-@Rupture <br>
-@Poison <br>
-@Tremor <br>
-@(Healing Down) <br>
-@Paralyze <br>
-@Fragile <br>
-@Prey <br>
-
-**Efeitos Condicionais** <br>
-@Rage
+| Efeitos Negativos  |
+|--------------------|
+| @Bleed |
+| @Spark |
+| @Burn |
+| @Cold |
+| @Poison |
+| @Rupture |
+| @Tremor |
+| @Sinking |
+| @Paralyze |
+| @Fragile |
+| @(Power Down) |
+| @Prey |
+| @(Healing Down) |
