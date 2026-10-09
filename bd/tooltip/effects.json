@@ -72,6 +72,10 @@
         "description": "Por essa cena sua Speed é aumentada com base na Stack.",
         "type": "positive"
     },
+    "Bind": {
+        "description": "Por essa cena sua Speed é reduzida com base na Stack.",
+        "type": "negative"
+    },
     "Damage Up": {
         "description": "Por essa cena seus ataques causam (Stack x 10) de dano adicional.",
         "type": "positive"

@@ -34,8 +34,8 @@ const markdownFiles = {
     perks:           new URL("../../../bd/system/perks.md", import.meta.url),
 
     // Armas Únicas
-
-    // Recursos
+    base:            new URL("../../../bd/system/armas/base.md", import.meta.url),
+    modificadores:   new URL("../../../bd/system/armas/modificadores.md", import.meta.url),
 };
 
 const systemPage = createMarkdownPage({
