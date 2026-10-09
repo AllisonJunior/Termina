@@ -36,6 +36,12 @@ const markdownFiles = {
     // Armas Únicas
     base:            new URL("../../../bd/system/armas/base.md", import.meta.url),
     modificadores:   new URL("../../../bd/system/armas/modificadores.md", import.meta.url),
+
+    // Traços
+    lombinho:        new URL("../../../bd/system/tracos/lombinho.md", import.meta.url),
+    pamonha:         new URL("../../../bd/system/tracos/pamonha.md", import.meta.url),
+    mugigo:          new URL("../../../bd/system/tracos/mugigo.md", import.meta.url),
+    assis:           new URL("../../../bd/system/tracos/assis.md", import.meta.url),
 };
 
 const systemPage = createMarkdownPage({
