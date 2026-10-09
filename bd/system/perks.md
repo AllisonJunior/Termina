@@ -53,7 +53,7 @@ Ao utilizar uma reação ganhe Shield igual a Fortitude, duas vezes por cena.
 ---
 
 **Bônus** <br>
-Ao ganhar um efeito positivo você pode escolher ganhar +1, duas vezes por cena.
+Duas vezes por cena, ao ganhar ou aplicar um efeito ganhe/aplique +1.
 
 ---
 
