@@ -24,7 +24,6 @@
 | **4** | Aplique 1 @Fragile |
 | **4** | Aplique 1 @(Power Down) |
 | **4** | Aplique 2 @Bind na próxima cena |
-| **5** | Aplique 1 @Paralyze |
 
 | Custo | Mod: Geral |
 |-------|-------|
