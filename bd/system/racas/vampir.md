@@ -6,6 +6,6 @@ As criaturas dos olhos de cor carmesim... uma raça que não se tem nenhum regis
 **Como um vampir você ganha os seguintes benefícios:** <br>
 
 - Movimento base 30 feet 
-- Ao acertar um ataque recupere 3 de Vida
+- Ao acertar um ataque corpo a corpo recupere 3 de Vida
 - Imune a @Bleed
 - Você possui hemocinese (em nível inicial, ou seja, por enquanto o seu controle do sangue se limita somente ao externo e para coisas simples, controle esse que é melhorado conforme mais forte você se torna)

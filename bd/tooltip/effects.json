@@ -95,5 +95,37 @@
     "Soul Resin": {
         "description": "Pela cena todo o dano dos seus ataques é convertido para dano horrífico, fim da cena reduza a Stack em 1.",
         "type": "positive"
+    },
+    "Stream": {
+        "description": "- Stack máxima: 10.\n- Início da cena: Ganhe Shield igual a Stack.\n- Ao agir ganhe 1 Charge (Máx. 2x por cena).\n- Uma vez por aliado por cena, quando ele agir ganhe 1 Charge.\n- Início da cena: Se a Stack estiver no seu valor máximo, ative um dos seguintes efeitos no campo de batalha (pela cena):\n\n1 - $i@!i&i#: O movimento de todas as criaturas é reduzido pela metade.\n2 - #@!&*(i@: Uma criatura a sua escolha ganha uma ação extra perdida após seu uso.\n ...",
+        "type": "negative"
+    },
+    "Charge": {
+        "description": "Recurso consumido / utilizado para ativar efeitos únicos.",
+        "type": "positive"
+    },
+    "Lord": {
+        "description": "- Uma vez por turno como uma ação livre, você pode invocar um de seus servos para o campo de batalha.\n- Seus servos agem sempre após você e quando mortos ficam indisponíveis para serem reinvocados por todo o combate.\n- A quantidade máxima de servos no campo de batalha é 3 (aumentado conforme você fica mais forte).\n- Início do turno: Ganhe 5 de Shield para cada servo em campo.",
+        "type": "positive"
+    },
+    "Mosquito": {
+        "description": "- Ao acertar um ataque aplique 1 Bleed.\n- Você pode consumir até 5 da Stack de um efeito negativo em si (Máx. 1x por cena).",
+        "type": "positive"
+    },
+    "Vespa": {
+        "description": "- Início da cena: Ganhe 2 Resilience.\n- Seus ataques ganham um bônus de +1 de acerto.",
+        "type": "positive"
+    },
+    "Vagalume": {
+        "description": "- Sua reação de clash ganha um bônus de +1.\n- Quando acertado aplique 1 Paralyze no atacante (Máx. 1x por criatura por cena).",
+        "type": "positive"
+    },
+    "Mariposa": {
+        "description": "- Início da cena: Ganhe 1 Guidance, 1 Haste e 5 Shield.\n- Ao aplicar um efeito aplique +1 (Máx. 1x por cena).",
+        "type": "positive"
+    },
+    "Formiga": {
+        "description": "- Ao errar um ataque cause 10 de dano.\n- Uma vez por cena, ao acertar um ataque ative um efeito no alvo, o efeito não reduz com essa ativação.",
+        "type": "positive"
     }
 }

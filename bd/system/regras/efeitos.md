@@ -5,6 +5,7 @@
 | @Haste |
 | @Guidance |
 | @Resilience |
+| @Charge |
 | @(Soul Resin) |
 | @(Power Up) |
 | @(Damage Up) |
