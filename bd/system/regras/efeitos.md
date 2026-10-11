@@ -3,6 +3,7 @@
 | @Poise |
 | @Protection |
 | @Haste |
+| @Armor |
 | @Guidance |
 | @Resilience |
 | @Charge |
