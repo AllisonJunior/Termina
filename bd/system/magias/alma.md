@@ -44,7 +44,7 @@ Você toca uma criatura e purifica 1d4 + 1 efeitos negativos nela, para cada efe
 **CORTES HORRÍFICOS** <br>
 **Ativação:** 6 de Vida<br>
 **Ação Livre:** 6 de Vida<br>
-Você move suas mãos rapidamente de cima para baixo e de baixo para cima em direção a uma criatura, criando uma série de cortes. Em um acerto o alvo sofre d6 + Horror de dano horrífico.
+VVocê move suas mãos rapidamente de cima para baixo e de baixo para cima em direção a uma criatura que esteja em até 40 feet de você, criando uma série de cortes. Em um acerto o alvo sofre d6 + Horror de dano horrífico.
 
 **BLINK** <br>
 **Ativação:** 10 de Vida<br>
