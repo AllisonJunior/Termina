@@ -19,4 +19,4 @@ Uma classe focada exclusivamente na defesa.
 - Sua reação de Evade pode ser reusada gratuitamente, enquanto você não falhar no seu teste.
 
 **Ardilosidade (Ativa)** <br>
-Uma vez por cena ao realizar um acerto crítico você pode aumentar o dano desse ataque em +50% (arredondado para cima).
+Uma vez por cena ao realizar um acerto você pode aumentar o dano desse ataque em +50% (arredondado para cima).
