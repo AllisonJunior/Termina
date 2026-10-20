@@ -7,13 +7,13 @@
 - A ordem de ação de um personagem é chamada de Speed, ordem essa que é re rolada todo fim de cena.
 - A vida temporária é chamada de Shield, por padrão é stackavel e é removida todo fim de cena (a não ser que algo diga o contrário). 
 - Agir se refere a: Gastar uma ação para usar uma habilidade, castar magia, reagir, atacar, etc.
-- Dano crítico segue a regra de re rolar o dano e o somar.
+- Dano crítico se trata do dano máximo do ataque.
 - Cada criatura possui resistências únicas definidas em sua classe para os três tipos de dano base: Cortante, Perfurante e Esmagante.
+- Além dos três tipos de dano base possuimos um último, conhecido como Horrífico, o mesmo ignora completamente resistências (a não ser que seja dito o contrário).
 - Os jogadores inicialmente começam com duas ações por turno.
 - Os jogadores tem acesso a todas as reações desse sistema.
 - Ao ter seus pontos de vida zerados o personagem do jogador entra no estado Desestabilizado.
 - Todos os personagens podem utilizar magia, mas para isso se é necessário atender os requisitos e restrições.
-- A ambíguidade do termo "Testes" nas descrições da magia, indica que um alvo pode tentar Resistir (Fortitude), Esquivar (Justiça), etc.
 
 ## Criação do Personagem
 

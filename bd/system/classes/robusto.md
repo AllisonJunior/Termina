@@ -13,7 +13,7 @@ Uma classe que troca sua defesa por uma alta ofensividade.
 ## Habilidades da Classe
 
 **Vingança (Passiva)** <br>
-Sua reação de Contra Ataque causa o dobro de dano.
+A sua primeira reação de Contra Ataque na cena causa o dobro de dano.
 
-**Opressão Descuidada (Ativa)** <br>
-No seu turno você pode optar por não se preocupar com sua defesa para aumentar a sua ofensividade. Ao fazer isso por essa cena, seus ataques passam a causar o dobro de dano, mas seus inimigos ganham vantagem para te acertar.
+**Opressão (Ativa)** <br>
+Uma vez a cada três cenas você pode como uma ação livre dobrar o dano de um de seus ataques.

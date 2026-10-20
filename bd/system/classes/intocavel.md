@@ -13,15 +13,10 @@ Uma classe focada exclusivamente na defesa.
 ## Habilidades da Classe
 
 **Fatalidade Crítica (Passiva)** <br>
-- Início do combate: Ganhe Shield fixo igual a 35% da sua vida máxima (arredondado para cima).
-- Seu acerto crítico causa (Dano Máximo x 2).
+- Quando um combate começa você ganha 35% da sua vida máxima de Shield fixo (arredondado para cima).
 - Seu movimento máximo é dobrado.
 - Armas a distância tem seu alcance dobrado.
-- Pela cena, a reação de Evade pode ser reutilizada enquanto você não falhar no seu teste.
+- Sua reação de Evade pode ser reusada gratuitamente, enquanto você não falhar no seu teste.
 
 **Ardilosidade (Ativa)** <br>
-No início de uma cena você ganha um dos seguintes beneficíos: 
-- Ganhe +5 de Shield fixo.
-- Ganhe +30 feet por essa cena.
-- Ganhe imunidade a ataques de oportunidade por essa cena.
-- Ataques a distância feitos contra você são feitos com desvantagem.
+Uma vez por cena ao realizar um acerto crítico você pode aumentar o dano desse ataque em +50% (arredondado para cima).

@@ -5,7 +5,7 @@ A raça composta por criaturas que se assemelham muito a traços de animais e ta
 
 **Como um mink você ganha os seguintes benefícios:** <br>
 
-- Movimento base 40 feet
+- Movimento base 45 feet
 - Fortitude +2
-- Vida aumentada em (Fortitude x 2)
-- Perk +1
+- Vida aumentada em ((Fortitude x 2) + Nível)
+- Uma vez por cena ao sofrer um ataque unilateral você pode escolher reduzir o seu dano pela metade (antes das resistências) 

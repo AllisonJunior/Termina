@@ -7,5 +7,5 @@ Uma raça com uma alta expectativa de vida que também é conhecida como a com m
 
 - Movimento base 30 feet
 - Prudência ou Justiça +2
-- Magia Mundana +2
-- Perk +1
+- Magia Mundana +2 ou Perks +2
+- Uma vez por dia a qualquer momento você pode rolar 2d4 e utilizar o resultado desse dado como um bônus em uma de suas rolagens como uma ação livre. 

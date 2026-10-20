@@ -12,13 +12,14 @@ Uma classe especializada na criação de todos os tipos de recursos.
 
 ## Habilidades da Classe
 
-**Mestre Construtor (Passiva)** <br>
-Você ao se tornar um mestre deve escolher qual caminho trilhará, o de um Mestre Alquimista ou o de um Mestre Ferreiro. A sua escolha determina com qual eficiência você irá poder criar certas coisas e qual nível de conhecimento você possui sobre tal conteúdo.
+**Criador (Passiva)** <br>
+A sua arma principal possui um set adicional de modificadores. No início de um combate você define com qual set sua arma principal começará, posteriormente você pode alternar entre os sets todo início de uma cena. A quantidade de sets que sua arma principal possui aumenta em +1 para cada 5 níveis.
 
 **Auxílio (Ativa)** <br>
 No início de uma cena você pode aplicar um dos seguintes efeitos em você ou em um aliado:
-- 1 @Armor
-- 1 @(Power Up) 
 - 1 @(Damage Up)
-- 2 @Protection
-- 4 @Haste
+- 2 @Resilience
+- 2 @Armor
+- 2 @Haste
+- 3 @Protection
+

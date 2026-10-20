@@ -9,7 +9,7 @@ Note que apesar de se poder castar magias da alma como uma ação livre, a quant
 **REVESTIMENTO HORRÍFICO** <br>
 **Ativação:** 8 de Vida<br>
 **Ação Livre:** 6 de Vida<br>
-Você profere algumas palavras incompreensíveis que imbuem a sua arma com horror, você ganha 2 @(Soul Resin).
+Você profere algumas palavras incompreensíveis que imbuem a sua arma com horror, você ganha 2 @(Horror Resin).
 
 **GARRA MALDITA** <br>
 **Ativação:** 6 de Vida<br>

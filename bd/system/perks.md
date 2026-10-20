@@ -13,22 +13,12 @@ Sua vida máxima é aumentada em +10.
 ---
 
 **Preparado** <br>
-Quando um combate começa ganhe: 2 @(Power Up) e 2 @Protection. A primeira vez que sair do estado desestabilizado ganhe 4 @(Power Up) por duas cenas.
+Quando um combate começa ganhe: 2 @(Power Up) e 5 @Protection. A primeira vez que sair do estado desestabilizado ganhe 4 @(Power Up) por duas cenas.
 
 ---
 
 **Escudo Extra** <br>
 No início do combate ganhe 10% da sua vida máxima de Shield fixo (arredondado para baixo).
-
----
-
-**Mugigo** <br>
-Ao acertar um alvo com um ataque corpo a corpo você pode aplicar @Prey.
-
----
-
-**Ataque Extra** <br>
-Uma vez por cena ao acertar um ataque você pode o refazer novamente.
 
 ---
 
@@ -43,7 +33,7 @@ Seus ataques críticos causam +10 de dano adicional.
 ---
 
 **Maldito** <br>
-Quando um atacante te coloca no estado desestabilizado ele ganha 2 @Paralyze e 2 @Fragile.
+Quando um atacante te coloca no estado desestabilizado ele ganha 3 @Paralyze e 7 @Fragile.
 
 ---
 
@@ -53,7 +43,7 @@ Ao utilizar uma reação ganhe Shield igual a Fortitude, duas vezes por cena.
 ---
 
 **Bônus** <br>
-Duas vezes por cena, ao ganhar ou aplicar um efeito ganhe/aplique +1.
+Uma vez por cena ao ganhar ou aplicar um efeito ganhe/aplique +1.
 
 ---
 
@@ -67,11 +57,6 @@ Ao curar uma criatura incluindo você, aumente a cura em (Prudência / 2, arredo
 
 ---
 
-**Adrenalina** <br>
-Uma vez a cada descanso longo, ao ter seus pontos de vida reduzidos a zero você pode agir como uma ação livre.
-
----
-
 **Alívio Horrífico** <br>
 Uma vez por cena você pode reduzir pela metade a penalidade da ativação de uma magia da alma como uma ação livre.
 
@@ -79,11 +64,6 @@ Uma vez por cena você pode reduzir pela metade a penalidade da ativação de um
 
 **Aproveitador** <br>
 Seus ataques unilaterais causam +10 de dano adicional.
-
----
-
-**Segunda Chance** <br>
-Uma vez por combate ao falhar em uma rolagem você pode a re rolar.
 
 ---
 

@@ -5,7 +5,7 @@ Uma consequência... uma criatura de outra raça que foi corrompida por **Termin
 
 **Como um carniçal você ganha os seguintes benefícios:** <br>
 
-- Movimento base 35 feet
-- Ao acertar um ataque corpo a corpo recupere 3 de Vida
+- Movimento base 40 feet
 - Ponto de Atributo +1
+- Uma vez a cada três cenas, você pode reduzir o dano de tipo horrífico pela metade
 - Você possui um **Membro de Caça** único (verifique a aba de armas)

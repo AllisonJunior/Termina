@@ -21,10 +21,10 @@ Você cria em até 30 feet de você um som, um cheiro, uma imagem ou a sua junç
 Você cria em até 30 feet de você um efeito sensorial instanâneo e infoensivo, como uma chuva de faíscas, uma lufada de vento, notas musicais fracas, um odor estranho, abrir ou fechar uma porta etc, ou seja, um truque simples. A qualidade, quantidade e duração dos efeitos que você pode criar são definidos pela sua Prudência. Você pode desfazer o truque a qualquer momento com uma ação livre.
 
 **FLECHA RESTRITIVA** <br> 
-Você estende suas mãos formando um arco mágico e então dispara em uma criatura em até 95 feet de você. Em um acerto a criatura sofre 2d8 de dano e ganha um dos seguintes efeitos: 1 @Paralyze, 1 @(Healing Down), 1 @Fragile, 1 @Tremor.
+Você estende suas mãos formando um arco mágico e então dispara em uma criatura em até 95 feet de você. Em um acerto a criatura sofre 2d8 de dano e ganha um dos seguintes efeitos: 1 @Paralyze, 2 @Bind na próxima cena, 3 @Fragile.
 
 **AGULHA DE MANA** <br>
-Você aponta um de seus dedos em direção a um alvo e então conjura uma pequena agulha de mana em uma criautra em até 20 feet de você. Em um acerto a criatura sofre d12 de dano e ganha 2 @Fragile.
+Você aponta um de seus dedos em direção a um alvo e então conjura uma pequena agulha de mana em uma criautra em até 20 feet de você. Em um acerto a criatura sofre d12 de dano e ganha 3 @Fragile.
 
 **ORIENTAÇÃO** <br>
 Você toca um alvo e aplica 2 @Guidance no mesmo.
@@ -42,7 +42,7 @@ Você estala rapidamente seus dedos, a partir deles se é criada uma enorme név
 Você estala rapidamente seus dedos, a partir deles se é criada uma enorme névoa expessa que se expande em um raio de até 35 feet, as criaturas dentro dessa névoa ficam cegas, ela dura por duas cenas. A coloração da neblina é definida por você. Você pode desfazer a neblina a qualquer momento com uma ação livre.
 
 **FALA MALDITA** <br>
-Você reveste suas cordas vocais com mana tornado sua fala uma arma, com isso você fala algo. Todas as criaturas a sua escolha que possam te ouviram precisa fazer um teste, em caso de falha sofrem 2d6 + Prudência de dano e ganham 2 @Sinking, em caso de sucesso só sofrem metade do dano e ganham 1 @Sinking.
+Você reveste suas cordas vocais com mana tornado sua fala uma arma, com isso você fala algo. Todas as criaturas a sua escolha que possam te ouviram precisa fazer um teste, em caso de falha sofrem 2d6 + Prudência de dano e ganham 2 @Tremor, em caso de sucesso só sofrem metade do dano e ganham 1 @Tremor.
 
 **ALARME** <br>
 Você cria um gatilho magico para ativação de um alarme, seja ele mental ou sonoro, caso sonoro você pode definir um som para o mesmo. Esse gatilho magico é alicado em um objeto, porta, arma, área, etc. com base em requisitos e restrições de ativação definidas por você. Você também pode definir uma magia que ira ser usada quando o gatilho do alarme ativar, mas note que qual magia pode ser utilizada dessa forma é definida pelo sua Prudência. Você pode desfazer esse alarme a qualquer momento com uma ação livre.
