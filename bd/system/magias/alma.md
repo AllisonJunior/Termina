@@ -48,7 +48,7 @@ VVocê move suas mãos rapidamente de cima para baixo e de baixo para cima em di
 
 **BLINK** <br>
 **Ativação:** 10 de Vida<br>
-**Ação Livre:** 10 de Vida e movimento máximo reduzido pela metade pela cena<br>
+**Ação Livre:** 6 de Vida<br>
 Você se torna um com o horror por alguns segundos se tornando somente cinzas e reaparecendo novamente em um ponto vazio em até 85 feet. c(!RED){Se essa magia tiver sido ativada como uma resposta a um ataque, o dano do ataque é reduzido pela metade mesmo que seja do tipo horrífico}.
 
 **DISSIPAR MAGIA** <br>
