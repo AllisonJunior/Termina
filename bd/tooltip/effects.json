@@ -89,7 +89,7 @@
         "type": "positive"
     },
     "Horror Resin": {
-        "description": "O dano de todos os seus ataques é convertido em dano do tipo horrífico, no fim da cena a Stack é reduzida em 1. Com a Stack reduzida a 0, esse efeito expira.",
+        "description": "O dano de todos os seus ataques é convertido em dano do tipo horrífico, no fim da cena a Stack é reduzida em 1.",
         "type": "positive"
     },
     "Stream": {
