@@ -7,11 +7,11 @@ Quando um combate começa você ganha @Lord por todo o combate.
 Segue a lista de Servos disponíveis:
 
 {Comuns}
+- Cervidae [4x]
 - Soldier [3x]
 - Ranger [3x]
 - Caster [2x]
 - Guardian [2x]
-- Cervidae [2x]
 
 {Únicos}
 - Yura
