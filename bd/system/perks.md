@@ -68,7 +68,7 @@ Seus ataques unilaterais causam +10 de dano adicional.
 ---
 
 **Tank** <br>
-Ataques unilaterais causam -5 de dano.
+Ataques unilaterais causam -5 de dano (antes das resistências).
 
 ---
 
