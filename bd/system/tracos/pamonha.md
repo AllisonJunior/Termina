@@ -6,6 +6,7 @@ Uma vez por turno ao acertar um ataque não provindo de uma magia, você pode at
 
 Uma vez por cena você pode como uma ação livre, ativar um dos seguintes efeitos (quando possível): 
 
-- Remova um efeito negativo presente em você ou um aliado, se o efeito removido tiver sido @Bleed ganhe 5 Shield fixo.
+- Remova um efeito negativo presente em você. 
+- Reduza a Stack de um efeito negativo em um aliado em 5.
 - Aumente a Stack de um efeito positivo ou negativo em uma criatura em +1.
 - No fim dessa cena a criatura não perde seu Shield.
