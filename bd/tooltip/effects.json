@@ -109,7 +109,7 @@
         "type": "positive"
     },
     "Stream": {
-        "description": "- Min & Max Speed +2.\n- Você é imune a Bleed.\n- Ao agir ganhe 1 Charge (Máx. 2x por cena).\n- Quando um aliado agir ganhe 1 Charge (Máx. 1x por aliado por cena).\n- No início de uma cena ganhe 10 Shield e ative um dos seguintes efeitos em si por toda a cena:\n\n1. Pigritia: Seu movimento máximo é dobrado e você é imune a ataques de oportunidade.\n2. Superbia: Você pode utilizar uma reação como uma ação livre.\n3. Morositas: Você vincula duas criaturas pela cena, todo dano e efeito causado/aplicado é repartido igualmente em ambas.\n4. Luxuria: Em combate você pode consumir 5 de Charge e garantir o valor máximo de uma rolagem sua, uma vez por cena. Após usar essa habilidade ela desativa por 3 cenas.",
+        "description": "- Min & Max Speed +2.\n- Você é imune a Bleed.\n- Ao agir ganhe 1 Charge (Máx. 2x por cena).\n- Quando um aliado agir ganhe 1 Charge (Máx. 1x por aliado por cena).\n- No início de uma cena ganhe 10 Shield e ative um dos seguintes efeitos em si por toda a cena:\n\n1. Pigritia: Seu movimento máximo é dobrado e você é imune a ataques de oportunidade.\n2. Superbia: Você pode utilizar uma reação como uma ação livre.\n3. Morositas: Você vincula duas criaturas pela cena, todo dano e efeito causado/aplicado é repartido igualmente em ambas.",
         "type": "negative"
     },
     "Charge": {
