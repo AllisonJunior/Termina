@@ -1,4 +1,4 @@
-## Apresentador
+## Transmissão
 
 O ~escolhido~ pioneiro dessa nova modalidade de entretenimento em tempo real, as lives, transmissões ao vivo que estão disponíveis para que toda a Zona Viva possa experienciar, dos Le Kakis as ~Deusas~ Damas.
 

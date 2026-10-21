@@ -54,11 +54,24 @@ c(!RED){Modificadores = *10*} <br>
 
 ---
 
-**Membro de Caça**<br>
+**Membro de Caça [Base]**<br>
 Acerto = *Fortidude, Prudência, Temperância ou Justiça* <br>
 Dano = *1d8 + Fortitude, Prudência, Temperância ou Justiça* <br>
 Tipo de Dano = *Cortante, Perfurante ou Esmagante* <br>
 Alcance = *Variável, se for um braço com lâmina por exemplo tem 5 feet de alcance, se for uma espécie de asa que se estende 15 feet, se for uma espécie de arma orgânica 30 feet, em outras palavras, (5/30 feet)* <br>
 c(!RED){Modificadores = *14*} <br>
+
+**Membro de Caça [Rex Insectorium]**<br>
+Acerto = *Fortitude* <br>
+Dano = *1d12 + Fortitude* <br>
+Tipo de Dano = *Esmagante* <br>
+Alcance = *15 feet* <br>
+
+Em um acerto aplique 3 @Poison <br>
+Em um acerto crítico aplique 3 @Poison <br>
+Em um acerto aplique 1 @(Damage Down) nessa ou na próxima cena (Máx. 1x por cena)<br>
+Em um acerto cause dano adicional igual ao @Poison no alvo <br>
+Em um acerto se o alvo tiver @(Healing Down) aumente o dano final em +2 <br>
+
 
 ---

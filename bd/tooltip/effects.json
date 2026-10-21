@@ -29,12 +29,20 @@
         "type": "negative"
     },
     "Healing Down": {
-        "description": "Por essa cena a efetividade da sua cura é reduzida pela metade, no fim da cena a Stack é reduzida em 1.",
+        "description": "Por essa cena toda a sua cura é reduzida pela metade.",
         "type": "negative"
+    },    
+    "Healing Up": {
+        "description": "Por essa cena toda a sua cura é dobrada.",
+        "type": "positive"
     },
     "Paralyze": {
-        "description": "Ao realizar uma rolagem, reduza o seu resultado máximo em 3, então reduza a Stack em 1.",
+        "description": "Ao realizar uma rolagem (com exceção de danos) reduza o seu resultado em 3, então reduza a Stack em 1.",
         "type": "negative"
+    },    
+    "Energize": {
+        "description": "Ao realizar uma rolagem (com exceção de danos)aumente o seu resultado em 3, então reduza a Stack em 1.",
+        "type": "positive"
     },
     "Tremor": {
         "description": "Ao sofrer dano de um ataque o sofra novamente, então reduza a Stack em 1.",
@@ -79,10 +87,18 @@
     "Damage Up": {
         "description": "Por essa cena seus ataques causam (Stack x 10) de dano adicional.",
         "type": "positive"
+    },    
+    "Damage Down": {
+        "description": "Por essa cena seus ataques causam menos (Stack x 10) de dano adicional.",
+        "type": "negative"
     },
-    "Armor": {
+    "Armor Up": {
         "description": "Por essa cena sua CA é aumentada com base na Stack.",
         "type": "positive"
+    },   
+    "Armor Down": {
+        "description": "Por essa cena sua CA é reduzida com base na Stack.",
+        "type": "negative"
     },
     "Resilience": {
         "description": "Quando um efeito negativo seria aplicado em você, ignore a sua aplicação e então reduza a Stack em 1.",
@@ -93,7 +109,7 @@
         "type": "positive"
     },
     "Stream": {
-        "description": "- Ao agir ganhe 1 Charge (Máx. 2x por cena).\n- Quando um aliado agir ganhe 1 Charge (Máx. 1x por aliado por cena).\n- No início de uma cena ganhe 10 Shield e ative um dos seguintes efeitos em si por toda a cena:\n\n1. Pigritia: Seu movimento máximo é dobrado e você é imune a ataques de oportunidade.\n2. Superbia: Você pode utilizar uma reação como uma ação livre.",
+        "description": "- Min & Max Speed +2.\n- Ao agir ganhe 1 Charge (Máx. 2x por cena).\n- Quando um aliado agir ganhe 1 Charge (Máx. 1x por aliado por cena).\n- No início de uma cena ganhe 10 Shield e ative um dos seguintes efeitos em si por toda a cena:\n\n1. Pigritia: Seu movimento máximo é dobrado e você é imune a ataques de oportunidade.\n2. Superbia: Você pode utilizar uma reação como uma ação livre.\n3. Morositas: Você vincula duas criaturas pela cena, todo dano e efeito causado/aplicado é repartido igualmente em ambas.\n4. Luxuria: Em combate você pode consumir 5 de Charge e garantir o valor máximo de uma rolagem sua, uma vez por cena. Após usar essa habilidade ela desativa por 3 cenas.",
         "type": "negative"
     },
     "Charge": {
@@ -103,25 +119,45 @@
     "Lord": {
         "description": "- Início do turno: Ganhe 5 de Shield para cada servo em campo.\n- Uma vez por turno como uma ação livre, você pode invocar um de seus servos para o campo de batalha.\n- Seus servos agem sempre após você e quando mortos ficam indisponíveis para serem reinvocados por todo o combate.\n- A quantidade máxima de servos no campo de batalha é 3 (aumentado conforme você fica mais forte).",
         "type": "positive"
+    },    
+    "Membro de Caça [Rex Insectorum]": {
+        "description": "Você pode utilizar o seu membro de caça.",
+        "type": "positive"
     },
     "Mosquito": {
-        "description": "No fim do seu turno remova 5 da Stack de um efeito negativo em si (quando possível).",
+        "description": "- Combate: No fim do seu turno remova 5 da Stack de um efeito negativo em si (quando possível).\n- Exploração: Esse inseto é capaz de detectar sangue a longas distâncias.",
         "type": "positive"
     },
     "Vespa": {
-        "description": "Início da cena ganhe 2 Resiliance.",
+        "description": "- Combate: No início da cena ganhe 2 Resiliance.\n- Exploração: Esse inseto é capaz de detectar inconsistências em liquídos.",
         "type": "positive"
     },
     "Vagalume": {
-        "description": "Quando acertado aplique 2 Paralyze no atacante (Máx. 1x por atacante por cena).",
+        "description": "- Combate: Quando acertado aplique 2 Paralyze no atacante (Máx. 1x por atacante por cena).\n- Exploração: Esse inseto é capaz de emitir luz em um raio de até 15 feet.",
         "type": "positive"
     },
     "Mariposa": {
-        "description": "Ao aplicar/ganhar um efeito aplique/ganhe +1 (quando possível).",
+        "description": "- Combate: Ao aplicar/ganhar um efeito aplique/ganhe +1 (quando possível).\n- Exploração: Esse inseto consegue purificar alguns recursos.",
         "type": "positive"
     },
     "Formiga": {
-        "description": "Ao acertar um ataque ative um efeito no alvo (Máx. 1x por atacante por cena).",
+        "description": "- Combate: Ao acertar um ataque ative um efeito no alvo (Máx. 1x por atacante por cena).\n- Exploração: Esse inseto é capaz de fortalecer temporariamente a força fisíca de uma criatura.",
+        "type": "positive"
+    },
+    "Escorpião": {
+        "description": "- Combate: Ao acertar um ataque aplique 2 Poison no alvo (Máx. 2x por cena).\n- Exploração: Esse inseto é capaz de fortalecer temporariamente a constituição de uma criatura.",
+        "type": "positive"
+    },
+    "Cigarra": {
+        "description": "- Combate: Ao acertar um ataque aplique 1 Tremor no alvo (Máx. 1x por cena).\n- Exploração: Esse inseto é capaz de agir como um alarme natural.",
+        "type": "positive"
+    },
+    "Aranha": {
+        "description": "- Combate: Ao acertar um ataque aplique Healing Down no alvo (Máx. 1x por cena).\n- Exploração: Esse inseto é capaz de tecer teia resistentes e de alta qualidade.",
+        "type": "positive"
+    },
+    "Louva-a-deus": {
+        "description": "- Combate: Ao acertar um ataque aumente o seu dano final em +2 para cada efeito negativo no alvo (Máx. 1x por cena).\n- Exploração: Esse inseto é capaz de fortalecer temporariamente a velocidade de uma criatura.",
         "type": "positive"
     }
 }

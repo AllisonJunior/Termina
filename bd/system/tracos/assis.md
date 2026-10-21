@@ -4,16 +4,15 @@ Um caso único em meio a tanta passividade... alguém capaz de moldar aqueles qu
 
 Quando um combate começa você ganha @Lord por todo o combate.
 
-Segue a lista de Servos disponíveis:
+---
 
-{Comuns}
+**Segue a lista de Servos disponíveis:**
+
 - Cervidae [4x]
 - Soldier [3x]
 - Ranger [3x]
 - Caster [2x]
 - Guardian [2x]
-
-{Únicos}
-- Yura
+- Yura [1x]
 
 ---

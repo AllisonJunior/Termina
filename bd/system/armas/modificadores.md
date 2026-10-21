@@ -2,13 +2,15 @@
 
 | Custo | Mod: [Ao Usar] |
 |-------|-------|
-| **2** | Ganhe 3 @Protection |
 | **3** | Ganhe 2 @Haste na próxima cena |
 | **3** | Ganhe 1 @Resilience |
 | **4** | Ganhe 3 @Poise |
 | **4** | Ganhe 1 @(Power Up) |
 | **4** | Ganhe 1 @(Damage Up) |
 | **4** | Ganhe 1 @(Damage Up) na próxima cena |
+| **4** | Ganhe @(Healing Up) |
+| **4** | Ganhe @(Healing Up) na próxima cena |
+| **4** | Ganhe 1 @Protection |
 
 | Custo | Mod: [Em um Acerto] |
 |-------|-------|
@@ -17,8 +19,10 @@
 | **2** | Aplique 3 @Burn |
 | **3** | Aplique 1 @Tremor |
 | **3** | Aplique 2 @Poison |
-| **4** | Aplique 2 @Fragile |
 | **4** | Aplique 2 @Bind na próxima cena |
+| **4** | Aplique 2 @Fragile |
+| **4** | Aplique @(Healing Down) |
+| **4** | Aplique @(Healing Down) na próxima cena |
 
 | Custo | Mod: Geral |
 |-------|-------|
