@@ -12,6 +12,7 @@ Quando um combate começa você invoca um Inseto ao seu lado e um adicional para
 - @Cigarra
 - @Aranha
 - @(Louva-a-deus)
+- @Besouro
 
 No início do seu turno você pode como uma ação livre invocar um inseto ao lado de uma criatura, uma criatura só pode possuir um único inseto, caso um novo seja atribuido a ela o antigo é desfeito.
 

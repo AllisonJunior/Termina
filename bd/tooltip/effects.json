@@ -141,7 +141,7 @@
         "type": "positive"
     },
     "Formiga": {
-        "description": "- Combate: Ao acertar um ataque ative um efeito no alvo (Máx. 1x por atacante por cena).\n- Exploração: Esse inseto é capaz de fortalecer temporariamente a força fisíca de uma criatura.",
+        "description": "- Combate: Ao acertar um ataque ative um efeito no alvo (Máx. 1x por atacante por cena).\n- Exploração: Esse inseto é capaz de fortalecer temporariamente a percepção de uma criatura.",
         "type": "positive"
     },
     "Escorpião": {
@@ -158,6 +158,10 @@
     },
     "Louva-a-deus": {
         "description": "- Combate: Ao acertar um ataque aumente o seu dano final em +2 para cada efeito negativo no alvo (Máx. 1x por cena).\n- Exploração: Esse inseto é capaz de fortalecer temporariamente a velocidade de uma criatura.",
+        "type": "positive"
+    },    
+    "Besouro": {
+        "description": "- Combate: No início da cena ganhe 1 Power Up.\n- Exploração: Esse inseto é capaz de fortalecer temporariamente a força fisíca de uma criatura.",
         "type": "positive"
     }
 }
