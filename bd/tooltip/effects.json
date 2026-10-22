@@ -41,7 +41,7 @@
         "type": "negative"
     },    
     "Energize": {
-        "description": "Ao realizar uma rolagem (com exceção de danos)aumente o seu resultado em 3, então reduza a Stack em 1.",
+        "description": "Ao realizar uma rolagem (com exceção de danos) aumente o seu resultado em 3, então reduza a Stack em 1.",
         "type": "positive"
     },
     "Tremor": {
